@@ -3,28 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Li & Yang (2005) 文章详细介绍：大跃进与中央计划灾难</title>
-  <meta name="description" content="Li & Yang (2005)《The Great Leap Forward: Anatomy of a Central Planning Disaster》中文详细介绍，梳理论文问题、历史背景、理论模型、实证识别、核心表格和贡献分解。" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:type" content="article" />
-  <meta property="og:locale" content="zh_CN" />
-  <meta property="og:title" content="Li & Yang (2005) 文章详细介绍：大跃进与中央计划灾难" />
-  <meta property="og:description" content="一页读懂 Li & Yang (2005) 对大跃进粮食危机的理论机制、固定效应 IV 识别和贡献分解。" />
-  <meta property="og:image" content="assets/li2005-table1-aggregate.png" />
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true,
-        tags: 'ams'
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    };
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <meta name="description" content="文献阅读笔记目录，收录课程论文的网页讲义、研究背景、理论模型和原文资料。" />
+  <title>文献阅读</title>
   <style>
     :root {
       --page: #f7f9fc;
@@ -34,784 +14,136 @@
       --line: #d8e0ea;
       --accent: #8b1e3f;
       --accent-dark: #64152d;
-      --teal: #0f766e;
-      --amber: #b45309;
-      --blue: #2563eb;
-      --green: #15803d;
-      --soft-red: #fff1f2;
-      --soft-teal: #ecfdf5;
-      --soft-blue: #eff6ff;
-      --soft-amber: #fffbeb;
       --shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       color: var(--ink);
       background: var(--page);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
         "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-      line-height: 1.75;
+      line-height: 1.7;
     }
 
-    a { color: var(--accent); }
-    p { margin: 0.72rem 0; text-align: justify; }
-    strong { color: var(--accent-dark); }
-    code {
-      padding: 0.08rem 0.32rem;
-      border-radius: 4px;
-      background: #eef2f7;
-      color: #9f1239;
-      font-family: "SF Mono", Menlo, Consolas, monospace;
-      font-size: 0.92em;
-    }
-
-    .topbar {
+    header {
       background: #18202f;
-      color: #f8fafc;
+      color: white;
       border-bottom: 5px solid var(--accent);
     }
-    .topbar-inner {
-      max-width: 1180px;
+
+    .inner {
+      width: min(1120px, calc(100% - 2rem));
       margin: 0 auto;
-      padding: 2rem 1.25rem 2.2rem;
     }
-    .site-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem;
-      margin-bottom: 1.15rem;
+
+    .hero {
+      padding: 2.6rem 0 2.8rem;
     }
-    .site-nav a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 36px;
-      padding: 0.34rem 0.72rem;
-      border: 1px solid rgba(226, 232, 240, 0.24);
-      border-radius: 8px;
-      color: #e2e8f0;
-      background: rgba(255, 255, 255, 0.06);
-      text-decoration: none;
-      font-size: 0.92rem;
-      line-height: 1.25;
-    }
-    .site-nav a:hover,
-    .site-nav a[aria-current="page"] {
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.13);
-      border-color: rgba(255, 255, 255, 0.34);
-    }
-    .eyebrow {
-      color: #cbd5e1;
-      font-size: 0.9rem;
-      margin: 0 0 0.35rem;
-    }
+
     h1 {
       margin: 0;
-      color: #ffffff;
-      font-size: clamp(1.85rem, 4vw, 3rem);
-      line-height: 1.2;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.15;
       letter-spacing: 0;
     }
+
     .subtitle {
-      max-width: 880px;
-      margin-top: 0.85rem;
+      max-width: 720px;
+      margin: 0.85rem 0 0;
       color: #dbeafe;
       font-size: 1rem;
     }
 
-    .layout {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 1.25rem;
-      display: grid;
-      grid-template-columns: 290px minmax(0, 1fr);
-      gap: 1.25rem;
-      align-items: start;
-    }
-
-    .toc {
-      position: sticky;
-      top: 1rem;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      padding: 1rem;
-      max-height: calc(100vh - 2rem);
-      overflow: auto;
-    }
-    .toc h2 {
-      margin: 0 0 0.65rem;
-      padding-bottom: 0.45rem;
-      color: var(--accent-dark);
-      border-bottom: 1px solid var(--line);
-      font-size: 1rem;
-    }
-    .toc ol {
-      margin: 0;
-      padding-left: 1.25rem;
-    }
-    .toc li { margin: 0.25rem 0; }
-    .toc a {
-      color: #334155;
-      text-decoration: none;
-      font-size: 0.93rem;
-    }
-    .toc a:hover { color: var(--accent); text-decoration: underline; }
-
     main {
-      min-width: 0;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      box-shadow: var(--shadow);
-      padding: 1.25rem clamp(1rem, 2.6vw, 2rem) 2.5rem;
+      padding: 1.4rem 0 3rem;
     }
 
-    section {
-      padding-top: 0.8rem;
-      margin-top: 0.4rem;
-      scroll-margin-top: 1rem;
+    .literature-list {
+      display: grid;
+      gap: 1rem;
     }
-    h2 {
-      margin: 1.5rem 0 0.9rem;
-      padding-left: 0.75rem;
-      border-left: 5px solid var(--accent);
+
+    .item {
+      padding: 1.15rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .item h2 {
+      margin: 0;
       color: var(--accent-dark);
-      font-size: 1.45rem;
+      font-size: 1.25rem;
       line-height: 1.35;
       letter-spacing: 0;
     }
-    h3 {
-      margin: 1.2rem 0 0.55rem;
-      color: #0f172a;
-      font-size: 1.13rem;
-      letter-spacing: 0;
-    }
-    h4 {
-      margin: 1rem 0 0.35rem;
-      color: #334155;
-      font-size: 1rem;
-    }
 
-    .lead {
-      padding: 1rem;
-      border: 1px solid #cbd5e1;
-      border-left: 5px solid var(--teal);
-      border-radius: 8px;
-      background: #f8fafc;
-      font-size: 1rem;
-    }
-    .method-box, .result-box, .warning-box {
-      margin: 1rem 0;
-      padding: 0.9rem 1rem;
-      border-radius: 8px;
-      border: 1px solid var(--line);
-    }
-    .method-box { background: var(--soft-blue); border-left: 5px solid var(--blue); }
-    .result-box { background: var(--soft-teal); border-left: 5px solid var(--teal); }
-    .warning-box { background: var(--soft-amber); border-left: 5px solid var(--amber); }
-    .method-box h4, .result-box h4, .warning-box h4 { margin-top: 0; }
-
-    .formula {
-      margin: 0.9rem 0;
-      padding: 0.85rem 1rem;
-      background: #fbfdff;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow-x: auto;
-      scroll-margin-top: 1rem;
-    }
-    .formula:target {
-      outline: 3px solid rgba(139, 30, 63, 0.18);
-      border-color: var(--accent);
-    }
-
-    .table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      margin: 0.9rem 0 1.1rem;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9rem;
-      min-width: 720px;
-    }
-    th, td {
-      padding: 0.58rem 0.65rem;
-      border-bottom: 1px solid var(--line);
-      vertical-align: top;
-      text-align: left;
-    }
-    th {
-      background: #eef2f7;
-      color: #0f172a;
-      font-weight: 700;
-    }
-    tbody tr:last-child td { border-bottom: none; }
-    .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
-    .note {
+    .item p {
+      margin: 0.55rem 0 0.9rem;
       color: var(--muted);
-      font-size: 0.88rem;
-      margin-top: -0.35rem;
     }
 
-    .paper-figure {
-      margin: 1.15rem 0 1.35rem;
-      padding: 0.75rem;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-    }
-    .paper-figure img {
-      display: block;
-      width: 100%;
-      max-height: 860px;
-      object-fit: contain;
-      border: 1px solid #e5e7eb;
-      background: #fff;
-    }
-    .paper-figure figcaption {
-      margin-top: 0.62rem;
-      color: var(--muted);
-      font-size: 0.88rem;
-      line-height: 1.65;
-      text-align: left;
-    }
-    .paper-figure.narrow {
-      max-width: 760px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.75rem;
-      margin: 1rem 0;
-    }
-    .stat {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 0.8rem;
-      background: #fbfdff;
-    }
-    .stat .value {
-      display: block;
-      color: var(--accent);
-      font-size: 1.45rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-    .stat .label { color: var(--muted); font-size: 0.86rem; }
-
-    .flow {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0.65rem;
-      margin: 1rem 0;
-    }
-    .flow div {
-      min-height: 104px;
-      border-radius: 8px;
-      border: 1px solid var(--line);
-      padding: 0.75rem;
-      background: #fff;
-      position: relative;
-    }
-    .flow span {
-      display: inline-block;
-      margin-bottom: 0.35rem;
-      color: var(--teal);
-      font-weight: 800;
-    }
-
-    .bar-list {
-      display: grid;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
       gap: 0.55rem;
-      margin: 0.9rem 0;
     }
-    .bar-row {
-      display: grid;
-      grid-template-columns: 190px 1fr 74px;
-      gap: 0.65rem;
+
+    .links a {
+      display: inline-flex;
       align-items: center;
-      font-size: 0.9rem;
-    }
-    .track {
-      height: 12px;
-      background: #e2e8f0;
-      border-radius: 999px;
-      overflow: hidden;
-    }
-    .fill {
-      height: 100%;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-    .fill.positive { background: var(--teal); }
-    .fill.offset { background: var(--amber); }
-
-    .back-top {
-      position: fixed;
-      right: 1.1rem;
-      bottom: 1.1rem;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #fff;
-      background: var(--accent);
+      min-height: 36px;
+      padding: 0.34rem 0.72rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--accent);
+      background: #fff;
       text-decoration: none;
-      box-shadow: 0 12px 24px rgba(100, 21, 45, 0.28);
+      font-weight: 700;
+      font-size: 0.92rem;
+      line-height: 1.25;
     }
 
-    @media (max-width: 920px) {
-      .layout { grid-template-columns: 1fr; }
-      .toc { position: static; max-height: none; }
-      .grid { grid-template-columns: 1fr; }
-      .flow { grid-template-columns: 1fr 1fr; }
-      .bar-row { grid-template-columns: 1fr; gap: 0.25rem; }
+    .links a:hover {
+      color: white;
+      border-color: var(--accent);
+      background: var(--accent);
     }
+
     @media (max-width: 560px) {
-      .topbar-inner, .layout { padding-left: 0.85rem; padding-right: 0.85rem; }
-      .site-nav { gap: 0.42rem; }
-      .site-nav a {
+      .inner { width: min(100% - 1.4rem, 1120px); }
+      .links a {
         flex: 1 1 132px;
         justify-content: center;
-        padding-left: 0.55rem;
-        padding-right: 0.55rem;
       }
-      main { padding: 0.9rem 0.85rem 2rem; }
-      .flow { grid-template-columns: 1fr; }
-      h2 { font-size: 1.25rem; }
-      table { font-size: 0.84rem; }
     }
   </style>
 </head>
-<body id="top">
-  <header class="topbar">
-    <div class="topbar-inner">
-      <nav class="site-nav" aria-label="网站导航">
-        <a href="index.html" aria-current="page">文章详解</a>
-        <a href="研究背景.html">研究背景</a>
-        <a href="理论模型.html">理论模型</a>
-        <a href="The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
-      </nav>
-      <p class="eyebrow">文章讲义：Wei Li & Dennis Tao Yang, Journal of Political Economy, 2005</p>
-      <h1>《The Great Leap Forward: Anatomy of a Central Planning Disaster》详细介绍</h1>
-      <p class="subtitle">本文的核心不是简单说“政策导致灾难”，而是展示一套方法：先用动态理论模型说明资源转移与过度征购为什么会造成连锁崩溃，再用省级面板数据、固定效应 IV 与贡献分解估计各因素的相对作用。</p>
+<body>
+  <header>
+    <div class="inner hero">
+      <h1>文献阅读</h1>
+      <p class="subtitle">课程论文阅读笔记、理论模型推导、研究背景和原文资料整理。</p>
     </div>
   </header>
 
-  <div class="layout">
-    <nav class="toc" aria-label="目录">
-      <h2>目录</h2>
-      <ol>
-        <li><a href="#sec1">文章问题与主线</a></li>
-        <li><a href="#sec2">历史背景与基本事实</a></li>
-        <li><a href="#sec3">理论模型：设定、推导与机制</a></li>
-        <li><a href="#sec4">数据与假设检验：变量逐一解释</a></li>
-        <li><a href="#sec5">实证模型与识别：每个变量怎么进模型</a></li>
-        <li><a href="#sec6">表5：固定效应 IV 核心结果</a></li>
-        <li><a href="#sec7">表6：稳健性检验逐项解释</a></li>
-        <li><a href="#sec8">表7：产量崩溃与恢复的贡献分解</a></li>
-        <li><a href="#sec9">结论与方法启示</a></li>
-      </ol>
-    </nav>
-
-    <main>
-      <section id="sec1">
-        <h2>1. 文章问题与主线</h2>
-        <div class="lead">
-          Li 和 Yang 要回答的根本问题是：1959-1961 年中国粮食产量为什么崩溃？官方解释强调自然灾害，既有研究也分别讨论过劳动力减少、公共食堂、人民公社激励、退出权丧失等因素。本文的贡献在于把这些因素放入同一个理论和实证框架中，估计它们各自对产量下降和恢复的贡献。
+  <main>
+    <div class="inner literature-list">
+      <article class="item">
+        <h2>The Great Leap Forward: Anatomy of a Central Planning Disaster</h2>
+        <p>Wei Li & Dennis Tao Yang (2005)，关于大跃进时期中央计划、资源转移、过度征购与粮食产量崩溃的文献阅读整理。</p>
+        <div class="links">
+          <a href="The-Great-Leap-Forward/">进入文献页</a>
+          <a href="The-Great-Leap-Forward/研究背景.html">研究背景</a>
+          <a href="The-Great-Leap-Forward/理论模型.html">理论模型</a>
+          <a href="The-Great-Leap-Forward/The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
         </div>
-        <p>文章的逻辑链条可以压缩成一句话：中央计划者错误相信集体化会显著提高农业生产率，同时又更急于工业化，于是把劳动力、土地和资本从农业转向工业，并提高粮食征购；过度征购降低农民口粮，口粮不足削弱体力劳动能力，下一期粮食产量继续下降。</p>
-        <div class="flow">
-          <div><span>第一步</span><br>错误预期：集体化被认为会使农业生产率大幅提高。</div>
-          <div><span>第二步</span><br>政策选择：资源转移到工业，同时提高对农村的粮食征购。</div>
-          <div><span>第三步</span><br>营养反馈：留给农民的粮食减少，劳动能力下降。</div>
-          <div><span>第四步</span><br>动态崩溃：当期投入少、下一期体力弱，产量继续下滑。</div>
-        </div>
-        <div class="grid">
-          <div class="stat"><span class="value">33.0%</span><span class="label">资源转移对 1958-1961 年产量下降的贡献</span></div>
-          <div class="stat"><span class="value">28.3%</span><span class="label">过度征购与营养效应对产量下降的贡献</span></div>
-          <div class="stat"><span class="value">12.9%</span><span class="label">恶劣天气对产量下降的贡献</span></div>
-        </div>
-      </section>
-
-      <section id="sec2">
-        <h2>2. 历史背景与基本事实</h2>
-        <p>新中国成立后，中国仍是高度农业化经济，工业基础薄弱。1952 年以后，政府采用苏联式重工业优先战略。问题在于：重工业投资需要剩余，而当时最主要的可提取剩余来自农业。于是，农业政策承担了双重压力：既要养活农村人口，又要为城市和工业化提供粮食、原料和积累。</p>
-        <p>1958 年大跃进启动后，政府相信人民公社和集体化能够快速提高农业生产率。地方干部在政治压力下夸报产量，中央基于“粮食已经过剩”的判断，把大量农村劳动力转向工业、钢铁、水利和其他非农项目，并加大粮食征购。</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>指标</th><th>大跃进前后变化</th><th>为什么重要</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>粮食总产量</td><td>1957 年 1.95 亿吨；1959 年 1.70 亿吨；1960 年 1.43 亿吨</td><td>这是被解释变量的核心事实：产量不是一次性下降，而是连续恶化。</td></tr>
-              <tr><td>征购量</td><td>1957 年 4600 万吨；1959 年 6400 万吨</td><td>产量已经下降时征购仍上升，意味着农村留粮被挤压。</td></tr>
-              <tr><td>农村人均留存粮</td><td>1957 年 273 公斤；1959 年 193 公斤；1960 年 182 公斤</td><td>这是营养与劳动能力机制的经验基础。</td></tr>
-              <tr><td>农村劳动力</td><td>1957 年 1.93 亿；1958 年 1.55 亿</td><td>体现资源从农业向工业和非农项目转移。</td></tr>
-              <tr><td>粮食播种面积</td><td>1957 年 1.34 亿公顷；1959 年 1.16 亿公顷</td><td>土地也从粮食生产中被挪出，直接压低粮食产量。</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <figure class="paper-figure">
-          <img src="assets/li2005-table1-aggregate.png" width="1080" height="671" alt="原文表1：1952-1977 年中国粮食产量、征购、留存粮和农业投入" loading="lazy" decoding="async">
-          <figcaption>原文表1给出全国层面的基本事实：1958-1961 年粮食产量连续下滑，同时征购、农村留粮、劳动力、播种面积和农业资本发生同步变化。它是本文把危机解释为“资源转移 + 过度征购 + 营养反馈”的数据起点。</figcaption>
-        </figure>
-        <div class="method-box">
-          <h4>方法上为什么先讲事实？</h4>
-          <p>文章不是直接从回归开始，而是先建立“事实模式”：劳动力和播种面积先下降，征购和留粮变化带来滞后的体力下降，产量在政策调整后仍继续低迷。理论模型必须能解释这种时间顺序，实证模型也要把当期投入、滞后营养、天气和制度因素同时纳入。</p>
-        </div>
-      </section>
-
-      <section id="sec3">
-        <h2>3. 理论模型：设定、推导与机制</h2>
-        <h3>3.1 基本设定</h3>
-        <p>模型有两个部门：农业生产粮食，工业生产工业品。总劳动力标准化为 1。政府每期把 $L_t$ 分配到农业，把 $1-L_t$ 分配到工业。</p>
-        <div class="formula" id="eq-prod">$$Q_t=aL_th_t,\qquad h_t=f(c_t),\quad f'(c_t)>0,\quad f''(c_t)<0$$</div>
-        <p>$Q_t$ 是第 $t$ 期粮食总产量，$a$ 是农业生产率，$h_t$ 是每个农业劳动者的体力或工作能力，$c_t$ 是农民当期粮食消费。关键设定是：农民吃得越少，下一阶段能投入的有效劳动越低。</p>
-
-        <h3>3.2 农民消费动态</h3>
-        <p>每个农业劳动者的粮食产出是 $af(c_t)$。政府向每个农业劳动者征购 $p_t$，剩下的粮食进入下一期消费：</p>
-        <div class="formula" id="eq-consume">$$c_{t+1}=af(c_t)-p_t \tag{1}$$</div>
-        <p>这条式子是模型的动态核心。过度征购不是只影响当期福利，而是通过 $c_{t+1}$ 影响下一期体力 $h_{t+1}=f(c_{t+1})$，再影响下一期产量。</p>
-
-        <h3>3.3 工业部门与粮食约束</h3>
-        <p>工业部门采用 Leontief 技术：每生产一单位工业品需要一单位劳动和 $m$ 单位粮食作为中间投入。工业工人还需要粮食配给，每人 $n$ 单位。因此，如果工业部门有 $1-L_t$ 个工人，工业需要的粮食是 $(m+n)(1-L_t)$。</p>
-        <div class="formula" id="eq-food">$$p_tL_t\geq (m+n)(1-L_t) \tag{2}$$</div>
-        <p>由于政府目标是最大化工业产出，在最优选择下这个约束通常取等号：多征的粮食不会直接提高工业产出，少征则工业部门无法运转。</p>
-
-        <h3>3.4 从约束中解出农业劳动力</h3>
-        <p>把式 (1) 改写为 $p_t=af(c_t)-c_{t+1}$，代入粮食约束的等号形式：</p>
-        <div class="formula">$$[af(c_t)-c_{t+1}]L_t=(m+n)(1-L_t)$$</div>
-        <p>移项并求 $L_t$：</p>
-        <div class="formula">$$L_t=\frac{m+n}{af(c_t)-c_{t+1}+m+n}$$</div>
-        <p>因此工业劳动力，也就是工业产出，可以写成：</p>
-        <div class="formula" id="eq-industrial">$$1-L_t=\frac{af(c_t)-c_{t+1}}{af(c_t)-c_{t+1}+m+n} \tag{3}$$</div>
-        <p>这个表达式说明：政府如果想提高当前工业产出，就要让 $af(c_t)-c_{t+1}$ 更大，也就是当前多征购、让下一期农民消费更低。</p>
-
-        <h3>3.5 政府目标函数</h3>
-        <p>政府最大化工业产出的贴现和：</p>
-        <div class="formula">$$\max \sum_{t=0}^{\infty}\beta^t(1-L_t),\qquad 0<\beta<1$$</div>
-        <p>$\beta$ 是贴现因子。$\beta$ 越低，政府越急于当前工业化，越愿意牺牲未来农业劳动能力来换取当前工业产出。把式 (3) 代入目标函数：</p>
-        <div class="formula" id="eq-objective">$$U=\sum_{t=0}^{\infty}\beta^t\frac{af(c_t)-c_{t+1}}{af(c_t)-c_{t+1}+m+n} \tag{4}$$</div>
-
-        <h3>3.6 欧拉方程推导</h3>
-        <p>定义：</p>
-        <div class="formula">$$F(x,y)=\frac{af(x)-y}{af(x)-y+m+n}$$</div>
-        <p>于是目标函数是 $\sum_t\beta^tF(c_t,c_{t+1})$。对中间某一期 $c_t$ 求一阶条件时，$c_t$ 同时出现在上一期项 $F(c_{t-1},c_t)$ 和本期项 $F(c_t,c_{t+1})$ 中：</p>
-        <div class="formula">$$\frac{\partial F(c_{t-1},c_t)}{\partial c_t}+\beta\frac{\partial F(c_t,c_{t+1})}{\partial c_t}=0$$</div>
-        <p>令 $D(x,y)=af(x)-y$，则 $F=D/(D+m+n)$。对第二个变量求导得到：</p>
-        <div class="formula">$$\frac{\partial F}{\partial y}=-\frac{m+n}{[af(x)-y+m+n]^2}$$</div>
-        <p>对第一个变量求导得到：</p>
-        <div class="formula">$$\frac{\partial F}{\partial x}=\frac{af'(x)(m+n)}{[af(x)-y+m+n]^2}$$</div>
-        <p>代回一阶条件并消去 $m+n$：</p>
-        <div class="formula">$$\beta\frac{af'(c_t)}{[af(c_t)-c_{t+1}+m+n]^2}=\frac{1}{[af(c_{t-1})-c_t+m+n]^2}$$</div>
-        <p>把下标整体后移一位，得到论文中的欧拉方程：</p>
-        <div class="formula" id="eq-euler">$$a\beta f'(c_{t+1})=\left[\frac{af(c_{t+1})-c_{t+2}+m+n}{af(c_t)-c_{t+1}+m+n}\right]^2 \tag{5}$$</div>
-        <div class="method-box">
-          <h4>欧拉方程的经济含义</h4>
-          <p>左边是多给下一期农民一点消费带来的边际收益：体力提高，未来农业产出提高。右边是跨期征购和工业产出的相对代价。最优政策要求政府在“当前工业产出”和“未来农业劳动能力”之间平衡。</p>
-        </div>
-
-        <h3>3.7 稳态与大跃进冲击</h3>
-        <p>稳态下 $c_t=c_{t+1}=c_{t+2}=\bar c$，欧拉方程化为：</p>
-        <div class="formula">$$f'(\bar c)=\frac{1}{a\beta}$$</div>
-        <p>由于 $f''<0$，稳态消费随农业生产率 $a$ 和政府耐心 $\beta$ 上升而提高。更耐心的政府会少征购，让农民维持更高体力；更高农业生产率也允许农村消费与工业征购同时提高。</p>
-        <p>论文模拟大跃进时设定 $f(c)=c^\delta$，$\delta=0.85$，$\beta$ 从 0.9 降到 0.8，政府误以为集体化使 $a$ 永久提高 50%，但实际 $a$ 永久下降 2%。模型预测：第 5 年农业劳动力被调走、征购提高；第 6 年消费和体力触底，产量继续下降；政策纠正后，劳动力回流但产量恢复缓慢。</p>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-fig1-simulation.png" width="706" height="684" alt="原文图1：大跃进冲击的数值模拟结果" loading="lazy" decoding="async">
-          <figcaption>原文 Fig. 1 展示数值模拟结果：第 5 年政策冲击后，农业劳动力被抽离，征购短期升高；随后消费、劳动能力和总产量下跌。四个面板对应 $L(t)$、$q(t)/c(t)/p(t)$、$h(t)$ 和 $Q(t)$，直观说明模型里的动态反馈。</figcaption>
-        </figure>
-      </section>
-
-      <section id="sec4">
-        <h2>4. 数据与假设检验：变量逐一解释</h2>
-        <p>实证部分使用 25 个省份 1952-1977 年的省级面板数据。北京、上海、天津三个城市型直辖市，以及西藏、新疆两个自治区不在样本内。数据来自公开统计资料和作者 1999 年组织的回溯调查。回溯调查补充了天气、生产单位规模、退出权等公开资料中没有系统记录的变量。</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>变量</th><th>构造方式</th><th>含义</th><th>主要假设</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>$Q_{it}$ 粮食产量</td><td>省 $i$ 年 $t$ 的粮食总产量，包含八类主粮和杂粮</td><td>被解释变量，实证中使用 $\ln Q_{it}$</td><td>需要解释 1958-1961 年为何下降、1961-1966 年为何恢复。</td></tr>
-              <tr><td>$L_{it}$ 农村劳动力</td><td>农业/农村劳动力数量</td><td>传统农业投入，也是资源转移的直接指标之一</td><td>劳动力减少会降低产量，预期系数为正。</td></tr>
-              <tr><td>$A_{it}$ 播种面积</td><td>种植作物并预期收获的面积</td><td>土地投入，注意播种面积可因复种大于耕地面积</td><td>面积越大，产量越高；粮食播种面积下降反映资源转移。</td></tr>
-              <tr><td>$K_{it}$ 农业资本</td><td>农机动力与役畜折算为统一马力单位</td><td>传统资本投入</td><td>资本越多，产量越高；大跃进中役畜减少导致资本下降。</td></tr>
-              <tr><td>$M_{it}$ 化肥</td><td>化肥使用量</td><td>现代投入</td><td>预期正向，但 1950 年代水平较低。</td></tr>
-              <tr><td>$I_{it}$ 灌溉比例</td><td>灌溉面积占播种面积比例</td><td>土地质量调整变量</td><td>灌溉提高土地效率，预期正向。</td></tr>
-              <tr><td>$G_{it}$ 粮食播种比例</td><td>播种面积中用于粮食作物的比例</td><td>把总农业投入调整为“用于粮食生产的投入”</td><td>如果投入按粮食面积同比例配置，$G$ 会影响有效投入。</td></tr>
-              <tr><td>$g_{i,t-1}$ 滞后留存粮</td><td>上一年农村人均留存粮，即产量减征购后按农村人口折算</td><td>当前农业劳动者可获得食物的代理变量</td><td>留粮越多，营养越好，体力越强，当前产量越高。</td></tr>
-              <tr><td>$S_{it}$ 钢铁产量/钢铁激增</td><td>省级钢铁和铁产出，尤其用 1956 年以后激增部分捕捉大炼钢铁等非农项目</td><td>不可观测资源转移的代理变量</td><td>钢铁激增意味着农业劳动被挪走，预期负向。</td></tr>
-              <tr><td>$W_{it}$ 天气</td><td>回溯调查中 1-5 级天气：很好、好、一般、坏、很坏</td><td>自然冲击控制变量</td><td>相对于“很好”，天气越差，产量越低。</td></tr>
-              <tr><td>$E_{it}$ 退出权取消</td><td>若官方规定农民不能退出集体，则取 1</td><td>集体化激励问题的制度变量</td><td>取消退出权削弱努力激励，预期负向。</td></tr>
-              <tr><td>$Z_{it}$ 生产单位规模</td><td>基本核算单位平均户数</td><td>衡量集体组织规模</td><td>理论上不确定：可能有规模经济，也可能有监督和搭便车问题。</td></tr>
-              <tr><td>$R_{it}$ 公共食堂/激进程度</td><td>公共食堂参与率，用来代理地方激进政策</td><td>反映食物浪费和激进政治动员</td><td>公共食堂和激进政策可能浪费粮食、增加劳动消耗，预期负向。</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <figure class="paper-figure">
-          <img src="assets/li2005-table2-provincial-inputs.png" width="1084" height="670" alt="原文表2：1952-1977 年省均粮食产量和农业投入" loading="lazy" decoding="async">
-          <figcaption>原文表2把全国事实转为省级面板的样本均值，列出粮食产量、劳动力、播种面积、农业资本、役畜、机械动力、化肥、灌溉比例和粮食播种比例。后续固定效应回归就是围绕这些省级年度变量展开。</figcaption>
-        </figure>
-        <div class="warning-box">
-          <h4>变量解释中最容易混淆的一点</h4>
-          <p>“征购”没有直接以当期征购量进入最终生产函数，而是通过“上一期农村人均留存粮”进入。原因是粮食生产有季节周期：播种和劳动发生时，农民的体力依赖上一季收获后留下来的粮食。这个滞后设计正好对应理论模型中的 $c_{t+1}=af(c_t)-p_t$。</p>
-        </div>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-table3-policy-weather.png" width="726" height="822" alt="原文表3：1952-1977 年省均政策变量和天气变量" loading="lazy" decoding="async">
-          <figcaption>原文表3补充政策和天气变量：钢铁产量、农村人均留存粮、天气等级、退出权取消比例和生产单位规模。它直接对应本文对资源转移、营养机制、天气冲击和制度因素的可检验化处理。</figcaption>
-        </figure>
-      </section>
-
-      <section id="sec5">
-        <h2>5. 实证模型与识别：每个变量怎么进模型</h2>
-        <h3>5.1 基础生产函数</h3>
-        <p>文章先写一个 Cobb-Douglas 粮食生产函数。Cobb-Douglas 的好处是取对数后系数可以解释为弹性，适合回答“某个投入变化 10%，产量大约变化多少”。</p>
-        <div class="formula" id="eq-emp-base">$$\ln Q_{it}=\sum_{X=L,A,K,M}\alpha_X\ln X^*_{it}+\sum_{j=2}^{5}\theta_jW^j_{it}+u_i+v(t)+e_{it} \tag{6}$$</div>
-        <p>$X^*_{it}$ 是“有效投入”，不是简单的投入数量。$u_i$ 是省份固定效应，控制一个省长期不变的地理、土壤、制度和政治差异；$v(t)$ 是时间趋势，控制全国共同的技术变化；$e_{it}$ 是省份年度的特殊冲击。</p>
-
-        <h3>5.2 为什么要构造“有效投入”</h3>
-        <p>论文的关键不只是问“有多少劳动力”，而是问“有多少真正用于粮食生产且有劳动能力的有效劳动力”。因此，作者把总投入调整成用于粮食生产的投入，再把营养、制度和资源转移嵌入有效劳动。</p>
-        <div class="formula">$$\ln X^G_{it}=\ln X_{it}+\gamma_X\ln G_{it}+c_{Xi},\qquad X=L,A,K,M \tag{7}$$</div>
-        <p>这里 $X^G$ 表示分配给粮食生产的投入，$G_{it}$ 是粮食播种比例。若粮食播种比例下降，说明更多土地和相关投入转向非粮作物或非农项目。</p>
-        <div class="formula">$$\ln L^*_{it}=\ln L^G_{it}+\ln h_{it}+\gamma_Z\ln Z_{it}+\gamma_EE_{it}+\gamma_S\ln S_{it}+\gamma_R\ln R_{it} \tag{8}$$</div>
-        <p>这条式子把有效劳动拆成几部分：基础劳动力数量、营养决定的体力、生产单位规模、退出权、钢铁激增和公共食堂/激进程度。</p>
-        <div class="formula">$$\ln h_{it}=\delta\ln g_{i,t-1} \tag{9}$$</div>
-        <p>$\delta$ 是食物对劳动能力的弹性。若 $\delta$ 很大，说明口粮下降会显著削弱劳动生产率。</p>
-        <div class="formula">$$\ln A^*_{it}=\ln A^G_{it}+\gamma_I\ln I_{it} \tag{10}$$</div>
-        <p>土地也要进行质量调整：同样面积的土地，灌溉比例越高，产出能力越强。</p>
-
-        <h3>5.3 最终回归方程</h3>
-        <p>把有效投入式代回生产函数，得到可估计的固定效应回归：</p>
-        <div class="formula" id="eq-final">$$
-        \begin{aligned}
-        \ln Q_{it}={}&\alpha_A(\ln A_{it}+\gamma_I\ln I_{it})+\alpha_M\ln M_{it}+\alpha_K\ln K_{it}+\gamma_G\ln G_{it}\\
-        &+\alpha_L(\ln L_{it}+\delta\ln g_{i,t-1}+\gamma_Z\ln Z_{it}+\gamma_EE_{it}+\gamma_S\ln S_{it}+\gamma_R\ln R_{it})\\
-        &+\sum_{j=2}^{5}\theta_jW^j_{it}+u_i^*+v(t)+e_{it}.
-        \end{aligned} \tag{11}
-        $$</div>
-        <div class="method-box">
-          <h4>这条方程的学习重点</h4>
-          <p>表面上看它是生产函数，实际上它是“机制检验”的生产函数。传统投入检验数量效应，$g_{i,t-1}$ 检验营养和体力机制，$S_{it}$ 检验资源转移，$W_{it}$ 控制天气，$E,Z,R$ 检验既有文献提出的制度和激进政策解释。</p>
-        </div>
-
-        <h3>5.4 为什么用固定效应 IV</h3>
-        <p><strong>固定效应</strong>解决的是省份之间长期不变的差异。例如某省土壤更适合种粮、某省长期水利条件更好、某省治理传统不同，这些因素若不控制，可能被误认为政策变量的作用。固定效应相当于让每个省和自己的历史均值比较。</p>
-        <p><strong>IV，即工具变量</strong>解决的是内生性。本文最关键的内生性来自滞后留存粮 $g_{i,t-1}$：它等于上一期粮食产量减征购，因此和滞后产量 $\ln Q_{i,t-1}$ 有关系。在短面板固定效应模型中，这种动态关系会使普通固定效应估计低估营养效应。</p>
-        <p><strong>本文 IV 用的是什么？</strong>论文使用“滞后的外生变量”作为工具变量。它们要满足两个条件：第一，与 $g_{i,t-1}$ 相关，能预测上一期留存粮；第二，不与去均值后的当期省份特殊误差相关。换句话说，IV 主要服务于识别“滞后食物可得性”对当前产量的因果影响。</p>
-        <p><strong>为什么不用完整年份虚拟变量？</strong>因为中央计划下各省政策变量有很强共同时间趋势。若加入年份虚拟变量，它们会吸收大跃进政策共同冲击，与投入和政策变量产生严重多重共线性。文章因此采用较简约的时间趋势 $v(t)=vt$，并报告聚类稳健标准误。</p>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-fig2-time-effects.png" width="724" height="866" alt="原文图2：控制农业投入后的估计时间效应" loading="lazy" decoding="async">
-          <figcaption>原文 Fig. 2 画出控制农业投入后的估计时间效应：不去趋势时长期上升，去趋势后 1959-1961 年出现明显低谷。这张图帮助理解为什么论文既控制投入，又保留简约时间趋势来处理全国共同变化。</figcaption>
-        </figure>
-      </section>
-
-      <section id="sec6">
-        <h2>6. 表5：固定效应 IV 核心结果</h2>
-        <h3>6.1 表5的列怎么读</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>列</th><th>估计方式</th><th>包含变量</th><th>用途</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>(1)</td><td>固定效应 OLS</td><td>传统投入：播种面积、化肥、农业资本、劳动力、粮食播种比例</td><td>建立基准生产函数。</td></tr>
-              <tr><td>(2)</td><td>固定效应 OLS</td><td>加入灌溉、制度变量、公共食堂、天气、时间趋势</td><td>检验既有解释：天气、激进政策、退出权、组织规模。</td></tr>
-              <tr><td>(3)</td><td>固定效应 OLS</td><td>再加入食物可得性和钢铁生产</td><td>检验本文核心机制，但仍可能有动态面板偏误。</td></tr>
-              <tr><td>(4)</td><td>固定效应 IV</td><td>完整模型，使用工具变量处理滞后食物可得性</td><td>论文核心结果，后续贡献分解也使用这一列。</td></tr>
-              <tr><td>(5)</td><td>固定效应 IV</td><td>把食物可得性分成低、中、高三组</td><td>检验营养效应是否存在非线性。</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-table5-core-results.png" width="725" height="1035" alt="原文表5：固定效应 OLS 和固定效应 IV 的核心估计结果" loading="lazy" decoding="async">
-          <figcaption>原文表5是实证部分的核心结果。列 (4) 是固定效应 IV 完整模型，后文贡献分解也使用这一列；列 (5) 把食物可得性分成三组，用来检查营养效应是否具有明显非线性。</figcaption>
-        </figure>
-
-        <h3>6.2 核心列 (4) 的结果与解释</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>变量</th><th class="num">列 (4) 系数</th><th>解释</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>$\ln$ 播种面积</td><td class="num">0.474***</td><td>播种面积增加 10%，粮食产量约增加 4.74%。土地投入是最强的传统投入之一。</td></tr>
-              <tr><td>$\ln$ 灌溉比例</td><td class="num">0.127***</td><td>灌溉提高土地质量，显著提高产量。</td></tr>
-              <tr><td>$\ln$ 粮食播种比例</td><td class="num">-0.055</td><td>不显著，说明在边际上，传统投入大体已经主要配置到粮食生产。</td></tr>
-              <tr><td>$\ln$ 化肥</td><td class="num">0.019*</td><td>化肥正向但弹性较小，符合当时现代投入水平较低的背景。</td></tr>
-              <tr><td>$\ln$ 农业资本</td><td class="num">0.138***</td><td>役畜和机器等资本对粮食产出有显著贡献。</td></tr>
-              <tr><td>$\ln$ 劳动力</td><td class="num">0.284***</td><td>基础劳动力数量正向显著；加入营养后，纯劳动力数量弹性低于未调整模型。</td></tr>
-              <tr><td>$\ln$ 食物可得性</td><td class="num">0.267***</td><td>上一年农村留存粮减少 10%，当年产量约下降 2.67%。这是营养和体力机制的关键证据。</td></tr>
-              <tr><td>$\ln$ 钢铁生产</td><td class="num">-0.099***</td><td>钢铁激增 10%，粮食产量约下降 0.99%，说明非农动员挤出了农业有效劳动。</td></tr>
-              <tr><td>$\ln$ 公共食堂</td><td class="num">-0.076**</td><td>公共食堂和地方激进政策显著负向，可能来自粮食浪费与激进动员。</td></tr>
-              <tr><td>$\ln$ 生产单位规模</td><td class="num">0.013**</td><td>小幅正向，说明单纯规模变大并没有在这一设定中表现为净负效应。</td></tr>
-              <tr><td>取消退出权</td><td class="num">-0.024</td><td>方向为负但不显著。作者认为可能因为变量只度量法律上的退出权，低估了事实上的强制集体化。</td></tr>
-              <tr><td>坏天气 / 很坏天气</td><td class="num">-0.076*** / -0.156***</td><td>相对“很好天气”，坏天气和很坏天气显著降低产量，但不是唯一主因。</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note">星号表示统计显著性：* 10%，** 5%，*** 1%。对数变量的系数可近似理解为弹性。</p>
-
-        <h3>6.3 结果分析：为什么表5支持本文机制</h3>
-        <div class="result-box">
-          <h4>第一，资源转移得到支持</h4>
-          <p>钢铁生产系数为 -0.099 且显著。钢铁生产在这里不是为了研究钢铁行业，而是作为大炼钢铁、水利工程、土地开垦等非农项目的代理变量。它越高，说明农业劳动力和注意力被越多地转出粮食生产。</p>
-        </div>
-        <div class="result-box">
-          <h4>第二，过度征购的滞后营养效应得到支持</h4>
-          <p>食物可得性系数为 0.267 且显著。由于它是上一年留存粮，结果说明上一年征购过高会通过营养不足影响当年劳动能力。作者进一步用 $0.267/0.284$ 得到劳动能力对食物的弹性约为 0.94，说明低营养环境下食物对体力劳动效率的作用很强。</p>
-        </div>
-        <div class="result-box">
-          <h4>第三，天气重要但不足以解释全部崩溃</h4>
-          <p>坏天气和很坏天气确实显著降低产量，但后续贡献分解显示天气只解释 12.9% 的下降。也就是说，天气是冲击之一，不是核心机制。</p>
-        </div>
-        <div class="method-box">
-          <h4>列 (5) 的非线性检验</h4>
-          <p>作者把食物可得性分成低、中、高三组，检验“越饿时食物对劳动能力越重要”是否在省级数据中明显出现。三组食物弹性约为 0.79、0.72、0.97，均显示食物重要，但由于标准误较大，不能拒绝三组弹性相同。因此文章的结论是：在宏观省级数据中，营养弹性整体很高，但没有强证据表明它明显非线性。</p>
-        </div>
-      </section>
-
-      <section id="sec7">
-        <h2>7. 表6：稳健性检验逐项解释</h2>
-        <p>稳健性检验的目的不是“多跑几张表”，而是检查核心结果是否依赖某个样本、某种变量口径或某个代理变量。表6全部使用固定效应 IV，只改变样本或关键变量定义。</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>表6列</th><th>做法</th><th>为什么要做</th><th>解决的问题</th><th>结果怎么读</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>(1)</td>
-                <td>把样本期缩短为 1952-1966</td>
-                <td>1966 年后进入文化大革命，农业和政治环境可能出现新冲击。</td>
-                <td>检验核心结论是否依赖 1967-1977 年这段后期样本。</td>
-                <td>食物可得性 0.301***、钢铁生产 -0.099***，核心方向仍在；但样本变小，$R^2$ 从约 0.80 降到 0.53，天气负效应更强，标准误更大。</td>
-              </tr>
-              <tr>
-                <td>(2)</td>
-                <td>剔除死亡率最高的四川、安徽、贵州</td>
-                <td>这些省份可能有极端政策、激进领导或未观测因素。</td>
-                <td>检验结果是否被少数灾情最重的省份“带出来”。</td>
-                <td>显著变量基本保持同方向：食物可得性 0.312***、钢铁生产 -0.092***，说明核心结果不是只由极端省份驱动。</td>
-              </tr>
-              <tr>
-                <td>(3)</td>
-                <td>用官方“受灾播种面积比例”替代回溯调查天气等级</td>
-                <td>调查天气等级可能存在省际口径不一致。</td>
-                <td>检验天气变量测量误差是否改变政策变量结论。</td>
-                <td>官方灾害变量 -0.077***，钢铁生产 -0.104*** 仍显著；食物可得性降为 0.135 且不显著。作者提醒：官方灾害变量可能把政策失败造成的歉收也归入天气，且样本量从 406 降到 210。</td>
-              </tr>
-              <tr>
-                <td>(4)</td>
-                <td>用“解放时间”替代公共食堂参与率作为地方激进程度代理</td>
-                <td>公共食堂参与率只有 1959 年数据，可能不能完整代表地方激进主义。</td>
-                <td>检验激进政策代理变量替换后，核心机制是否仍成立。</td>
-                <td>食物可得性 0.270*** 仍显著，解放时间 -0.010***；整体结果未系统性偏离表5。不过钢铁生产系数变小且不显著，说明资源转移代理在这一替代设定中较敏感。</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-table6-robustness.png" width="725" height="928" alt="原文表6：固定效应 IV 稳健性检验" loading="lazy" decoding="async">
-          <figcaption>原文表6展示四组稳健性检验：缩短样本期、剔除死亡率最高省份、替换天气变量、替换地方激进程度代理。它的作用是检查营养机制和资源转移结论是否依赖某个单一设定。</figcaption>
-        </figure>
-        <div class="method-box">
-          <h4>稳健性检验的共同逻辑</h4>
-          <p>表6每一列都围绕一个潜在质疑：样本时期是否特殊、极端省份是否支配结果、天气变量是否测错、激进政策代理是否任意。结果显示，营养机制和大部分政策变量方向较稳定；但天气口径和激进程度代理会影响部分系数大小，这正是稳健性检验应当揭示的边界。</p>
-        </div>
-      </section>
-
-      <section id="sec8">
-        <h2>8. 表7：产量崩溃与恢复的贡献分解</h2>
-        <h3>8.1 方法是什么</h3>
-        <p>贡献分解不是重新估计模型，而是使用表5列 (4) 的估计系数，计算每个变量在某一时期的实际变化会带来多少产量变化。核心公式是：</p>
-        <div class="formula">$$\Delta\ln Q_{j,58-61}=\hat\gamma_j\Delta\ln X_{j,58-61} \tag{12}$$</div>
-        <p>如果变量不是对数形式，例如天气虚拟变量，则使用：</p>
-        <div class="formula">$$\Delta\ln Q_{j,58-61}=\hat\gamma_j\Delta X_{j,58-61}$$</div>
-        <p>若多个变量属于同一类，例如资源转移包括播种面积、资本、劳动力和钢铁生产，则把它们的贡献相加：</p>
-        <div class="formula">$$\hat z=\sum_{j=1}^{n}\hat\gamma_j\Delta\ln X_{j,58-61} \tag{13}$$</div>
-        <p>最后把该类因素造成的 $\Delta\ln Q$ 除以实际观察到的总变化 $\Delta\ln Q_{58-61}$，得到百分比贡献：</p>
-        <div class="formula">$$\text{贡献率}=\frac{\hat z}{\Delta\ln Q_{58-61}} \tag{14}$$</div>
-        <div class="method-box">
-          <h4>为什么用对数变化分解</h4>
-          <p>回归模型的被解释变量是 $\ln Q$，解释变量大多也是对数。系数乘以对数变化，正好对应“这一变量实际变化对 log 产量变化的预测贡献”。这种方法能把估计结果转化为历史时期的量化解释。</p>
-        </div>
-
-        <h3>8.2 崩溃期：1958-1961</h3>
-        <p>1958-1961 年，观察到的省均粮食产量对数变化为 -0.352。模型解释了 -0.232，约占总下降的 66.1%。</p>
-        <div class="bar-list" aria-label="1958-1961 贡献分解">
-          <div class="bar-row"><span>资源转移</span><div class="track"><div class="fill" style="width:33%"></div></div><span>-33.0%</span></div>
-          <div class="bar-row"><span>征购/营养</span><div class="track"><div class="fill" style="width:28.3%"></div></div><span>-28.3%</span></div>
-          <div class="bar-row"><span>天气条件</span><div class="track"><div class="fill" style="width:12.9%"></div></div><span>-12.9%</span></div>
-          <div class="bar-row"><span>现代投入</span><div class="track"><div class="fill offset" style="width:3%"></div></div><span>+3.0%</span></div>
-        </div>
-        <figure class="paper-figure narrow">
-          <img src="assets/li2005-table7-contribution.png" width="725" height="1046" alt="原文表7：大跃进粮食产量崩溃与恢复的贡献分解" loading="lazy" decoding="async">
-          <figcaption>原文表7把表5列 (4) 的回归系数转成历史时期的数量分解。崩溃期中，资源转移贡献 33.0%，征购与营养贡献 28.3%，天气贡献 12.9%；恢复期则主要来自资源重新回流农业。</figcaption>
-        </figure>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>因素类别</th><th class="num">对 $\Delta\ln Q$ 的贡献</th><th class="num">占观察总变化</th><th>解释</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>资源转移</td><td class="num">-0.116***</td><td class="num">-33.0%</td><td>最大贡献项。尤其是钢铁生产一项贡献约 -22.6%，说明非农动员是核心。</td></tr>
-              <tr><td>过度征购/营养</td><td class="num">-0.100***</td><td class="num">-28.3%</td><td>上一期留存粮下降削弱劳动能力，是第二大原因。</td></tr>
-              <tr><td>天气条件</td><td class="num">-0.045***</td><td class="num">-12.9%</td><td>恶劣天气确实加剧危机，但贡献小于两类政策因素。</td></tr>
-              <tr><td>政策/制度因素</td><td class="num">+0.019</td><td class="num">+5.5%</td><td>组内因素相互抵消。公共食堂关闭带来正向抵消，生产单位规模变化带来负向影响。</td></tr>
-              <tr><td>现代投入</td><td class="num">+0.011**</td><td class="num">+3.0%</td><td>化肥和灌溉的增加部分缓冲了下降，但幅度小。</td></tr>
-              <tr><td>残差</td><td class="num">-0.119***</td><td class="num">-33.9%</td><td>仍有约三分之一下降未被模型解释，提示数据和机制仍不完全。</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>8.3 恢复期：1961-1966</h3>
-        <p>1961-1966 年，观察到的对数产量变化为 +0.445。模型解释 +0.315，约占总恢复的 70.7%。恢复主要来自资源重新回到农业、天气改善、现代投入增加以及留粮恢复。</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr><th>因素类别</th><th class="num">对 $\Delta\ln Q$ 的贡献</th><th class="num">占恢复</th><th>解释</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>资源转移逆转</td><td class="num">+0.165***</td><td class="num">37.1%</td><td>劳动力、资本和注意力重新回到农业，是恢复的最大来源。</td></tr>
-              <tr><td>天气改善</td><td class="num">+0.052***</td><td class="num">14.7%</td><td>自然条件改善帮助产量反弹。</td></tr>
-              <tr><td>现代投入</td><td class="num">+0.055***</td><td class="num">12.3%</td><td>化肥和灌溉继续增加，对恢复有正向贡献。</td></tr>
-              <tr><td>征购/营养恢复</td><td class="num">+0.042***</td><td class="num">9.4%</td><td>征购稳定和农村留粮改善使劳动能力恢复。</td></tr>
-              <tr><td>政策/制度因素</td><td class="num">-0.013**</td><td class="num">-3.0%</td><td>部分制度因素仍拖累恢复。</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="result-box">
-          <h4>贡献分解的核心结论</h4>
-          <p>崩溃不是单一原因造成的，但两类政策因素最重要：资源转移解释 33.0%，征购和营养解释 28.3%，合计约 61%。这也解释了为什么政策纠正后恢复缓慢：劳动力可以调回来，但营养和体力恢复需要时间，生产率损失也不会立刻消失。</p>
-        </div>
-      </section>
-
-      <section id="sec9">
-        <h2>9. 结论与方法启示</h2>
-        <p>本文结论是，大跃进粮食危机主要是中央计划的系统性失败。错误的农业生产率预期、急于工业化的目标函数、强制性的资源调配、过度征购以及缺乏纠错机制共同造成灾难。天气是重要外部冲击，但不是主要解释。</p>
-        <div class="method-box">
-          <h4>这篇文章最值得学习的方法</h4>
-          <p>第一，用理论模型明确机制和时间顺序，而不是直接堆变量。第二，把理论机制翻译成可观测变量：资源转移用劳动力、播种面积、资本和钢铁生产代理，营养机制用滞后留存粮代理。第三，用固定效应 IV 处理省份异质性和动态面板偏误。第四，用贡献分解把回归系数转化成历史解释，回答“各因素到底贡献多少”。</p>
-        </div>
-        <p>因此，读表5、表6、表7时，重点不只是看显著性，而是看方法链条是否连贯：理论机制是否可检验，变量是否对应机制，识别策略是否解决关键偏误，稳健性是否回应合理质疑，贡献分解是否把估计结果转化为可解释的历史数量。</p>
-      </section>
-    </main>
-  </div>
-
-  <a class="back-top" href="#top" aria-label="回到顶部">↑</a>
+      </article>
+    </div>
+  </main>
 </body>
 </html>
