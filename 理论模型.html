@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>理论模型：大跃进期间的中央计划动态模型</title>
+  <meta name="description" content="逐步推导 Li & Yang (2005) 中用于解释大跃进时期资源转移、过度征购和农业产出崩溃的中央计划动态模型。" />
+
+  <!-- MathJax 3: render LaTeX inside $...$ and $$...$$ -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath:  [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        tags: 'ams',
+        processEscapes: true,
+        packages: {'[+]': ['ams', 'noerrors']}
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+        enableMenu: true,
+        renderActions: { addMenu: [0, '', ''] }
+      },
+      loader: { load: ['[tex]/ams', '[tex]/noerrors'] },
+      startup: {
+        ready: () => { MathJax.startup.defaultReady(); }
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+  <style>
+    :root {
+      --primary: #2c5f9e;
+      --primary-dark: #1e4a7a;
+      --primary-light: #ebf8ff;
+      --bg: #fafbfc;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --highlight: #fef3c7;
+      --code-bg: #f3f4f6;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                   "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.75;
+      color: var(--text);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 5rem;
+    }
+
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1rem;
+    }
+    .site-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0.34rem 0.72rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: #1e4a7a;
+      background: white;
+      text-decoration: none;
+      font-size: 0.92rem;
+      line-height: 1.25;
+      box-shadow: var(--shadow);
+    }
+    .site-nav a:hover,
+    .site-nav a[aria-current="page"] {
+      color: white;
+      border-color: var(--primary);
+      background: var(--primary);
+    }
+
+    /* ===== 顶部目录 ===== */
+    .toc {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.75rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .toc h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.05rem;
+      color: var(--primary);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+    .toc ol { padding-left: 1.4rem; margin: 0.3rem 0; }
+    .toc a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .toc a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* ===== 标题 ===== */
+    h1 {
+      color: var(--primary);
+      font-size: 1.85rem;
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 0.5rem;
+      margin: 1.5rem 0 1.5rem;
+      scroll-margin-top: 1rem;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-top: 2.5rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 0.7rem;
+      scroll-margin-top: 1rem;
+    }
+    h3 {
+      color: #111827;
+      font-size: 1.15rem;
+      margin-top: 1.8rem;
+      scroll-margin-top: 1rem;
+    }
+    h4 {
+      color: #374151;
+      font-size: 1.05rem;
+      margin-top: 1.4rem;
+    }
+
+    p, li { text-align: justify; }
+    ul, ol { padding-left: 1.6rem; }
+    li { margin: 0.2rem 0; }
+
+    strong { color: var(--primary); font-weight: 600; }
+    em { color: var(--muted); }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2rem 0;
+    }
+
+    /* ===== 行内公式引用（点击跳转） ===== */
+    a.eqref {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0 3px;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+    }
+    a.eqref:hover {
+      background: var(--highlight);
+      color: var(--primary-dark);
+    }
+
+    /* ===== 公式块（带锚点 + 高亮） ===== */
+    .equation {
+      position: relative;
+      margin: 1.2rem 0;
+      padding: 0.4rem 1rem 0.4rem 1.1rem;
+      scroll-margin-top: 1rem;
+      border-radius: 6px;
+    }
+    .equation:target {
+      background: linear-gradient(90deg, #fff7d6 0%, transparent 80%);
+      box-shadow: inset 3px 0 0 var(--primary);
+      animation: flash 1.6s ease-out;
+    }
+    @keyframes flash {
+      0%   { background: #fde68a; }
+      100% { background: linear-gradient(90deg, #fff7d6 0%, transparent 80%); }
+    }
+
+    /* 公式右上角的锚点图标 */
+    .eq-anchor {
+      position: absolute;
+      top: 0.2rem;
+      right: -0.2rem;
+      opacity: 0;
+      transition: opacity 0.2s;
+      font-size: 0.75rem;
+    }
+    .equation:hover .eq-anchor { opacity: 1; }
+    .eq-anchor a {
+      color: var(--muted);
+      text-decoration: none;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.9);
+    }
+    .eq-anchor a:hover { color: var(--primary); background: white; }
+
+    /* MathJax 渲染的公式标签 */
+    mjx-container[display="true"] {
+      margin: 0.8rem 0;
+    }
+    mjx-container[display="true"] mjx-tag {
+      color: var(--primary) !important;
+    }
+
+    /* ===== Code ===== */
+    code {
+      background: var(--code-bg);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+      color: #b91c1c;
+    }
+
+    blockquote {
+      border-left: 4px solid var(--primary);
+      margin: 1.2rem 0;
+      padding: 0.4rem 1rem;
+      background: var(--primary-light);
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* ===== 回到顶部按钮 ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      line-height: 44px;
+      font-size: 1.3rem;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(44, 95, 158, 0.35);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.25s, transform 0.25s, background 0.2s;
+      pointer-events: none;
+      z-index: 99;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .back-to-top:hover { background: var(--primary-dark); }
+
+    /* ===== 公式索引卡片 ===== */
+    .eq-index {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.6rem;
+      margin: 0.5rem 0 0.2rem;
+      padding: 0;
+      list-style: none;
+    }
+    .eq-index li a {
+      display: block;
+      padding: 0.5rem 0.8rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--primary);
+      border-radius: 5px;
+      color: var(--text);
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .eq-index li a:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      transform: translateX(2px);
+    }
+    .eq-index .num {
+      color: var(--primary);
+      font-weight: 700;
+      margin-right: 0.4rem;
+    }
+    .eq-index .desc {
+      color: var(--muted);
+      font-size: 0.9em;
+    }
+
+    /* ===== 推导步骤的"上一步/下一步"提示 ===== */
+    .step-nav {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin: -0.4rem 0 0.6rem;
+      padding: 0 0.4rem;
+    }
+    .step-nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .step-nav a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* ===== 移动端 ===== */
+    @media (max-width: 640px) {
+      .container { padding: 1rem 0.9rem 4rem; }
+      .site-nav a {
+        flex: 1 1 132px;
+        justify-content: center;
+        padding-left: 0.55rem;
+        padding-right: 0.55rem;
+      }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; }
+      h3 { font-size: 1.05rem; }
+      .toc { padding: 1rem 1.1rem; }
+      .back-to-top { right: 1rem; bottom: 1rem; }
+      .eq-anchor { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="site-nav" aria-label="网站导航">
+      <a href="index.html">文章详解</a>
+      <a href="研究背景.html">研究背景</a>
+      <a href="理论模型.html" aria-current="page">理论模型</a>
+      <a href="The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
+    </nav>
+
+    <!-- ============ 目录 ============ -->
+    <nav class="toc" id="top">
+      <h2>📑 目录</h2>
+      <ol>
+        <li><a href="#sec1">基本设定</a>
+          <ol>
+            <li><a href="#sec1-1">经济结构</a></li>
+            <li><a href="#sec1-2">农业生产</a></li>
+            <li><a href="#sec1-3">工业生产</a></li>
+            <li><a href="#sec1-4">粮食征购与约束</a></li>
+            <li><a href="#sec1-5">农民留存粮食与消费动态</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec2">政府的目标函数</a></li>
+        <li><a href="#sec3">欧拉方程的推导</a>
+          <ol>
+            <li><a href="#sec3-1">定义函数</a></li>
+            <li><a href="#sec3-2">一阶条件</a></li>
+            <li><a href="#sec3-3">计算偏导数</a></li>
+            <li><a href="#sec3-4">代入一阶条件</a></li>
+            <li><a href="#sec3-5">得到标准形式</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec4">稳态分析</a></li>
+        <li><a href="#sec5">数值模拟与政策冲击（论文图 1）</a></li>
+        <li><a href="#sec6">模型的核心结论</a></li>
+      </ol>
+      <h2 style="margin-top:1rem;">🔢 关键公式索引</h2>
+      <ul class="eq-index">
+        <li><a href="#eq1"><span class="num">(1)</span><span class="desc">消费递推关系</span></a></li>
+        <li><a href="#eq2"><span class="num">(2)</span><span class="desc">工业产出表达式</span></a></li>
+        <li><a href="#eq3"><span class="num">(3)</span><span class="desc">改写后的目标函数</span></a></li>
+        <li><a href="#eq4"><span class="num">(4)</span><span class="desc">一阶条件</span></a></li>
+        <li><a href="#eq5"><span class="num">(5)</span><span class="desc">欧拉方程</span></a></li>
+        <li><a href="#eq6"><span class="num">(6)</span><span class="desc">稳态条件</span></a></li>
+      </ul>
+    </nav>
+
+    <h1>理论模型：大跃进期间的中央计划动态模型</h1>
+
+    <!-- ============ 1. 基本设定 ============ -->
+    <h2 id="sec1">1. 基本设定</h2>
+
+    <h3 id="sec1-1">1.1 经济结构</h3>
+    <ul>
+      <li><strong>两部门</strong>：农业（生产粮食）与工业（生产工业品）。</li>
+      <li><strong>劳动力</strong>：全国总劳动力标准化为 1。
+        <ul>
+          <li>$L_t$：第 $t$ 期农业部门劳动力比例，$0 \le L_t \le 1$。</li>
+          <li>$1 - L_t$：工业部门劳动力比例。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3 id="sec1-2">1.2 农业生产</h3>
+    <p>仅使用 <strong>有效劳动</strong> 作为投入，生产函数为：</p>
+
+    <div class="equation" id="eq-prod">
+      $$Q_t = a \cdot L_t \cdot h_t$$
+      <div class="eq-anchor"><a href="#eq-prod" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>其中：</p>
+    <ul>
+      <li>$Q_t$：第 $t$ 期粮食总产量。</li>
+      <li>$a$：农业全要素生产率（受技术和组织影响）。</li>
+      <li>$h_t$：每个农业劳动者的 <strong>工作能力</strong>（体力）。</li>
+    </ul>
+
+    <p><strong>工作能力与营养的关系</strong>：</p>
+
+    <div class="equation" id="eq-hc">
+      $$h_t = f(c_t), \quad f'(c_t) > 0$$
+      <div class="eq-anchor"><a href="#eq-hc" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>$c_t$ 为第 $t$ 期每个农民实际消费的粮食。论文采用具体函数形式 $f(c) = c^{\delta}$（$\delta > 0$）。</p>
+
+    <h3 id="sec1-3">1.3 工业生产</h3>
+    <ul>
+      <li>列昂惕夫（Leontief）技术：生产 1 单位工业品需要：
+        <ul>
+          <li>1 单位劳动</li>
+          <li>$m$ 单位粮食作为中间投入</li>
+        </ul>
+      </li>
+      <li>工业部门还需要养活工业工人：每个工业工人消费 $n$ 单位粮食。</li>
+      <li>因此，工业部门的 <strong>总粮食需求</strong> 为：</li>
+    </ul>
+
+    <div class="equation" id="eq-ind">
+      $$m(1-L_t) + n(1-L_t) = (m+n)(1-L_t)$$
+      <div class="eq-anchor"><a href="#eq-ind" title="复制锚链">🔗</a></div>
+    </div>
+
+    <h3 id="sec1-4">1.4 粮食征购与约束</h3>
+    <p>政府从每个农民手中征购 $p_t$ 单位粮食，总征购量：</p>
+
+    <div class="equation" id="eq-pur">
+      $$p_t L_t$$
+      <div class="eq-anchor"><a href="#eq-pur" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p><strong>粮食供给约束</strong>（工业部门能正常运行的必要条件）：</p>
+
+    <div class="equation" id="eq-constr">
+      $$p_t L_t \ge (m+n)(1-L_t)$$
+      <div class="eq-anchor"><a href="#eq-constr" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>在最优决策中，通常取等号（紧约束）。</p>
+
+    <h3 id="sec1-5">1.5 农民留存粮食与消费动态</h3>
+    <p>每个农民的平均产出：</p>
+
+    <div class="equation" id="eq-avg">
+      $$\frac{Q_t}{L_t} = a f(c_t)$$
+      <div class="eq-anchor"><a href="#eq-avg" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>农民留存粮食（用于未来消费）：</p>
+
+    <div class="equation" id="eq-save">
+      $$g_t = a f(c_t) - p_t$$
+      <div class="eq-anchor"><a href="#eq-save" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>第 $t+1$ 期的消费等于第 $t$ 期的留存：</p>
+
+    <div class="equation" id="eq1">
+      $$c_{t+1} = g_t = a f(c_t) - p_t \tag{1}$$
+      <div class="eq-anchor"><a href="#eq1" title="复制锚链">🔗</a></div>
+    </div>
+
+    <hr />
+
+    <!-- ============ 2. 政府的目标函数 ============ -->
+    <h2 id="sec2">2. 政府的目标函数</h2>
+
+    <p>政府只关心 <strong>工业产出的贴现值之和</strong>：</p>
+
+    <div class="equation" id="eq-obj-raw">
+      $$\max \sum_{t=0}^{\infty} \beta^t (1 - L_t), \quad \beta \in (0,1)$$
+      <div class="eq-anchor"><a href="#eq-obj-raw" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>这里 $\beta$ 是政府的贴现因子（$\beta$ 越小，政府越没有耐心）。</p>
+
+    <p>利用紧约束 $p_t L_t = (m+n)(1-L_t)$，可以消去 $p_t$ 和 $L_t$，将问题转化为关于消费 $c_t$ 的动态规划。</p>
+
+    <h3>从约束中解出 $L_t$：</h3>
+    <p>由 $p_t L_t = (m+n)(1-L_t)$ 可得：</p>
+
+    <div class="equation" id="step-2-1">
+      $$p_t = \frac{(m+n)(1-L_t)}{L_t}$$
+      <div class="eq-anchor"><a href="#step-2-1" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><span></span><a href="#step-2-2">下一步 →</a></div>
+
+    <p>代入 <a class="eqref" href="#eq1">(1)</a> 式：</p>
+
+    <div class="equation" id="step-2-2">
+      $$c_{t+1} = a f(c_t) - \frac{(m+n)(1-L_t)}{L_t}$$
+      <div class="eq-anchor"><a href="#step-2-2" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-1">← 上一步</a><a href="#step-2-3">下一步 →</a></div>
+
+    <p>解出 $L_t$：</p>
+
+    <div class="equation" id="step-2-3">
+      $$\frac{(m+n)(1-L_t)}{L_t} = a f(c_t) - c_{t+1}$$
+      <div class="eq-anchor"><a href="#step-2-3" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-2">← 上一步</a><a href="#step-2-4">下一步 →</a></div>
+
+    <div class="equation" id="step-2-4">
+      $$\Rightarrow \frac{1-L_t}{L_t} = \frac{a f(c_t) - c_{t+1}}{m+n}$$
+      <div class="eq-anchor"><a href="#step-2-4" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-3">← 上一步</a><a href="#step-2-5">下一步 →</a></div>
+
+    <div class="equation" id="step-2-5">
+      $$\Rightarrow \frac{1}{L_t} - 1 = \frac{a f(c_t) - c_{t+1}}{m+n}$$
+      <div class="eq-anchor"><a href="#step-2-5" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-4">← 上一步</a><a href="#step-2-6">下一步 →</a></div>
+
+    <div class="equation" id="step-2-6">
+      $$\Rightarrow L_t = \frac{m+n}{a f(c_t) - c_{t+1} + m+n}$$
+      <div class="eq-anchor"><a href="#step-2-6" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-5">← 上一步</a><a href="#eq2">下一步 →</a></div>
+
+    <p>于是工业产出：</p>
+
+    <div class="equation" id="eq2">
+      $$1 - L_t = \frac{a f(c_t) - c_{t+1}}{a f(c_t) - c_{t+1} + m+n} \tag{2}$$
+      <div class="eq-anchor"><a href="#eq2" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-2-6">← 上一步</a><a href="#eq3">下一步 →</a></div>
+
+    <h3>重写目标函数：</h3>
+    <p>将 <a class="eqref" href="#eq2">(2)</a> 代入政府目标，得到：</p>
+
+    <div class="equation" id="eq3">
+      $$U = \sum_{t=0}^{\infty} \beta^t \cdot \frac{a f(c_t) - c_{t+1}}{a f(c_t) - c_{t+1} + m+n} \tag{3}$$
+      <div class="eq-anchor"><a href="#eq3" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#eq2">← 上一步</a><a href="#sec3">进入第 3 节 →</a></div>
+
+    <p>其中 $c_0$ 给定，控制变量为序列 $\{c_1, c_2, \dots\}$。</p>
+
+    <hr />
+
+    <!-- ============ 3. 欧拉方程的推导 ============ -->
+    <h2 id="sec3">3. 欧拉方程的推导</h2>
+
+    <h3 id="sec3-1">3.1 定义函数</h3>
+    <p>令</p>
+
+    <div class="equation" id="eq-Fdef">
+      $$F(x, y) = \frac{a f(x) - y}{a f(x) - y + m+n}$$
+      <div class="eq-anchor"><a href="#eq-Fdef" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><span></span><a href="#eq-Fobj">下一步 →</a></div>
+
+    <p>则目标函数为：</p>
+
+    <div class="equation" id="eq-Fobj">
+      $$U = \sum_{t=0}^{\infty} \beta^t F(c_t, c_{t+1})$$
+      <div class="eq-anchor"><a href="#eq-Fobj" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#eq-Fdef">← 上一步</a><a href="#sec3-2">进入 3.2 →</a></div>
+
+    <h3 id="sec3-2">3.2 一阶条件</h3>
+    <p>对某个内部 $c_t$（$t \ge 1$）求导：</p>
+
+    <div class="equation" id="step-3-1">
+      $$\frac{\partial}{\partial c_t} \left[ \beta^{t-1} F(c_{t-1}, c_t) + \beta^t F(c_t, c_{t+1}) \right] = 0$$
+      <div class="eq-anchor"><a href="#step-3-1" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><span></span><a href="#eq4">下一步 →</a></div>
+
+    <p>除以 $\beta^{t-1}$ 得：</p>
+
+    <div class="equation" id="eq4">
+      $$\frac{\partial F(c_{t-1}, c_t)}{\partial c_t} + \beta \frac{\partial F(c_t, c_{t+1})}{\partial c_t} = 0 \tag{4}$$
+      <div class="eq-anchor"><a href="#eq4" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-3-1">← 上一步</a><a href="#sec3-3">进入 3.3 →</a></div>
+
+    <h3 id="sec3-3">3.3 计算偏导数</h3>
+    <p>记 $D(x,y) = a f(x) - y$，则 $F(x,y) = \dfrac{D}{D + m+n}$。</p>
+
+    <p>对第二个变量求偏导：</p>
+
+    <div class="equation" id="eq-pF-y">
+      $$\frac{\partial F}{\partial y} = \frac{-1 \cdot (D+m+n) - D \cdot (-1)}{(D+m+n)^2} = \frac{-(m+n)}{(D+m+n)^2}$$
+      <div class="eq-anchor"><a href="#eq-pF-y" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><span></span><a href="#eq-pF-x">下一步 →</a></div>
+
+    <p>对第一个变量求偏导：</p>
+
+    <div class="equation" id="eq-pF-x">
+      $$\frac{\partial F}{\partial x} = \frac{a f'(x) \cdot (D+m+n) - D \cdot a f'(x)}{(D+m+n)^2} = \frac{a f'(x) (m+n)}{(D+m+n)^2}$$
+      <div class="eq-anchor"><a href="#eq-pF-x" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#eq-pF-y">← 上一步</a><a href="#sec3-4">进入 3.4 →</a></div>
+
+    <h3 id="sec3-4">3.4 代入一阶条件</h3>
+    <p>在 <a class="eqref" href="#eq4">(4)</a> 中：</p>
+
+    <div class="equation" id="eq-pFct">
+      $$\frac{\partial F(c_{t-1}, c_t)}{\partial c_t} = \frac{-(m+n)}{\bigl( a f(c_{t-1}) - c_t + m+n \bigr)^2}$$
+      <div class="eq-anchor"><a href="#eq-pFct" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><span></span><a href="#eq-pFct1">下一步 →</a></div>
+
+    <div class="equation" id="eq-pFct1">
+      $$\frac{\partial F(c_t, c_{t+1})}{\partial c_t} = \frac{a f'(c_t) (m+n)}{\bigl( a f(c_t) - c_{t+1} + m+n \bigr)^2}$$
+      <div class="eq-anchor"><a href="#eq-pFct1" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#eq-pFct">← 上一步</a><a href="#step-3-sub">下一步 →</a></div>
+
+    <p>代入 <a class="eqref" href="#eq4">(4)</a> 并消去 $(m+n)$：</p>
+
+    <div class="equation" id="step-3-sub">
+      $$\frac{-1}{\bigl( a f(c_{t-1}) - c_t + m+n \bigr)^2} + \beta \cdot \frac{a f'(c_t)}{\bigl( a f(c_t) - c_{t+1} + m+n \bigr)^2} = 0$$
+      <div class="eq-anchor"><a href="#step-3-sub" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#eq-pFct1">← 上一步</a><a href="#step-3-rearr">下一步 →</a></div>
+
+    <p>整理得：</p>
+
+    <div class="equation" id="step-3-rearr">
+      $$\beta \cdot \frac{a f'(c_t)}{\bigl( a f(c_t) - c_{t+1} + m+n \bigr)^2} = \frac{1}{\bigl( a f(c_{t-1}) - c_t + m+n \bigr)^2}$$
+      <div class="eq-anchor"><a href="#step-3-rearr" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-3-sub">← 上一步</a><a href="#step-3-inv">下一步 →</a></div>
+
+    <p>两边取倒数：</p>
+
+    <div class="equation" id="step-3-inv">
+      $$\frac{\bigl( a f(c_t) - c_{t+1} + m+n \bigr)^2}{\bigl( a f(c_{t-1}) - c_t + m+n \bigr)^2} = \beta a f'(c_t)$$
+      <div class="eq-anchor"><a href="#step-3-inv" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-3-rearr">← 上一步</a><a href="#sec3-5">进入 3.5 →</a></div>
+
+    <h3 id="sec3-5">3.5 得到标准形式</h3>
+    <p>将下标 $t$ 替换为 $t+1$，得到论文中的欧拉方程：</p>
+
+    <div class="equation" id="eq5">
+      $$a\beta f'(c_{t+1}) = \left[ \frac{ a f(c_{t+1}) - c_{t+2} + m+n }{ a f(c_t) - c_{t+1} + m+n } \right]^2 \tag{5}$$
+      <div class="eq-anchor"><a href="#eq5" title="复制锚链">🔗</a></div>
+    </div>
+    <div class="step-nav"><a href="#step-3-inv">← 上一步</a><a href="#sec4">进入第 4 节 →</a></div>
+
+    <hr />
+
+    <!-- ============ 4. 稳态分析 ============ -->
+    <h2 id="sec4">4. 稳态分析</h2>
+
+    <p><strong>稳态</strong> 定义：所有变量不随时间变化，即</p>
+
+    <div class="equation" id="eq-ss-def">
+      $$c_t = c_{t+1} = c_{t+2} = \tilde{c}$$
+      <div class="eq-anchor"><a href="#eq-ss-def" title="复制锚链">🔗</a></div>
+    </div>
+
+    <p>将稳态代入欧拉方程 <a class="eqref" href="#eq5">(5)</a>：</p>
+    <ul>
+      <li>右边分子分母相同，比值为 1，平方后仍为 1。</li>
+      <li>左边为 $a\beta f'(\tilde{c})$。</li>
+    </ul>
+
+    <p>因此：</p>
+
+    <div class="equation" id="eq6">
+      $$a\beta f'(\tilde{c}) = 1 \quad \Longrightarrow \quad f'(\tilde{c}) = \frac{1}{a\beta} \tag{6}$$
+      <div class="eq-anchor"><a href="#eq6" title="复制锚链">🔗</a></div>
+    </div>
+
+    <h3>4.1 稳态的经济含义</h3>
+    <ul>
+      <li>由于 $f''(c) < 0$（凹性），方程 <a class="eqref" href="#eq6">(6)</a> 有唯一解 $\tilde{c}$。</li>
+      <li><strong>更耐心的政府</strong>（$\beta$ 较大）→ 右边 $1/(a\beta)$ 较小 → $f'(\tilde{c})$ 较小 → $\tilde{c}$ 较大。<br>
+        即政府越有耐心，农民稳态消费越高。</li>
+      <li><strong>农业生产率提高</strong>（$a$ 增大）→ 类似效果，稳态消费增加。</li>
+    </ul>
+
+    <h3>4.2 稳态下的其他变量</h3>
+    <ul>
+      <li>稳态工作能力：$\tilde{h} = f(\tilde{c})$。</li>
+      <li>稳态人均产量：$\tilde{q} = a \tilde{h}$。</li>
+      <li>稳态农业劳动力比例 $\tilde{L}$ 可由紧约束解出，但论文未显式给出。</li>
+    </ul>
+
+    <h3>4.3 稳定性</h3>
+    <p>由 $f''<0$ 及动态系统的性质，可以证明（通过线性化）稳态是 <strong>渐近稳定的</strong>：偏离稳态的最优路径会逐渐收敛回 $\tilde{c}$。</p>
+
+    <hr />
+
+    <!-- ============ 5. 数值模拟 ============ -->
+    <h2 id="sec5">5. 数值模拟与政策冲击（论文图 1）</h2>
+
+    <h3>5.1 参数校准（附录 B）</h3>
+    <ul>
+      <li>$\beta = 0.9$（基准耐心程度）</li>
+      <li>营养函数：$h = c^{0.85}$（$\delta = 0.85$）</li>
+      <li>$a = 1.8465$，$m+n = 27.6471$，使稳态 $c=10$，农业劳动力占比 90%。</li>
+    </ul>
+
+    <h3>5.2 大跃进冲击</h3>
+    <ul>
+      <li><strong>第 1–4 年</strong>：经济从低消费（$c=8$）向稳态恢复。</li>
+      <li><strong>第 5 年</strong>：政府发动大跃进，同时发生两个变化：
+        <ol>
+          <li>不耐烦程度增加：$\beta$ 从 0.9 降至 0.8。</li>
+          <li>错误预期：认为集体化使 $a$ 永久提高 50%（实际永久下降 2%）。</li>
+        </ol>
+      </li>
+      <li><strong>第 6 年起</strong>：政府意识到错误，恢复 $\beta=0.9$ 并接受真实 $a$。</li>
+    </ul>
+
+    <h3>5.3 模拟结果</h3>
+    <ul>
+      <li><strong>农业劳动力 $L_t$</strong>：第 5 年骤降，第 6 年回升。</li>
+      <li><strong>人均消费与征购</strong>：第 5 年征购激增，消费暴跌；第 6 年消费最低。</li>
+      <li><strong>工作能力 $h_t$</strong>：紧跟消费变化，第 6 年触底。</li>
+      <li><strong>总产量 $Q_t$</strong>：第 5 年开始下降，第 6 年继续恶化，之后缓慢恢复，但稳态水平低于震前（因实际 $a$ 永久下降）。</li>
+    </ul>
+
+    <p>模拟动态与实际数据（表 1、表 2）高度一致。</p>
+
+    <hr />
+
+    <!-- ============ 6. 模型的核心结论 ============ -->
+    <h2 id="sec6">6. 模型的核心结论</h2>
+    <ol>
+      <li><strong>资源转移</strong>：政府错误认为农业生产率会大幅提高，于是将劳动力从农业转移到工业。</li>
+      <li><strong>过度征购</strong>：政府变得不耐烦，为了提高当前工业产出，大幅提高人均征购量。</li>
+      <li><strong>营养反馈</strong>：过度征购导致农民口粮严重不足 → 体力下降 → 劳动生产率下降 → 总产出崩溃。</li>
+      <li><strong>系统性风险</strong>：中央计划下信息扭曲 + 缺乏制衡 + 营养‑劳动反馈机制，使得一个"理性"的政府也可能酿成灾难。</li>
+    </ol>
+
+    <hr />
+    <p style="text-align:center; color:var(--muted); font-size:0.9em;">
+      以上就是 <strong>理论模型及详细推导</strong> 的完整整理。<br>
+      点击文中的 <a class="eqref" href="#eq1">(1)</a>、<a class="eqref" href="#eq5">(5)</a> 等编号可跳转到对应公式。
+    </p>
+
+  </div>
+
+  <!-- 回到顶部 -->
+  <a href="#top" class="back-to-top" id="backToTop" title="回到顶部 / 目录">↑</a>
+
+  <script>
+    // 回到顶部按钮的显隐
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    // 当跳转到某个公式时，自动把浏览器滚动位置稍微往上挪一点，让公式不会贴着顶栏
+    // （scroll-margin-top 已在 CSS 中处理）
+  </script>
+</body>
+</html>

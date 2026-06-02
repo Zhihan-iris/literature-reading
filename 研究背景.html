@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>大跃进与中央计划灾难：历史背景与脉络</title>
+    <meta name="description" content="介绍 Li & Yang (2005) 论文所涉及的大跃进历史背景、集体化进程、资源转移、过度征购、天气因素和灾难规模。" />
+    <!-- Chart.js CDN for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5f2eb;
+            font-family: 'Segoe UI', 'Roboto', 'Noto Sans', system-ui, -apple-system, 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c2825;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fffef9;
+            border-radius: 8px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            padding: 1rem 1rem 0;
+            background: #fffef9;
+        }
+        .site-nav a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 36px;
+            padding: 0.34rem 0.72rem;
+            border: 1px solid #eaded1;
+            border-radius: 8px;
+            color: #5f3b2f;
+            background: #faf6f0;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.25;
+        }
+        .site-nav a:hover,
+        .site-nav a[aria-current="page"] {
+            color: #7a2e1f;
+            border-color: #c07a5b;
+            background: #fff0e3;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #8b2c1d 0%, #a83c2a 100%);
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        .hero .sub {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            display: inline-block;
+            padding-top: 0.6rem;
+            margin-top: 0.6rem;
+        }
+        .hero .citation {
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            opacity: 0.75;
+            font-style: italic;
+        }
+
+        .content {
+            padding: 2rem 2rem 2.5rem;
+        }
+
+        .section {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #e9e2d8;
+            padding-bottom: 1.8rem;
+        }
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #7a2e1f;
+            margin-bottom: 1rem;
+            border-left: 6px solid #b85c3a;
+            padding-left: 1rem;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.2rem 0 0.6rem 0;
+            color: #4e3e34;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        .insight-box {
+            background: #fef7e8;
+            border-left: 5px solid #c07a5b;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0;
+            border-radius: 12px;
+            font-size: 0.95rem;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+        .timeline-item {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+            background: #faf6f0;
+            border-radius: 20px;
+            padding: 0.8rem 1.2rem;
+            transition: 0.1s ease;
+        }
+        .timeline-year {
+            min-width: 85px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: #b1452a;
+            line-height: 1.3;
+        }
+        .timeline-desc {
+            flex: 1;
+        }
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .stat-card {
+            background: #f3eee8;
+            border-radius: 20px;
+            padding: 1rem 1.2rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #8b3c28;
+            line-height: 1.2;
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: #5f4d3e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .chart-container {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid #f0e5db;
+        }
+        canvas {
+            max-height: 400px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.2rem 0;
+            font-size: 0.9rem;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        th {
+            background: #e6dad0;
+            padding: 10px 8px;
+            font-weight: 600;
+            color: #2e241f;
+        }
+        td {
+            border-bottom: 1px solid #e9e0d7;
+            padding: 8px 8px;
+            text-align: center;
+        }
+        .footnote {
+            font-size: 0.8rem;
+            color: #7e6b5c;
+            margin-top: 0.8rem;
+            border-top: 1px dashed #ddd2c6;
+            padding-top: 0.8rem;
+        }
+        .quote {
+            font-style: italic;
+            background: #fff0e3;
+            padding: 0.8rem 1.2rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+            color: #5a3e30;
+            border-left: 4px solid #b86b4a;
+        }
+        @media (max-width: 680px) {
+            .content {
+                padding: 1.2rem;
+            }
+            .site-nav a {
+                flex: 1 1 132px;
+                justify-content: center;
+                padding-left: 0.55rem;
+                padding-right: 0.55rem;
+            }
+            .timeline-item {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="site-nav" aria-label="网站导航">
+        <a href="index.html">文章详解</a>
+        <a href="研究背景.html" aria-current="page">研究背景</a>
+        <a href="理论模型.html">理论模型</a>
+        <a href="The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
+    </nav>
+    <div class="hero">
+        <h1>📉 大跃进·中央计划的崩溃</h1>
+        <div class="sub">1958–1961 · 粮食危机与制度性灾难</div>
+        <div class="citation">基于 Li & Yang (2005) 《The Great Leap Forward: Anatomy of a Central Planning Disaster》</div>
+    </div>
+    <div class="content">
+        <!-- 引子：时代背景 -->
+        <div class="section">
+            <h2>📅 时代背景 · 战后中国的困境</h2>
+            <p>1949年新中国成立时，是一个极度贫困的农业经济体，近<strong>90%的人口生活在农村</strong>，使用传统手工农具耕作。经过百年战乱，工业基础几乎为零。面对严峻的粮食安全与工业化渴望，新政府于1952年迅速采纳<strong>苏联式重工业优先发展战略</strong>。为了给工业化筹集资金，必须从庞大的农民群体中提取农业剩余——这决定了农业政策的核心矛盾：<strong>在低生产率下既要养活农民又要支撑工业</strong>。</p>
+            <div class="insight-box">
+                📌 毛泽东在1955年7月的讲话中直言：“社会主义工业化不能孤立地进行……如果我们不能在大约三个五年计划的时间里基本上解决农业合作化问题，我们就不能解决日益增长的商品粮和工业原料的需要同主要农作物一般产量很低之间的矛盾。”
+            </div>
+            <p>在这种意识形态下，<strong>农业集体化</strong>被视为实现“生产力大跃进”的唯一途径。政府相信，通过将小农家庭组织成大规模集体（人民公社），可以立刻采用机械化耕作，释放出巨量粮食和劳动力，从而加速工业扩张。这一信念成为后来一系列激进政策的理论基础。</p>
+        </div>
+
+        <!-- 集体化狂飙与数据 -->
+        <div class="section">
+            <h2>🚜 从互助组到人民公社 · 集体化进程</h2>
+            <div class="timeline">
+                <div class="timeline-item"><div class="timeline-year">1953</div><div class="timeline-desc">中央推动农业生产合作社，起初允许农民自愿退出，但政治压力迅速升级。</div></div>
+                <div class="timeline-item"><div class="timeline-year">1956年底</div><div class="timeline-desc"><strong>96.3%</strong>的农户加入高级合作社，独立农户仅剩3.7%。退出权名存实亡。</div></div>
+                <div class="timeline-item"><div class="timeline-year">1958.1.1</div><div class="timeline-desc">“大跃进”运动正式启动，全国小合作社合并为<strong>2.65万个人民公社</strong>，每个公社平均涵盖数千户农民。</div></div>
+                <div class="timeline-item"><div class="timeline-year">1958秋</div><div class="timeline-desc">公共食堂遍地开花，最多时超过265万个。宣称“吃饭不要钱”，实际导致巨大浪费和激励扭曲。</div></div>
+            </div>
+            <p>地方政府在“打破保守思想”的口号下竞相浮夸，1958年最初预测粮食产量将达5.25亿吨（1957年仅1.95亿吨），后经多次下调，最终官方数据定格在2亿吨——但实际灾难已经酿成。</p>
+            <div class="stat-grid">
+                <div class="stat-card"><div class="stat-number">38 百万</div><div class="stat-label">1957–58 农业劳动力减少</div></div>
+                <div class="stat-card"><div class="stat-number">-13%</div><div class="stat-label">粮食播种面积缩减(1957–59)</div></div>
+                <div class="stat-card"><div class="stat-number">1000万头</div><div class="stat-label">大牲畜减少(1956–58)</div></div>
+                <div class="stat-card"><div class="stat-number">16.4百万</div><div class="stat-label">1958年农民进城/转向工业</div></div>
+            </div>
+        </div>
+
+        <!-- 政策失误：资源转移+过度征购 -->
+        <div class="section">
+            <h2>⚙️ 致命政策组合 · 资源转移与过度征购</h2>
+            <p>受虚假高产报告的误导，中央坚信粮食问题已“永久解决”，随即实施两大激进政策：</p>
+            <ul style="margin-left: 1.8rem; margin-bottom: 1rem;">
+                <li><strong>🔁 资源大挪移</strong>：调离农业劳动力投入“大炼钢铁”和水利工程，1958年动员超过1亿农民参与非农项目。同时减少粮食播种面积，鼓励种植经济作物。</li>
+                <li><strong>📈 掠夺性征购</strong>：国家粮食征购量从1957年的4600万吨飙升至1959年的6400万吨，即使当年粮食已实际减产。同时净出口粮食从年均211万吨提高到395万吨（1959年）。</li>
+            </ul>
+            <p>后果极为惨烈：农村人均留存口粮从1957年的<strong>273公斤</strong>骤降至1959年的<strong>193公斤</strong>，1960年进一步跌至<strong>182公斤</strong>。每日人均热量摄入从2100卡降至1500卡——远低于维持正常体力劳动的阈值。</p>
+            <div class="quote">
+                “Becker (1996) 报道，北京附近村庄幸存的农民虚弱到无法种植或收获新作物。”
+            </div>
+            <p><strong>营养—劳动能力的恶性循环</strong>由此开启：口粮不足 → 体力衰竭 → 劳动生产率崩溃 → 下一年产量进一步下降。即使1960年后政府开始退人、减购，农业产出直到1966年才勉强恢复到1957年水平。</p>
+        </div>
+
+        <!-- 关键指标演变 + 曲线图 -->
+        <div class="section">
+            <h2>📊 关键指标演变 (1952–1962)</h2>
+            <div class="chart-container">
+                <canvas id="grainTrendChart" width="800" height="400" style="max-width:100%; height:auto;"></canvas>
+            </div>
+            <table>
+                <thead>
+                    <tr><th>年份</th><th>粮食总产(百万吨)</th><th>征购量(百万吨)</th><th>农村人均留存(kg)</th><th>农业劳动力(百万人)</th><th>大牲畜(百万头)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1952</td><td>164</td><td>33</td><td>260</td><td>173</td><td>76.3</td></tr>
+                    <tr><td>1953</td><td>167</td><td>47</td><td>242</td><td>177</td><td>78.1</td></tr>
+                    <tr><td>1954</td><td>170</td><td>51</td><td>228</td><td>182</td><td>81.8</td></tr>
+                    <tr><td>1955</td><td>184</td><td>48</td><td>256</td><td>186</td><td>85.4</td></tr>
+                    <tr><td>1956</td><td>193</td><td>40</td><td>284</td><td>185</td><td>87.4</td></tr>
+                    <tr><td>1957</td><td>195</td><td>46</td><td>273</td><td>193</td><td>84.2</td></tr>
+                    <tr><td>1958</td><td>200</td><td>52</td><td>268</td><td>155</td><td>78.1</td></tr>
+                    <tr><td>1959</td><td>170</td><td>64</td><td>193</td><td>163</td><td>79.1</td></tr>
+                    <tr><td>1960</td><td>143</td><td>47</td><td>182</td><td>170</td><td>73.2</td></tr>
+                    <tr><td>1961</td><td>148</td><td>37</td><td>290</td><td>197</td><td>69.4</td></tr>
+                    <tr><td>1962</td><td>160</td><td>32</td><td>229</td><td>212</td><td>70.1</td></tr>
+                </tbody>
+            </table>
+            <div class="footnote">数据来源：农业部 (1989)，Wen (1993) 等；1959年征购量达到峰值而产量锐减，农村人均留存崩塌（1961年留存回升系征购大幅下降+产量略有回暖，但整体仍远低于1957年）。</div>
+        </div>
+
+        <!-- 天气与灾难交织 -->
+        <div class="section">
+            <h2>🌧️ 自然因素 · 并不无辜的天气</h2>
+            <p>官方历史长期将饥荒归因为“三年自然灾害”。Kueh (1995) 利用气象资料证实1959–1961年确实出现不利天气，但同等程度的恶劣天气在过去几十年并未引发如此规模的粮食崩溃。论文通过计量分析指出：<strong>坏天气仅解释了产量下降的12.9%</strong>，而人为政策占主导地位。也就是说，天气只是“完美风暴”的配角，真正致命的是制度性的资源剥夺。</p>
+            <div class="insight-box">
+                🌪️ 中央计划体制引入了一种系统性风险：当所有决策集中时，信息失真和政治浮夸导致连锁政策失误。地方干部有强烈的动机虚报产量，上级基于虚假繁荣制定更激进的目标——这是一个自我强化的毁灭循环。
+            </div>
+        </div>
+
+        <!-- 饥荒规模与制度反思 -->
+        <div class="section">
+            <h2>💔 灾难的规模 · 人类的悲剧</h2>
+            <p>根据人口学家的推算，大跃进饥荒导致的超额死亡人数在<strong>1650万至3000万</strong>之间，即使以最低估计，这也是有记录以来人类历史上最严重的饥荒。粮食产量在1959年下降15%，1960年和1961年再降16%。中国当时实行封闭经济，拒绝国际援助，农村地区陷入绝境。</p>
+            <p>直到1960年底，中央才开始大规模逆转政策：退返城市劳动力（1962年农村劳动力较1958年增加5000万以上）、降低征购定额、解散大部分公共食堂。但从1965年起才确立相对稳定的征购制度（每年4000万吨左右）。令人唏嘘的是，粮食产量直到<strong>1966年</strong>才回到1957年的水平，而此后文化革命又起，农业进步再次中断。</p>
+            <div class="quote">
+                论文作者总结：“资源转移造成了33%的产量损失，过度征购/营养效应造成28.3%的损失。这场危机本质上是中央计划体制的系统性失败——错误预期+错误的政策组合+营养反馈机制，使理性的政府也滑向灾难。”
+            </div>
+        </div>
+
+        <!-- 理论模型直观解释 -->
+        <div class="section">
+            <h2>📐 理论模型核心机制</h2>
+            <p>Li & Yang 构建了一个动态中央计划模型，将大跃进的崩溃归结为三步：</p>
+            <ol style="margin-left: 1.8rem; margin-bottom: 1rem;">
+                <li><strong>错误信念+急躁</strong>：政府坚信集体化会永久提升农业全要素生产率（a），且自身变得极度“短视”（贴现因子β下降），因此大幅减少农业劳动力并提高征购。</li>
+                <li><strong>营养反馈</strong>：过度征购导致农民人均口粮c下降 → 工作能力h(c)崩溃 → 劳动生产率下降，即使劳动力回流也无法弥补。</li>
+                <li><strong>产出螺旋下滑</strong>：1959年减产 → 更激进征购 → 1960年体力崩溃 → 1961年依旧低产，形成了论文图1所示的“塌陷-恢复缓慢”动态。</li>
+            </ol>
+            <p>模拟结果高度拟合实际数据：农业劳动力先骤降后回升，但人均消费和工作能力需数年才能恢复，且稳态产出因制度性生产率损失而低于大跃进之前。</p>
+            <div class="stat-grid">
+                <div class="stat-card"><div class="stat-number">33.0%</div><div class="stat-label">资源转移贡献份额</div></div>
+                <div class="stat-card"><div class="stat-number">28.3%</div><div class="stat-label">过度征购/营养效应</div></div>
+                <div class="stat-card"><div class="stat-number">12.9%</div><div class="stat-label">恶劣天气贡献</div></div>
+                <div class="stat-card"><div class="stat-number">61%+</div><div class="stat-label">两项政策合计贡献</div></div>
+            </div>
+        </div>
+
+        <!-- 余波与历史教训 -->
+        <div class="section">
+            <h2>📖 余波与历史教训</h2>
+            <p>大跃进饥荒之后，中央虽然放弃了最极端政策（如公共食堂、无限制征购），但集体所有制和计划分配体系保留下来，直到1978年改革开放后才逐步解体。本文揭示了一个冷酷的规律：<strong>当农业剩余被不计后果地抽取且缺乏反馈纠错机制时，即使在没有市场失灵的情况下，命令式经济也可能自我毁灭。</strong>与爱尔兰马铃薯饥荒不同，中国具有广阔的耕地和作物多样性，本可对冲气候风险，但因强制性集体化和政治浮夸，风险被集中放大。</p>
+            <div class="footnote">
+                ⚠️ 本页基于学术论文 Li & Yang (2005) 历史背景与实证结论整理，旨在清晰呈现中央计划灾难的脉络。所有数据与引用均源自原文及其中引用的官方统计和调研。图表使用Chart.js渲染，展示1952–1962年间核心指标的剧烈波动。
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        // 数据: 年份 1952–1962
+        const years = ['1952','1953','1954','1955','1956','1957','1958','1959','1960','1961','1962'];
+        // 粮食总产 (百万吨)
+        const grainOutput = [164, 167, 170, 184, 193, 195, 200, 170, 143, 148, 160];
+        // 征购量 (百万吨)
+        const procurement = [33, 47, 51, 48, 40, 46, 52, 64, 47, 37, 32];
+        // 农村人均留存 (kg)
+        const retainedPerCapita = [260, 242, 228, 256, 284, 273, 268, 193, 182, 290, 229];
+
+        const ctx = document.getElementById('grainTrendChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: years,
+                datasets: [
+                    {
+                        label: '粮食总产量 (百万吨)',
+                        data: grainOutput,
+                        borderColor: '#b1452a',
+                        backgroundColor: 'rgba(177, 69, 42, 0.05)',
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#b1452a',
+                        tension: 0.2,
+                        fill: false,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: '征购量 (百万吨)',
+                        data: procurement,
+                        borderColor: '#3b6e47',
+                        backgroundColor: 'rgba(59, 110, 71, 0.05)',
+                        borderWidth: 3,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#2c5f2d',
+                        tension: 0.2,
+                        fill: false,
+                        yAxisID: 'y'
+                    },
+                    {
+                        label: '农村人均留存 (kg)',
+                        data: retainedPerCapita,
+                        borderColor: '#c27e43',
+                        backgroundColor: 'rgba(194, 126, 67, 0.05)',
+                        borderWidth: 2.5,
+                        pointRadius: 4,
+                        pointBackgroundColor: '#bd6b2f',
+                        borderDash: [5, 5],
+                        tension: 0.2,
+                        fill: false,
+                        yAxisID: 'y1'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            font: { size: 12 },
+                            boxWidth: 14
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: '1952–1962 中国粮食生产与征购趋势',
+                        font: { size: 16, weight: 'normal' },
+                        padding: { bottom: 15 }
+                    }
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: '百万吨 (Mt)',
+                            color: '#5e3a2b'
+                        },
+                        grid: { color: '#e8dfd6' },
+                        beginAtZero: false,
+                        min: 0,
+                        max: 240
+                    },
+                    y1: {
+                        position: 'right',
+                        title: {
+                            display: true,
+                            text: '公斤/人 (kg/capita)',
+                            color: '#bd6b2f'
+                        },
+                        grid: { drawOnChartArea: false },
+                        min: 150,
+                        max: 320
+                    },
+                    x: {
+                        title: { display: true, text: '年份' }
+                    }
+                }
+            }
+        });
+    })();
+</script>
+</body>
+</html>
