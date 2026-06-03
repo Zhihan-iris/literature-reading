@@ -1,0 +1,1806 @@
+
+
+===== PAGE 1 =====
+The impact of singlehood on carbon emissions: Empirical evidence 
+from China
+☆
+Yaqi Liu
+a
+, Jing Guo
+b , *
+a
+School of Economy, Shanxi University of Finance and Economics, Taiyuan, China
+b
+School of Government, Nanjing University, Nanjing, China
+ARTICLE INFO
+Keywords:
+Singlehood
+Carbon emissions
+Economies of scale
+Convenient living
+Energy sharing
+ABSTRACT
+Against the backdrop of increasing consumption-based carbon emissions, mitigating household carbon emissions 
+is crucial for achieving China's carbon reduction goals. This study investigates the impact of the household 
+singlehood rate on per capita carbon emissions from a consumption-based perspective. Utilizing panel data from 
+the China Family Panel Studies (CFPS) encompassing 63,412 households from 2010 to 2022, our analysis 
+demonstrates that a rising singlehood rate significantly increases per capita carbon emissions, with a baseline 
+impact coefficient of 0.244. The impact is channeled through three mechanisms: diminished economies of scale 
+in household public goods, insufficient sharing of domestic energy, and increased per capita consumption driven 
+by convenience-seeking behaviors. Heterogeneity analyses uncover systematic disparities: the effect is strongest 
+for males, rural dwellers, the youth, high-income earners and high-education singlehood households. Based on 
+these insights, we propose targeted policy recommendations focused on leveraging learning curves, intervening 
+at sensitive points, and implementing personal carbon budgets to systematically guide and incentivize low- 
+carbon transitions among the singlehood population.
+1. Introduction
+On January 20, 2025, U.S. President Donald Trump announced the 
+United States' withdrawal from the Paris Agreement and implemented 
+policies to reduce investment in clean energy in favor of traditional fossil 
+fuels — a move expected to adversely affect global carbon emissions ( US 
+News, 2025 ). In March 2025, the International Energy Agency (IEA) 
+released its Global Energy Review 2025, reporting that global 
+energy-related carbon emissions increased by 0.8 % year-on-year in 
+2024, reaching 37.6 billion tons of CO
+2
+. Atmospheric CO
+2 
+concentra -
+tions rose to 422.5 ppm, approximately 3ppm higher than in 2023 and 
+50 % higher than pre-industrial levels. China's carbon emissions in 2024 
+remained largely unchanged from the previous year, at 12.6 billion tons, 
+accounting for one-third of global emissions — a share comparable to 
+China's portion of global manufacturing ( International Energy Agency 
+(IEA), 2025 ).
+As the world's largest carbon emitter, China has committed to 
+peaking CO
+2 
+emissions by 2030 and achieving carbon neutrality by 
+2060 — objectives collectively known as the “ dual-carbon goals ” 
+( Ministry of Foreign Affairs of the People's Republic of China, 2020 ). 
+This strategy necessitates reductions in both lifestyle and 
+production-related emissions. According to the Global Energy Review 
+2025, weakened real estate markets and reduced infrastructure invest -
+ment in China led to a 10 % decline in cement production and a more 
+than 5 % reduction in industrial process emissions ( International Energy 
+Agency (IEA), 2025 ). While energy-related carbon emissions in China 
+increased by 0.4 %, industrial process-related emissions decreased by 5 
+%, indicating a rise in lifestyle carbon emissions. Therefore, mitigating 
+household carbon emissions is crucial for China to achieve its emission 
+reduction targets amid declining industrial emissions.
+These macro-trends raise a critical question: what factors are driving 
+the growth of carbon emissions in China? The determinants of carbon 
+emissions are multifaceted, encompassing economic, demographic, and 
+policy factors at the macro level; industrial and energy structure factors 
+at the meso level; and technological innovation and individual behavior 
+at the micro level. Economic growth typically correlates with increased 
+energy consumption and higher emissions, with China's rapid industri -
+alization being a major driver ( Cui et al., 2023 ). Population size directly 
+☆
+All authors have read and agreed to the published version of the manuscript.
+* Corresponding author.
+E-mail addresses: sxcjdxjjxylyq@163.com (Y. Liu), liuyaqi@stu.sxufe.edu.cn (J. Guo). 
+Contents lists available at ScienceDirect
+Journal of Cleaner Production
+journal homep age: www.el sevier.com/l ocate/jclepro
+https://doi.org/10.1016/j.jclepro.2026.147631
+Received 27 May 2025; Received in revised form 19 November 2025; Accepted 20 January 2026  
+Journal of Cleaner Production 548 (2026) 147631 
+Available online 24 February 2026 
+0959-6526/© 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+===== PAGE 2 =====
+affects total energy demand, while demographic shifts such as urbani -
+zation and aging ( Guo et al., 2023 ) also influence emission patterns. 
+Government policies, including carbon emission trading systems (ETS) 
+( Yu et al., 2023 ) and building emission standards ( Du et al., 2024 ), 
+significantly impact carbon emissions. Heavy industries are typically the 
+largest emitters ( Cui et al., 2023 ), and fossil fuels (coal, oil, natural gas) 
+remain primary sources of carbon emissions, whereas renewable energy 
+(solar, wind, hydro) offers low or zero emissions ( Temiz and Dincer, 
+2023 ). Technological advances in energy efficiency, new energy sys -
+tems, carbon capture and storage (CCS), and other innovations play a 
+fundamental role in reducing carbon intensity ( Na et al., 2024 ).
+At the micro level, individual consumption patterns and household 
+structure characteristics will influence per capita carbon emissions.In -
+dividual consumption habits—such as travel modes and dietary patterns 
+( Khan et al., 2024 )—directly affect carbon emissions. Behaviors like 
+using public transportation, reducing meat consumption, and purchas -
+ing energy-efficient appliances can lower one's carbon footprint. 
+Household structure is closely linked to consumption patterns and 
+indirectly affects carbon emissions. Variations in household character -
+istics—including number (household effect), distribution (distribution 
+effect), size (scale effect), per capita energy use (consumption effect), 
+and energy choices (choice effect)—all influence emission intensity. 
+Contrary to scale and distribution effects, the number of households has 
+a positive and significant impact on CO
+2 
+emissions ( Shigetomi et al., 
+2018 ).
+Regarding marital structure, consumption patterns of single in -
+dividuals differ markedly from those of non-single groups. Data from 
+South Korea suggest that an increase in single-person households in 
+metropolitan areas reduces per capita greenhouse gas (GHG) emissions, 
+partly due to smaller dwelling sizes and more efficient use of shared 
+living spaces ( Cho et al., 2021 ). In contrast, Japanese data indicate that 
+single-person households have a larger carbon footprint than non-single 
+households, particularly among single women, mainly due to higher 
+energy use and spending on clothing and healthcare ( Huang et al., 
+2024 ). This contradiction between Korean and Japanese findings pre -
+sents a paradox: does singlehood increase or decrease per capita carbon 
+emissions? The academic community remains divided. Chinese data 
+suggest that a higher proportion of single households leads to reduced 
+electricity consumption and thus lower carbon emissions ( Wang et al., 
+2023 ). However, this analysis considers only direct emissions from 
+electricity use, underestimating non-electric energy use and indirect 
+emissions linked to consumption.
+Currently, few studies explore how China's singlehood rate indirectly 
+affects per capita carbon emissions through household consumption. 
+Using CFPS household survey data from 2010 to –2022, this study an -
+alyzes the impact of singlehood on per capita carbon emissions from a 
+consumption perspective, offering theoretical insights into how house -
+hold structure influences carbon emissions within the context of the 
+second demographic transition.
+While existing literature has largely focused on developed econo -
+mies, a significant research gap remains regarding the impact of sin -
+glehood on carbon emissions in developing countries—especially given 
+structural differences in energy systems and consumption behaviors. 
+This study contributes a unique empirical analysis from China, the 
+world's largest carbon emitter and largest developing economy, to 
+elucidate how rising singlehood influences emission trajectories. Its in -
+novations are twofold: first, it pioneers the measurement of singlehood's 
+impact on per capita carbon emissions in China; second, it investigates 
+the mechanisms—through economies of scale in high-value assets, en -
+ergy sharing, and convenience-driven consumption—by which single -
+hood affects emissions.
+2. Literature review and hypothesis proposed
+Global climate change has become an increasingly pressing issue, 
+with countries actively seeking pathways to achieve carbon neutrality 
+goals ( Xuan et al., 2025 ) ( Nurgazina et al., 2023 ). Against this backdrop, 
+in-depth research into the drivers of carbon emissions has become 
+particularly crucial. Traditional carbon emission analyses have primar -
+ily focused on macro-level factors such as industrial structure, energy 
+consumption, technological progress, and policy impacts ( Oyewo et al., 
+2024 ) ( Cui and Cao, 2024 ) ( Hu et al., 2024 ) ( Sun et al., 2023 ) ( Li et al., 
+2024 ).
+However, in recent years, the impact of demographic shifts on car -
+bon emissions has gradually drawn academic attention. Population 
+aging is one of the key factors influencing household carbon emissions. 
+Panel data from 30 Chinese provinces spanning 2003 to 2019 reveal that 
+population aging significantly impacts energy-related carbon emissions 
+from daily life among both urban and rural residents ( Yuan et al., 2024 ). 
+Additionally, urbanization influences carbon emissions by affecting 
+economic production activities, energy demand, and lifestyle and con -
+sumption behaviors ( Ma and Ogata, 2024 ). Among these, the rising rate 
+of singlehood—as a significant social phenomenon—and its potential 
+influence on carbon emissions have emerged as a new research focus. 
+The rising rate of single individuals is closely linked to urbanization and 
+demographic shifts, potentially influencing carbon emissions through 
+similar or even unique mechanisms.
+Although current literature directly addressing “the impact of single- 
+person households on carbon emissions” is limited, several potential 
+mechanisms can be inferred from related studies.
+Inefficient residential energy use.Single-person households typically 
+reside in relatively independent living units. Even if their living space is 
+smaller than the average for multi-person households, the per capita 
+living space is often larger. This implies that each single individual may 
+consume more residential energy (e.g., heating, cooling, lighting) than 
+the per capita consumption of members in multi-person households. For 
+instance, whether an apartment is occupied by one or two people, the 
+heat loss area of its exterior walls and the energy consumption of major 
+appliances like refrigerators may not differ significantly, leading to 
+higher per capita energy consumption when occupied by a single person. 
+Carbon emissions during the production phase of building materials are 
+a critical component of the structure's full life cycle. Increased window- 
+to-wall ratios (WER) may elevate a building's embodied carbon emis -
+sions. If single-person households prefer residences with expansive 
+windows or greater independence, their dwellings may exhibit a rela -
+tively higher carbon footprint.
+Differences in consumption patterns.The consumption behaviors of 
+single individuals may differ from those of household units. For 
+example, singles may be more inclined to purchase smaller-packaged 
+goods, potentially leading to increased packaging material consump -
+tion and waste generation, thereby raising carbon emissions during 
+production and disposal processes. Additionally, singles may dine out 
+more frequently, and the carbon intensity of the food service industry is 
+significant, encompassing multiple stages such as ingredient production, 
+processing, transportation, and energy consumption in dining estab -
+lishments. Shifts in food consumption patterns, such as adopting more 
+plant-based diets, can help reduce the environmental impact of food 
+consumption. However, if the consumption patterns of single in -
+dividuals do not evolve toward greater sustainability, they may instead 
+increase carbon emissions.
+Transportation Patterns.Single individuals may be more inclined to 
+use private transportation, particularly in urban areas. Due to the 
+absence of shared travel needs among family members, their willingness 
+to carpool or use public transportation may be lower. The adoption of 
+electric vehicles (EVs) represents a significant option for reducing 
+transportation greenhouse gas emissions. While the emissions impact of 
+EV charging times requires further understanding, the widespread use of 
+private gasoline-powered vehicles undoubtedly increases carbon emis -
+sions. Rail transportation, particularly high-speed rail (HSR), holds the 
+potential for lower carbon emissions over its lifecycle. If singles' travel 
+patterns fail to fully leverage these low-carbon transportation options, 
+their carbon footprint will further increase.
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+2 
+
+===== PAGE 3 =====
+2.1. Declining scale effects of high-value shared household goods lead to 
+increased per capita carbon emissions
+The rise in singlehood directly leads to an increase in the number of 
+households and the number of people living alone, and an increase in the 
+per capita housing area and the number of dwellings per capita, leading 
+to a decline in the scale effect and sharing of household consumer goods 
+and energy. First, energy resources (e.g., heating and cooling) tradi -
+tionally shared by multiple-person households are dispersed into more 
+individual units, and household scale effects decline, with single-family 
+households consuming 1.5 – 2 times more energy per unit area than 
+multiple-person households ( Cho et al., 2021 ). Second, the need for 
+single-person households to independently purchase appliances such as 
+refrigerators and washing machines leads to an increase in energy 
+consumption per unit of service ( Won et al., 2014 ). Third, smaller homes 
+favored by single-person households have higher surface area-to-volume 
+ratios and lower efficiency for winter heating and summer cooling 
+( Schubert et al., 2012 ). Fourth, single-person households have lower 
+car-sharing rates, higher vacancy rates, and increased carbon emissions 
+from gasoline.
+2.2. Carbon-intensive lifestyles of singlehood with a preference for 
+convenient living lead to increased per capita carbon emissions
+The singlehood group's consumption preference is characterized by 
+“ immediacy, convenience and personalization ” , and the increase in per 
+capita consumption leads to more carbon footprints. First, the high 
+frequency of eating out has led to a surge in takeaway packaging waste, 
+and Chinese singletons' takeaway orders are higher than those of home 
+users, resulting in an increase in carbon emissions from plastic waste 
+( Long et al., 2022 ). Second, the life cycle compression of carbon emis -
+sions as clothing and electronics are updated more frequently ( Tan-et al., 
+2024 ). Third, the higher frequency of online purchases and higher use of 
+cell phones in singlehood households raises the carbon emissions related 
+to logistics and network signaling.
+2.3. Low sharing of household living energy leads to higher per capita 
+carbon emissions
+The low degree of sharing of energy consumption among the sin -
+glehood group in the three areas of kitchen fuel, winter heating and 
+home appliance use leads to higher per capita carbon emissions.
+2.4. Research hypothesis
+Accordingly, the following hypotheses are proposed: 
+Hypothesis 1 . The singlehood rate has a positive effect on per capita 
+carbon emissions.
+Hypothesis 2 . The singlehood rate has a positive impact on per capita 
+carbon emissions through three major paths: reducing the household 
+size effect of high-value assets, improving consumption convenience, 
+and reducing the sharing of living energy.
+3. Materials and methods
+3.1. Modeling
+ln ( percarbon
+it
+) = β
+0
++ β
+1
+singlhood
+it
++
+∑
+K
+k = 1
+γ
+k
+control
+k , it
++ μ
+i
++ λ
+t
++ ε
+it
+(1) 
+The variance inflation factors for all variables are less than 5, indi -
+cating no significant multicollinearity. The Hausman test indicates that a 
+fixed-effects model is required.This study employs a district-time dual 
+fixed-effects panel model ( Formula 1 ) with the following specifications:
+The dependent variable is the natural logarithm of per capita carbon 
+emissions (ln ( percarbon
+ct
+) ), representing carbon intensity geography. 
+The core explanatory variable is the household singlehood rate 
+(singlhood
+ct
+), defined as the proportion of single adult individuals 
+within a household relative to the total household size. Control variables 
+comprise K socioeconomic indicators (X
+k , ct
+; see Table 1 ), with β
+0 
+denoting baseline emissions, β
+1 
+quantifying the net marginal effect of 
+singlehood on emissions, and γ
+k 
+capturing control variable moderations
+Triple rationale for county-level dual fixed effects:
+County fixed effects absorb time-invariant district characteristics, 
+eliminating provincial-scale l aggregation bias.
+Temporal fixed effects capture nationwide initiatives, while county 
+effects filter localized interventions.
+Leveraging intra-district temporal variation within our high- 
+dimensional panel satisfies strict exogeneity.
+The stochastic disturbance term ε
+ct 
+follows i.i.d. normality 
+ 
+ε
+ct
+∼
+N
+ 
+0 , σ
+2
+))
+.
+3.2. Methods
+3.2.1. Methods introduction
+In the field of calculating household consumption carbon emissions, 
+a substantial body of literature has emerged in recent years, primarily 
+encompassing input-output methods and life-cycle assessment ap -
+proaches. Multi-Regional Input-Output (MRIO) models have been 
+widely used to track indirect carbon emissions from household con -
+sumption. Zhang et al. (2023) constructed a multi-regional input-output 
+database in China and combined it with micro household survey data to 
+reveal the decoupling mechanism of carbon emissions from urban and 
+rural household consumption ( Zhang et al., 2023a ); for the specificity of 
+the urban scale, Long et al. (2019) proposes an improved IO model based 
+on purchaser price, which solves the problem of traditional producer 
+Table 1 
+Household consumption categories and corresponding industrial production 
+sectors.
+Consumption Categories Industrial Sector Categories
+Food Agricultural and Sideline Food Processing, Food 
+Manufacturing, Beverage Manufacturing, 
+Tobacco Industry
+Clothing Textile Industry; Textile Apparel, Footwear, and 
+Headwear Manufacturing; Leather, Fur, Feather 
+(Down), and Related Products Industry
+Housing Construction; Production and Supply of Electric 
+Power and Heat; Production and Supply of Gas; 
+Production and Supply of Water
+Household Goods and Services Wood Processing and Wood, Bamboo, Rattan, 
+Palm, and Straw Products; Furniture 
+Manufacturing; Electrical Machinery and 
+Equipment Manufacturing; Metal Products; 
+Plastic Products Industry
+Transportation, 
+Communications, and Postal 
+Services
+Manufacture of Transportation Equipment; 
+Manufacture of Communication Equipment, 
+Computers, and Other Electronic Devices; 
+Transportation Services; Postal and Savings 
+Services
+Education, Culture, and 
+Entertainment
+Education, Culture, and Entertainment; 
+Manufacture of Paper and Paper Products; 
+Manufacture of Cultural, Educational, and 
+Sports Goods; Printing and Reproduction of 
+Recorded Media; Manufacture of Instruments 
+and Meters; Manufacture of Cultural and Office 
+Machinery
+Healthcare Pharmaceutical Manufacturing
+Other Goods and Services Wholesale and Retail Trade; Accommodation 
+and Food Services; Handicrafts and Other 
+Manufacturing
+Source: Compiled according to the National Economic Industry Classification 
+(GB/T4754-2017) released by the National Bureau of Statistics of China in 2017
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+3 
+
+===== PAGE 4 =====
+price model's biased allocation of carbon emissions in the trading chain 
+( Long et al., 2019 ); Feng et al. (2021) using a nested global multire -
+gional IO model to analyze U.S. household carbon emissions and found 
+that the top 10 % income group emits 3.8 times more carbon than the 
+bottom 50 % group, with luxury consumption and international air 
+travel being the main contributing sources ( Feng et al., 2021 ). The life 
+cycle assessment (LCA) approach has become popular in recent years. 
+Huang et al. (2024) used the EIO-LCA method to quantify the full 
+life-cycle carbon emissions of Japanese households, and found that the 
+implied carbon emissions of high-income households were significantly 
+higher than those of low-income groups in the transportation and edu -
+cation categories of services ( Huang et al., 2024 ); Khan et al. (2024)
+used life cycle assessment to quantify household food carbon emissions 
+in China and Europe, and found that rural households in China have a 
+significantly higher share of carbon emissions from food transportation 
+(33.7 %) than in Germany (18.2 %) due to the low coverage of the cold 
+chain, but the carbon intensity of the processing process is only 1/3 of 
+that in Europe ( Khan et al., 2024 ).
+The aforementioned studies indicate that while life cycle assessment 
+(LCA) can reveal detailed emissions across the entire consumption 
+chain, its high data intensity requirements and insufficient grassroots 
+statistical coverage — particularly in the informal economic sectors of 
+developing countries — constrain the availability and spatio-temporal 
+continuity of full life cycle data.
+Given the systemic bottlenecks in obtaining full-cycle data at the 
+consumption end using LCA methods, this study shifts to an application 
+framework based on the input-output approach. Specifically, carbon 
+emission intensity calculations are derived from the product of energy 
+intensity and standard coal emission coefficients.
+3.2.2. Calculation process
+The core logic of this method lies in linking household consumption 
+expenditures with sectoral carbon emission accounts, thereby circum -
+venting LCA's reliance on micro-process data. Its implementation in -
+volves two major steps:
+Consumption-Industry Mapping: Establishing correspondences be -
+tween eight major categories of household consumption expenditures 
+and 42 related industrial sectors based on the National Economic In -
+dustry Classification (GB/T 4754-2017) (see Table 1 );
+Emission Factor Calibration:Calculating carbon emission intensity 
+coefficients for each consumption category based on the industry map -
+ping relationships. The carbon emission intensity is calculated by 
+multiplying the energy intensity with the carbon emission coefficient of 
+standard coal, and because of the limitation of the availability of whole- 
+life consumption data of the life-cycle approach, this paper finally 
+chooses the input-output approach. The application of the input-output 
+method involves correlating various types of consumption expenditures 
+with the carbon emissions of the corresponding industries. Before car -
+rying out the calculation of the carbon emission coefficients of various 
+types of household consumption, the first task is to clarify the close 
+connection between the eight types of household consumption expen -
+diture and the corresponding industrial sectors.
+The classification of household consumption expenditures is based 
+on the following:
+This study adopts a classification of household consumption expen -
+ditures into eight categories: food, tobacco, and alcohol; clothing; 
+housing; household goods and services; transportation and communi -
+cation; education, culture, and entertainment; health care; and other 
+goods and services. This classification rigorously follows the official 
+“ Classification Standard for Chinese Household Consumption Expendi -
+tures (2013) ” (Announcement No. 22 of the National Bureau of Statis -
+tics). The framework offers three principal advantages:
+Comprehensive Coverage: These eight categories encompass funda -
+mental household needs such as food, clothing, housing, and trans -
+portation. Empirical assessments confirm that this classification 
+captures most of household carbon emissions, as validated using the 
+China Emissions Accounts and Datasets (CEADs) 2023 edition.
+Data Traceability: Each consumption category can be accurately 
+traced to 42 corresponding industrial sectors according to the National 
+Economic Industry Classification (GB/T 4754-2017), providing a robust 
+foundation for input-output analysis.
+International Comparability: The classification is fully consistent 
+with the consumption categories defined by the United Nations System 
+of Environmental-Economic Accounting (SEEA), enabling reliable cross- 
+country comparative research.
+The standard coal emission factor, as a widely used parameter for 
+estimating carbon emissions, offers the core advantage of uniformly 
+converting various forms of energy consumption into standard coal 
+equivalents. This provides a standardized, comparable benchmark for 
+carbon emission calculations at the macro level. The primary reasons for 
+adopting this factor in this study are data availability and computational 
+consistency: standard coal consumption is a commonly reported indi -
+cator in provincial and national energy statistics, facilitating alignment 
+with official energy balance sheets and macroeconomic data.
+Non-fossil energy sources (such as nuclear power, hydropower, wind 
+power, solar power, etc.) do indeed have corresponding standard coal 
+conversion factors in energy statistics. These factors are primarily used 
+to measure the energy value contained within these sources, enabling 
+unified statistical tracking and comparison with fossil fuels. Although 
+non-fossil energy sources have lower carbon emissions, calculating their 
+specific carbon footprint requires household energy consumption data 
+and the application of carbon emission life cycle assessment methodol -
+ogies. This represents a promising avenue for future research.
+The carbon emission factor of standard coal represents the level of 
+carbon emissions per unit of energy. A more accurate measurement can 
+be achieved by multiplying this factor with the energy intensity corre -
+sponding to a specific consumption category. Owing to variations in 
+energy consumption across different industries, the energy intensity for 
+each consumption category is derived from the ratio of standard coal 
+consumption to the total output value of all relevant industries associ -
+ated with that category. The household carbon emissions are calculated 
+as follows: 
+CI
+i
+= w ×
+∑
+N
+n = 1
+Ind
+n , i
+/
+∑
+N
+n = 1
+Δ
+n , i
+(2) 
+CE =
+∑
+8
+i = 1
+( CS
+i
+CI
+i
+) (3) 
+Equation (2) establishes the emission coefficient at the sectoral level by 
+converting industrial energy inputs into carbon intensity per unit of 
+consumption expenditure, whereas Equation (3) applies these co -
+efficients to household-level expenditure data to quantify actual emis -
+sions. Specifically, CI denotes the carbon intensity of consumption 
+category i, measured in kilograms of carbon dioxide per yuan (kgCO
+2
+/ 
+yuan); w represents the carbon emission coefficient of standard coal, 
+taking the value of 2.493 based on standard coal conversion; Ind in -
+dicates the standard coal consumption of industry n within consumption 
+category i, measured in kilograms of coal equivalent (kgce); Δ refers to 
+Table 2 
+Carbon emission factors corresponding to eight types of household consumption.
+Consumption Categories Industrial Sector Categories
+Food 0.418
+Clothing 0.561
+Housing 0.708
+Household Goods and Services 0.484
+Transportation, Communications, and Postal Services 0.827
+Education, Culture, and Entertainment 0.427
+Healthcare 0.256
+Other Goods and Services 0.190
+Source: Calculated by the author
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+4 
+
+===== PAGE 5 =====
+the gross output of industry n within consumption category i, measured 
+in yuan; N is the total number of industries covered in consumption 
+category i; and the subscript i (i = 1, 2, … , 8) indexes the consumption 
+category, corresponding sequentially to food and alcohol, clothing, 
+residence, household facilities and services, transportation and 
+communication, education, culture and entertainment, health care, and 
+miscellaneous goods and services.
+While Equation (2) derives sectoral carbon intensity from produc -
+tion-side industrial data, Equation (3) aggregates consumption-side 
+emissions by coupling these intensities with observed household 
+spending patterns. Specifically, CE represents total household carbon 
+emissions, measured in kilograms of carbon dioxide (kgCO
+2
+); CS denotes 
+household consumption expenditure on category i, measured in yuan; 
+and CI is the carbon intensity of consumption category i calculated from 
+Equation (2) , measured in kilograms of carbon dioxide per yuan 
+(kgCO
+2
+/yuan).
+Finally, the carbon emission factors corresponding to per-unit con -
+sumption expenditure for each of the eight categories are calculated as 
+shown in Table 2 .
+3.3. Main variables
+3.3.1. Explained variable
+The explanatory variable is per capita carbon emissions (ln (percar -
+bon
+it
+) ), calculated using household carbon emissions divided by house -
+hold size. The calculation of household carbon emissions includes two 
+approaches: the first is the direct calculation method, which uses the 
+household's energy consumption combined with the carbon emission 
+factor; the second is the indirect calculation method, which uses 
+household consumption data to calculate the carbon emissions behind 
+the consumption. Given the availability of data, this paper uses the 
+second method (Input-Output Method).
+3.3.2. Core explanatory variables
+The core explanatory variable is the household singlehood rate 
+(singlehood
+it
+), defined as the proportion of single individuals within a 
+household relative to the total household size. A single individual is 
+identified as any household member aged 20 years or older whose 
+marital status is unmarried, divorced, or widowed.
+3.3.3. Control variables
+Control variables are selected based on factors known to influence 
+household consumption and, consequently, household carbon emis -
+sions. These are organized into two levels: household head character -
+istics and household-level characteristics.
+Household Head-Level Variables:
+Age of the household head (and its quadratic term).
+Urban/rural residence (1 = urban, 0 = rural).
+Household registration type (0 = urban, 1 = rural).
+Political affiliation (1 = member of the Communist Party of China, 0 
+= otherwise).
+Gender (1 = male, 0 = female).
+Educational attainment (coded as: 0 = illiteracy, 1 = elementary 
+school, 2 = junior high school, 3 = senior high school, 4 = university or 
+above).
+Employment status (1 = employed, 0 = unemployed).
+Type of employment (1 = works within the system, e.g., government, 
+institutions, state-owned enterprises; 0 = works outside the system).
+Self-employment status (1 = self-employed, 0 = otherwise).
+Health status (1 = healthy, 0 = otherwise).
+Household-Level Variables:
+Household size.
+Old-age dependency ratio.
+Child dependency ratio.
+Logarithm of household income.
+Logarithm of household net worth.
+3.4. Data sources
+Data are derived from the China Family Panel Studies (CFPS), a 
+nationally representative longitudinal survey conducted by the Institute 
+of Social Science Survey (ISSS) of Peking University. The survey covers 
+25 provinces/municipalities/autonomous regions (excluding Xinjiang, 
+Tibet, Qinghai, Ningxia, Inner Mongolia, Hainan, Hong Kong, Macao, 
+and Taiwan), with a target sample of 16,000 households. The CFPS 
+tracks all household members from the baseline year (2010) onward, 
+including subsequent blood and adopted children. The analysis utilizes 
+seven waves of data collected between 2010 and 2022.The data are from 
+China Family Panel Studies (CFPS), funded by PekingUniversity and the 
+Nationl Natural Science Foundation of China. The CFPS is maintained by 
+the Institute of Social Science Survey of Peking University.
+To address heteroskedasticity, logarithmic transformations were 
+applied to continuous variables, while proportional variables were 
+retained in their original form. Extreme values in the main variables 
+were winsorized at the 1st and 99th percentiles. Observations beyond 
+three standard deviations of the main variables were excluded to miti -
+gate the influence of outliers and non-normality. The final unbalanced 
+panel dataset comprises 62,412 households.
+3.5. Descriptive statistics
+Descriptive statistics indicate that annual per capita carbon emis -
+sions range from 4.75 kg to 642,204.66 kg, with a mean of 8415.99 
+kg — consistent with macro-level estimates (see Table 3 ). The substantial 
+standard deviation (12,798.08) justifies the use of logarithmic trans -
+formation to reduce heteroskedasticity. The household singlehood rate 
+varies from 0 to 1, with a mean of 18 % and a standard deviation of 0.18, 
+aligning with figures reported in the Statistical Yearbook.
+3.6. Feature fact analysis
+As illustrated in Fig. 1 and Table 4 , China's singlehood rate exhibits a 
+positive correlation with per capita carbon emissions, the latter being 
+calculated based on per capita consumption expenditure. According to 
+data from the China Statistical Yearbook, between 2001 and 2023, 
+annual per capita carbon emissions increased from 1.532 tons to 14.243 
+tons, while the singlehood rate rose from 25.9 % to 28.8 %.
+4. Results
+4.1. Baseline regression
+The regression results indicate that the singlehood rate has a statis -
+tically significant positive effect on per capita carbon emissions at the 
+1% level (see Table 5 ). Specifically, a 1 % increase in the overall sin -
+glehood rate is associated with a 24.4 % rise in per capita carbon 
+emissions.
+The study found that the singlehood rate has a positive effect on per 
+capita carbon emissions. This significant phenomenon stems from 
+multiple underlying factors, including family consumption patterns, 
+resource efficiency, and demographic shifts ( Shao et al., 2024 ) ( Cao 
+et al., 2024 ). The phenomenon is primarily driven by interconnected 
+mechanisms, particularly the reduced resource-sharing efficiency and 
+distinctive consumption patterns characteristic of single-person 
+households.
+A key mechanism lies in the fact that single-person households are 
+less efficient than multi-person households in sharing resource con -
+sumption. For example, household appliances such as refrigerators, 
+washing machines, and ovens show no significant difference in energy 
+consumption per user within a certain usage range. The per capita en -
+ergy consumption of a single individual using these appliances is much 
+higher than the per capita energy consumption allocated among two or 
+more people in a household ( Jack and Ivanova, 2021 ). Studies have 
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+5 
+
+===== PAGE 6 =====
+explicitly emphasized that the reduction in household size (often asso -
+ciated with rising single-person rates) poses a significant sustainability 
+challenge by decreasing resource sharing and increasing individual 
+resource consumption. Generally, larger households exhibit lower per 
+capita energy consumption and carbon emissions. For instance, empir -
+ical research in China shows that the downsizing of households affects 
+household carbon emissions, indicating that smaller household sizes 
+tend to increase per capita carbon emissions ( Yu et al., 2018 ).
+Beyond the use of fixed household appliances, heating and cooling 
+also constitute a significant energy demand. A single-person household 
+requires heating or cooling for their entire living space, resulting in 
+higher per capita energy expenditure compared to multi-person house -
+holds sharing these costs ( Jack and Ivanova, 2021 ). Similarly, 
+single-person households may have lower food preparation efficiency, 
+often involving small portions that still require full-sized cooking 
+utensils. This leads to higher energy intensity per meal compared to 
+preparing large portions for multiple people.
+Travel patterns also exacerbate this effect. Single individuals are 
+more likely to travel alone, leading to lower vehicle occupancy rates 
+and, consequently, higher per capita transportation-related carbon 
+emissions. Although options like carpooling or public transportation 
+exist, daily commutes and personal matters often result in single-person 
+bicycle travel. China's research on household size and transportation 
+carbon emissions confirms that smaller household sizes lead to reduced 
+sharing of transportation resources, increased individual resource con -
+sumption, and higher carbon emissions. Considering that transportation 
+is a significant contributor to the overall carbon footprint, this is a key 
+factor ( Liang et al., 2024 ).
+Furthermore, the unique consumption patterns of single-person 
+households also contribute to the issue. Individuals living alone may 
+exhibit distinct purchasing behaviors, such as consuming more conve -
+nience foods, packaged goods, or dining out more frequently. These 
+Table 3 
+Descriptive statistics.
+VarName Definition Obs Mean SD Min Max
+pcarbon carbon emissions per capita 63412 8415.99 12798.075 4.75 642204.66
+singlerate singlehood rate 63412 0.18 0.315 0.00 1.00
+unmarryrate unmarried rate 63412 0.10 0.232 0.00 1.00
+divorcerate divorce rate 63412 0.02 0.125 0.00 1.00
+widowrate widow rate 63412 0.06 0.198 0.00 1.00
+age age 63412 49.18 14.332 13.00 99.00
+age2 square of age 63412 2623.73 1459.121 169.00 9801.00
+hukou registered permanent residence 63412 0.70 0.459 0.00 1.00
+urban urban and rural 63412 0.51 0.500 0.00 1.00
+gender sexual distinction 63412 0.56 0.496 0.00 1.00
+party whether he is a member of the Communist Party 63412 0.04 0.194 0.00 1.00
+eduyear Years of education 63412 7.60 4.912 0.00 23.00
+work whether there is work 63412 0.75 0.432 0.00 1.00
+tizhi whether it is within the country system 63412 0.10 0.306 0.00 1.00
+zigu whether self-employed 63412 0.09 0.283 0.00 1.00
+health health condition 63412 0.36 0.480 0.00 1.00
+yanglao whether there is pension insurance 63412 0.15 0.355 0.00 1.00
+yiliao whether there is health insurance 63412 0.22 0.411 0.00 1.00
+gongshang whether there is work-related injury insurance 63412 0.08 0.273 0.00 1.00
+shengyu whether there is maternity insurance 63412 0.06 0.242 0.00 1.00
+shiye whether there is unemployment insurance 63412 0.07 0.262 0.00 1.00
+gongjijin whether there is a housing fund 63412 0.08 0.276 0.00 1.00
+oldrate The proportion of older persons 63412 0.24 0.364 0.00 1.00
+childrate The proportion of children's 63412 0.07 0.157 0.00 1.00
+lnfincome Household net income 63412 10.63 1.173 0.00 16.59
+lntotal_asset Household net asset 63412 12.21 1.560 0.00 18.20
+Source: Calculated by STATA18
+Fig. 1. Singlehood rate and per capita carbon emissions.
+Source: China Statistical Yearbook
+Table 4 
+Singlehood rate and per capita carbon emissions(China Statistical Yearbook).
+year pcarbon singlerate unmarryrate divorcerate widowrate
+2001 1531.886 0.259 0.191 0.010 0.058
+2002 1761.592 0.264 0.195 0.010 0.059
+2003 1952.352 0.264 0.196 0.011 0.057
+2004 2209.843 0.263 0.195 0.011 0.057
+2005 2551.355 0.259 0.192 0.010 0.057
+2006 2895.396 0.263 0.194 0.010 0.059
+2007 3403.773 0.262 0.192 0.011 0.059
+2008 3899.865 0.260 0.189 0.011 0.059
+2009 4375.052 0.258 0.188 0.012 0.058
+2010 4942.426 0.287 0.216 0.014 0.057
+2011 5676.300 0.276 0.208 0.014 0.055
+2012 6347.139 0.272 0.204 0.014 0.053
+2013 7052.079 0.272 0.202 0.016 0.054
+2014 7728.951 0.268 0.197 0.017 0.054
+2015 8380.277 0.269 0.197 0.017 0.055
+2016 9148.581 0.264 0.189 0.019 0.056
+2017 9804.424 0.261 0.186 0.020 0.055
+2018 10643.545 0.259 0.182 0.021 0.056
+2019 11518.753 0.260 0.180 0.023 0.057
+2020 11382.299 0.273 0.192 0.024 0.057
+2021 12848.127 0.274 0.194 0.024 0.057
+2022 13102.142 0.279 0.197 0.024 0.057
+2023 14242.859 0.288 0.199 0.027 0.063
+Source: China Statistical Yearbook
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+6 
+
+===== PAGE 7 =====
+habits often involve higher implicit carbon footprints due to packaging, 
+processing, and transportation processes associated with single-serving 
+meals or restaurant operations. These consumption choices amplify 
+the overall carbon footprint, as household consumption patterns are 
+recognized as direct and indirect drivers of environmental impacts 
+( Duarte et al., 2021 )
+.
+The policy implications of these findings suggest that carbon 
+reduction strategies should consider household structures and adopt 
+measures tailored to the consumption patterns of single-person house -
+holds. This may involve promoting energy-efficient appliances suitable 
+for small families, encouraging resource sharing within communities, or 
+designing urban environments that facilitate sustainable transportation 
+choices ( Oltulular, 2025 ).Carbon footprint analysis tools can help in -
+dividuals reflect on their environmental impact by considering their 
+socioeconomic background ( Brandenstein et al., 2025 ; Haynes, 2024 ). 
+Moreover, given the global trend of rising per capita CO2 emissions 
+( Yang et al., 2023 ), understanding household size-related driving factors 
+is crucial for achieving carbon neutrality goals ( Zhang et al., 2023b ). 
+The impact of demographic factors on carbon emissions remains a key 
+global concern, while the rising single-person rate further complicates 
+efforts to reduce overall carbon footprints.
+Further disaggregation by marital status reveals distinct effects:
+The unmarried rate exhibits the strongest positive impact, with a 1 % 
+increase leading to a 32.3 % increase in per capita carbon emissions.
+The divorce rate also shows a significant positive effect, resulting in a 
+30.9 % increase in per capita emissions per 1 % rise.
+In contrast, the widowed rate has a comparatively modest effect, 
+with a 1 % increase associated with a 6.5 % increase in per capita carbon 
+emissions.
+As for the phenomenon that unmarried people have higher emissions 
+than divorced or widowed people, this difference is mainly due to the 
+combined effect of lifestyle, income level and urbanization.
+From the perspective of lifestyle and consumption patterns, unmar -
+ried adults (specifically referring to single adults who have never mar -
+ried) typically enjoy higher disposable incomes and greater time 
+flexibility. Their consumption behaviors tend to be more hedonistic, 
+characterized by frequent participation in social dining, travel vaca -
+tions, and the pursuit of trendy electronic products – activities with high 
+carbon intensity. Additionally, as they mostly live alone, they cannot 
+benefit from the “ per capita emission reduction ” effect of small-scale 
+families like divorced or widowed groups (who may form multi- 
+member households) through sharing housing, heating, and household 
+appliances with children.
+From the perspective of income level, unmarried people are often in 
+the rising stage of their career and have no direct burden of raising 
+children. Their higher disposable income and marginal propensity to 
+consume make them more likely to engage in non-essential consumption 
+with high carbon emissions, while divorced or widowed groups may be 
+more concentrated in necessities due to economic pressure such as 
+property division and single-parent raising.
+In addition, in terms of urbanization, unmarried people are highly 
+concentrated in metropolises, and their lives are deeply embedded in the 
+urban infrastructure of high-carbon intensive service systems such as 
+takeout, express delivery and ride-hailing.
+Therefore, the higher emissions of unmarried people are essentially a 
+concentrated reflection of their socio-economic characteristics of “ more 
+Table 5 
+Baseline regression.
+VARIABLES (1) (2) (3) (4)
+single unmarried divorce widow
+lnpcarbon lnpcarbon lnpcarbon lnpcarbon
+singlerate 0.244*** ​ ​ ​
+(0.013) ​ ​ ​
+unmarryrate ​ 0.323*** ​ ​
+​ (0.018) ​ ​
+divorcerate ​ ​ 0.309*** ​
+​ ​ (0.031) ​
+widowrate ​ ​ ​ 0.065***
+​ ​ ​ (0.022)
+age   0.029***   0.029***   0.033***   0.032***
+(0.002) (0.002) (0.002) (0.002)
+age2 0.000*** 0.000*** 0.000*** 0.000***
+(0.000) (0.000) (0.000) (0.000)
+hukou   0.179***   0.182***   0.177***   0.181***
+(0.016) (0.015) (0.015) (0.015)
+urban 0.123*** 0.126*** 0.124*** 0.125***
+(0.016) (0.016) (0.016) (0.016)
+gender 0.001   0.010   0.004   0.000
+(0.008) (0.008) (0.008) (0.008)
+party 0.143*** 0.139*** 0.138*** 0.138***
+(0.014) (0.014) (0.014) (0.014)
+eduyear 0.019*** 0.019*** 0.019*** 0.019***
+(0.001) (0.001) (0.001) (0.001)
+work   0.063***   0.067***   0.063***   0.063***
+(0.010) (0.010) (0.010) (0.010)
+tizhi 0.076*** 0.080*** 0.074*** 0.074***
+(0.013) (0.013) (0.014) (0.014)
+zigu 0.218*** 0.222*** 0.219*** 0.220***
+(0.014) (0.014) (0.014) (0.014)
+health   0.035***   0.034***   0.035***   0.035***
+(0.008) (0.008) (0.008) (0.008)
+yanglao 0.038*** 0.039*** 0.041*** 0.041***
+(0.014) (0.014) (0.014) (0.014)
+yiliao   0.003   0.001   0.003   0.003
+(0.018) (0.018) (0.018) (0.018)
+gongshang 0.103*** 0.107*** 0.111*** 0.107***
+(0.019) (0.020) (0.020) (0.020)
+shengyu   0.045*   0.055**   0.039   0.042*
+(0.024) (0.024) (0.024) (0.025)
+shiye   0.070***   0.067***   0.070***   0.066***
+(0.023) (0.024) (0.023) (0.024)
+gongjijin 0.069*** 0.070*** 0.073*** 0.072***
+(0.015) (0.015) (0.015) (0.016)
+oldrate   0.067***   0.037**   0.069***   0.078***
+(0.017) (0.017) (0.017) (0.017)
+childrate   0.041*   0.010   0.128***   0.118***
+(0.023) (0.023) (0.024) (0.024)
+lnfincome 0.158*** 0.152*** 0.153*** 0.152***
+(0.006) (0.006) (0.006) (0.006)
+lntotal_asset 0.072*** 0.071*** 0.067*** 0.065***
+(0.004) (0.004) (0.004) (0.004)
+Constant 6.729*** 6.800*** 6.991*** 6.999***
+(0.086) (0.086) (0.088) (0.088)
+Year FE Yes Yes Yes Yes
+County FE Yes Yes Yes Yes
+Observations 63,412 63,412 63,412 63,412
+R-squared 0.549 0.549 0.546 0.545
+Source: Calculated by STATA18
+Table 6 
+Replace the dependent variable.
+VARIABLES (1) (2) (3) (4)
+singlehood unmarried divorce widow
+lnpcarbon0 lnpcarbon0 lnpcarbon0 lnpcarbon0
+singlerate 0.168*** ​ ​ ​
+(0.024) ​ ​ ​
+unmarryrate ​ 0.075* ​ ​
+​ (0.044) ​ ​
+divorcerate ​ ​ 0.336*** ​
+​ ​ (0.058) ​
+widowrate ​ ​ ​ 0.170***
+​ ​ ​ (0.033)
+Constant 4.388*** 4.486*** 4.461*** 4.436***
+(0.137) (0.138) (0.139) (0.139)
+Control Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes
+County FE Yes Yes Yes Yes
+Observations 18,647 18,647 18,647 18,647
+R-squared 0.426 0.424 0.425 0.425
+Source: Calculated by STATA18
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+7 
+
+===== PAGE 8 =====
+individualized lifestyle, higher income and more urbanization".
+4.2. Robustness analysis
+4.2.1. Replacement of explained variables
+Per capita carbon emissions from electricity (lnpcarbon0) were 
+calculated based on household electricity consumption data. The 
+benchmark regression results remain robust. The impact coefficient of 
+the singlehood rate on per capita carbon emissions from electricity is 
+16.8 % （ see Table 6 ） , which is lower than the benchmark regression 
+coefficient of 24.4 %. This indicates that using electricity consumption 
+alone provides an incomplete representation of energy usage, as it ig -
+nores other energy sources and thus leads to an underestimation of the 
+effect of the singlehood rate on carbon emissions.
+4.2.2. Replacement of core explanatory variables and removal of some 
+samples
+To examine the robustness of the findings, two treatment variables 
+were constructed based on the household singlehood rate. The variable 
+treat0 was defined as 1 if the singlehood rate was greater than 0, and 
+0 otherwise. Regression results presented in Column 1 （ see Table 7 ） 
+indicate that treat0 has a statistically significant positive effect on per 
+capita carbon emissions, confirming the stability of the baseline results. 
+Similarly, treat1 was defined as 1 only when the singlehood rate equaled 
+1 (indicating a fully single household), and 0 otherwise. As shown in 
+Column 2 （ see Table 7 ） , treat1 also exhibits a significantly positive 
+impact on per capita carbon emissions, further supporting the robust -
+ness of the estimates.
+Notably, the coefficient of treat1 is larger than that of treat0. This 
+discrepancy can be attributed to differences in group composition be -
+tween the two treatment variables. Specifically, treat0 includes all 
+households with any degree of singlehood (from partially single, e.g., 
+singlehood rate = 0.1, to fully single, i.e., singlehood rate = 1), thereby 
+introducing internal heterogeneity. The average treatment effect in this 
+group is diluted by households with low singlehood rates, resulting in a 
+smaller coefficient. In contrast, treat1 comprises exclusively fully single 
+households, which represent a more homogeneous group characterized 
+by stronger carbon-intensive lifestyles — such as greater reliance on take- 
+out meals, higher usage of energy-intensive electrical equipments 
+instead of manual labor, and preference for private transportation. 
+These behaviors lead to higher per capita carbon emissions, which is 
+reflected in the larger coefficient for treat1.
+After excluding COVID-19 samples, the regression results remain 
+robust （ Table 7 ） .
+4.3. Endogeneity analysis
+To mitigate potential endogeneity arising from reverse causality, the 
+average singlehood rate at the county and district levels was employed 
+as an instrumental variable (IV) for the household-level singlehood rate. 
+The two-stage least squares (2SLS) regression results remain statistically 
+significant. The absolute value of the coefficient for the impact of 
+household singlehood rate on per capita carbon emissions is 0.306, 
+which is larger than the baseline regression estimate of 0.244 （ see 
+Table 8 ） .
+The first-stage F-statistic is 7953.11, exceeding the conventional 
+threshold of 10, thus satisfying the relevance condition for the instru -
+mental variable. The Kleibergen-Paap rk LM test statistic (p = 0.0000) 
+confirms that the equation is identified. The Cragg-Donald Wald F-sta -
+tistic is 6431.774, far above the 10 % maximal IV size critical value, 
+indicating the absence of weak instrument problems. The endogeneity 
+test yields a p-value of 0.0558, which is less than 0.1, suggesting the 
+presence of endogeneity in the core explanatory variable. variables.
+4.4. Mechanism analysis
+4.4.1. Economies of scale
+Traditional households benefit from stronger economies of scale in 
+the use of household utilities, where high-value assets such as cars and 
+housing are more likely to be shared among family members. In contrast, 
+singlehood households exhibit weaker economies of scale due to a 
+higher likelihood of living alone, reducing the potential for resource 
+sharing. Regression results indicate that the singlehood rate exerts a 
+significant positive influence on per capita housing area, per capita 
+number of housing units, per capita number of cars, and per capita 
+expenditure on car purchases （ see Table 9 ） . Subsequent incorporation 
+of these four mediating variables into the regression models reveals that 
+each has a significant positive effect on per capita carbon emissions, 
+confirming the presence of a mediating mechanism. Notably, after 
+controlling for the number of housing units per capita, the effect of 
+singlehood on per capita carbon emissions becomes statistically insig -
+nificant, suggesting that per capita housing units fully mediate this 
+relationship.
+4.4.2. Convenience consumption
+The singlehood group demonstrates a marked preference for eating 
+out due to the low cost-effectiveness of cooking individually. This group 
+also exhibits higher per capita expenditure on furniture and durable 
+goods, resulting from insufficient sharing of such items within the 
+household. Furthermore, singles show a stronger tendency toward on -
+line shopping with home delivery rather than visiting physical stores. 
+Table 7 
+Replace the core explanatory variables and remove the COVID-19 sample.
+VARIABLES (1) (2) (3)
+The singlehood rate is 
+the treatment 
+variable 1
+The singlehood rate is 
+the treatment 
+variable 2
+Remove the 
+COVID-19 
+sample
+lnpcarbon lnpcarbon lnpcarbon
+treat0 0.019** ​ ​
+(0.008) ​ ​
+treat1 ​ 0.414*** ​
+​ (0.016) ​
+singlerate ​ ​ 0.188***
+​ ​ (0.014)
+Constant 7.008*** 6.416*** 6.570***
+(0.090) (0.089) (0.100)
+Control Yes Yes Yes
+Year FE Yes Yes Yes
+County FE Yes Yes Yes
+Observations 63,415 63,415 48,348
+R-squared 0.545 0.555 0.523
+Source: Calculated by STATA18
+Table 8 
+Endogeneity analysis.
+(1) (2)
+stage I stage II
+Singlehood rate lnpcarbon
+County average singlehood rate 0.940 *** ​
+(0.011) ​
+singlerate ​ 0.306 ***
+​ (0.037)
+Control Yes Yes
+Year FE Yes Yes
+County FE Yes Yes
+Obs 63415 63415
+R2 ​ 0.2274
+F 7953.11 243.87
+CD Wald F 6431.774 ​
+Kleibergen-Paap rk LM 的 p 值 0.0000 ​
+Endogeneity test 0.0558 ​
+Source: Calculated by STATA18
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+8 
+
+===== PAGE 9 =====
+Additionally, they allocate more resources to mobile phone services to 
+support remote social interactions, as opposed to in-person family so -
+cialization. Accordingly, the following variables were selected as me -
+diators to reflect the singlehood group's pursuit of “ convenience- 
+oriented consumption ” : per capita dining-out expenditure, per capita 
+spending on furniture and durables, per capita online shopping expen -
+diture, and per capita mobile phone expenses. The mediating effects of 
+these variables were all found to be statistically significant （ see 
+Table 10 ） .
+4.4.3. Energy sharing
+The lower degree of energy sharing among the singlehood group 
+results in higher per capita energy consumption, which in turn leads to 
+increased per capita carbon emissions. Household energy consumption 
+is primarily attributed to cooking, heating, and appliance use. Using 
+three types of per capita energy costs — fuel, heating, and electricity — as 
+mediating variables, a chained mediating effect is identified: the sin -
+glehood rate influences per capita energy consumption, which subse -
+quently affects per capita carbon emissions （ see Table 11 ） .
+4.5. Heterogeneity analysis
+4.5.1. Distinguishing between gender and urban/rural
+Gender and urbanization influence household carbon intensity 
+through differentiated lifestyle patterns. The number of male singlehood 
+individuals is defined as those meeting or exceeding the legal marriage 
+age for males (22 years or older), while female singlehood is similarly 
+defined based on the legal marriage age for females (20 years or older). 
+The urban singlehood rate refers to the proportion of single individuals 
+residing in urban households, and the rural singlehood rate denotes that 
+in rural households.
+Regression results show that the positive coefficient of the male 
+singleness rate (proportion of single males aged 22 and above relative to 
+total household population) on per capita carbon emissions is signifi -
+cantly larger than that of the female singleness rate (proportion of single 
+females aged 20 and above relative to total household population) (see 
+Table 12 ). This disparity may be attributable to men's stronger prefer -
+ences for carbon-intensive lifestyles, such as greater reliance on private 
+car travel, higher meat consumption, alcohol, and tobacco use. 
+Table 9 
+The scale economy mediation path of high value public goods in households.
+VARIABLES (1) (2) (3) (4)
+per-capita housing 
+area
+number of housing units per capita number of cars per capita per capita car purchase cost
+phousemianji lnpcarbon phousesum lnpcarbon pcarsum lnpcarbon pcarfei lnpcarbon
+phousemianji ​ 0.253*** ​ ​ ​ ​ ​ ​
+​ (0.011) ​ ​ ​ ​ ​ ​
+singlerate 0.352*** 0.160*** 0.427***   0.011 1.509*** 0.167*** 0.609*** 0.249***
+(0.017) (0.017) (0.024) (0.029) (0.040) (0.021) (0.067) (0.025)
+phousesum ​ ​ ​ 0.653*** ​ ​ ​ ​
+​ ​ ​ (0.030) ​ ​ ​ ​
+pcarsum ​ ​ ​ ​ ​ 0.133*** ​ ​
+​ ​ ​ ​ ​ (0.006) ​ ​
+pcarfei ​ ​ ​ ​ ​ ​ ​ 0.230***
+​ ​ ​ ​ ​ ​ ​ (0.003)
+Constant 2.491*** 5.945*** 1.878*** 4.607*** 8.261*** 5.396*** 6.402*** 5.768***
+(0.093) (0.103) (0.102) (0.189) (0.186) (0.111) (0.302) (0.137)
+Control Yes Yes Yes Yes Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes Yes Yes Yes Yes
+County FE Yes Yes Yes Yes Yes Yes Yes Yes
+Observations 27,625 25,782 12,363 11,530 28,575 26,505 13,849 13,190
+R-squared 0.880 0.657 0.323 0.602 0.546 0.524 0.131 0.639
+Source: Calculated by STATA18
+Table 10 
+Convenience consumption intermediary path of single groups.
+VARIABLES (1) (2) (3) (4)
+Per capita eat out Per capita furniture durable goods Per capita online shopping Per capita mobile phone fees
+eat out lnpcarbon furniture durable goods lnpcarbon online shopping lnpcarbon mobile phone fees lnpcarbon
+eat out ​ 0.332*** ​ ​ ​ ​ ​ ​
+​ (0.006) ​ ​ ​ ​ ​ ​
+singlerate 0.605*** 0.182*** 0.334*** 0.174*** 0.617*** 0.268*** 0.169*** 0.167***
+(0.026) (0.015) (0.040) (0.017) (0.045) (0.026) (0.016) (0.015)
+furniture durable goods ​ ​ ​ 0.191*** ​ ​ ​ ​
+​ ​ ​ (0.003) ​ ​ ​ ​
+online shopping ​ ​ ​ ​ ​ 0.074*** ​ ​
+​ ​ ​ ​ ​ (0.005) ​ ​
+mobile phone fees ​ ​ ​ ​ ​ ​ ​ 0.280***
+​ ​ ​ ​ ​ ​ ​ (0.007)
+Constant 7.188*** 4.745*** 5.105*** 6.298*** 3.130*** 6.040*** 2.693*** 6.038***
+(0.149) (0.105) (0.203) (0.108) (0.269) (0.160) (0.101) (0.107)
+control Yes Yes Yes Yes Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes Yes Yes Yes Yes
+County FE Yes Yes Yes Yes Yes Yes Yes Yes
+Observations 22,367 21,298 22,544 21,097 13,798 13,057 30,950 29,372
+R-squared 0.363 0.594 0.160 0.626 0.354 0.476 0.312 0.498
+Source: Calculated by STATA18
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+9 
+
+===== PAGE 10 =====
+Furthermore, the rural singlehood rate exhibits a stronger positive 
+impact on per capita carbon emissions compared to the urban single -
+hood rate. This may be explained by the prevalence of high-emission 
+energy practices in rural areas — including the use of coal and fire -
+wood for cooking and heating — coupled with less developed infra -
+structure for public transportation and sharing economy mechanisms 
+relative to urban settings.
+4.5.2. Distinguish between ages
+Carbon emissions exhibit life-cycle effects, and different age groups 
+contribute differently to these emissions. The singlehood population is 
+categorized into three age groups: young (20 – 45 years), middle-aged 
+(45 – 60 years), and elderly (over 60 years). From the age perspective, 
+the positive effect coefficient of the young singleness rate (young single 
+adults as a proportion of total household members) on per capita carbon 
+emissions is larger than that of the middle-aged singleness rate (middle- 
+aged singles as a proportion of total household members), which in turn 
+exceeds that of the elderly singleness rate (elderly singles as a proportion 
+of total household members) (see Table 13 ). This pattern is consistent 
+with the general observation that aging is associated with reduced car -
+bon emissions.
+4.5.3. Distinguishing between incomes
+Income level shapes lifestyle patterns, which in turn influence 
+household carbon emissions. Regression analysis based on quartiles of 
+net per capita household income reveals that the singlehood rate exerts a 
+statistically significant effect on per capita carbon emissions in the 
+lowest 25 % and highest 25 % income households, whereas the effect is 
+not significant in the two middle-income quartiles （ see Table 14 ） . 
+Table 11 
+Mediating paths of household energy sharing.
+VARIABLES (1) (3) (5)
+Per capita fuel costs Per capita heating costs Per capita electricity costs
+fuel lnpcarbon heating lnpcarbon electricity lnpcarbon
+fuel ​ 0.272*** ​ ​ ​ ​
+​ (0.008) ​ ​ ​ ​
+singlerate 0.255*** 0.192*** 0.358*** 0.201*** 0.237*** 0.163***
+(0.018) (0.015) (0.034) (0.033) (0.015) (0.012)
+heating ​ ​ ​ 0.331*** ​ ​
+​ ​ ​ (0.016) ​ ​
+electricity ​ ​ ​ ​ ​ 0.404***
+​ ​ ​ ​ ​ (0.007)
+Constant 6.541*** 5.154*** 6.361*** 4.866*** 5.534*** 4.726***
+(0.122) (0.099) (0.209) (0.178) (0.098) (0.077)
+control Yes Yes Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes Yes Yes
+County FE Yes Yes Yes Yes Yes Yes
+Observations 37,812 35,685 10,169 9651 51,908 48,985
+R-squared 0.167 0.529 0.536 0.516 0.331 0.575
+Source: Calculated by STATA18
+Table 12 
+Analysis of gender and urban-rural heterogeneity.
+VARIABLES (1) (2) (3) (4)
+Male 
+singlehood 
+rate
+Female 
+singlehood 
+rate
+Rural 
+singlehood 
+rate
+Urban 
+singlehood 
+rate
+lnpcarbon lnpcarbon lnpcarbon lnpcarbon
+singlemanrate 0.275*** ​ ​ ​
+(0.019) ​ ​ ​
+singlewomanrate ​ 0.156*** ​ ​
+​ (0.017) ​ ​
+singleruralrate ​ ​ 0.153*** ​
+​ ​ (0.013) ​
+singlecityrate ​ ​ ​ 0.121***
+​ ​ ​ (0.013)
+Constant 6.857*** 6.939*** 6.914*** 6.962***
+(0.087) (0.087) (0.087) (0.088)
+control Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes
+County FE Yes Yes Yes Yes
+Observations 63,412 63,412 63,412 63,412
+R-squared 0.548 0.546 0.547 0.546
+Source: Calculated by STATA18
+Table 13 
+Heterogeneity analysis by age group.
+VARIABLES (1) (2) (3)
+Youth singlehood 
+rate
+Middle-aged 
+singlehood rate
+Older singlehood 
+rate
+lnpcarbon lnpcarbon lnpcarbon
+singleyoungrate 0.308*** ​ ​
+(0.019) ​ ​
+singlemiddlerate ​ 0.227*** ​
+​ (0.030) ​
+singleoldrate ​ ​ 0.120***
+​ ​ (0.022)
+Constant 6.860*** 6.985*** 6.976***
+(0.086) (0.088) (0.089)
+control Yes Yes Yes
+Year FE Yes Yes Yes
+County FE Yes Yes Yes
+Observations 63,412 63,412 63,412
+R-squared 0.548 0.545 0.545
+Source: Calculated by STATA18
+Table 14 
+Analysis of heterogeneity of income groups.
+VARIABLES (1) (2) (3) (4)
+Lowest 25 
+%
+Below the 
+average 25 %
+Above the 
+average 25 %
+Highest 25 
+%
+lnpcarbon lnpcarbon lnpcarbon lnpcarbon
+singlerate 0.141*** 0.022   0.019 0.245***
+(0.028) (0.023) (0.020) (0.021)
+Constant 7.557*** 9.565*** 10.627*** 8.421***
+(0.152) (0.159) (0.173) (0.203)
+control Yes Yes Yes Yes
+Year FE Yes Yes Yes Yes
+County FE Yes Yes Yes Yes
+Observations 11,346 13,083 13,433 13,771
+R-squared 0.211 0.295 0.395 0.440
+Source: Calculated by STATA18
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+10 
+
+===== PAGE 11 =====
+This divergence may be attributed to distinct lifestyle patterns prevalent 
+in the extreme income groups. For instance, single individuals in the 
+lowest income group may exhibit limited overall consumption yet 
+maintain carbon-intensive habits—such as smoking, alcohol consump -
+tion, and reliance on high-emission fuels like coal. Conversely, those in 
+the highest income group may adopt less carbon-intensive behaviors per 
+unit of consumption, but their high levels of overall con -
+sumption—including ownership of luxury cars and larger resi -
+dences—implicitly result in elevated per capita carbon emissions.
+4.5.4. Distinguishing educational qualifications
+Individuals with higher education are classified as the highly 
+educated group, while those without are categorized as the low educa -
+tion group. The singles are correspondingly divided into highly educated 
+singles and low education singles. The positive effect coefficient of the 
+high-education singleness rate (proportion of highly educated single 
+members in total household population) on per capita carbon emissions 
+is approximately twice as large as that of the low-education singleness 
+rate (proportion of less-educated single members in total household 
+population) (see Table 15 ). Although conventional wisdom suggests that 
+highly educated individuals tend to demonstrate a stronger awareness of 
+low-carbon lifestyles, the observed disparity may be attributed to their 
+generally higher income levels and elevated consumption patterns, 
+which could outweigh environmental consciousness in driving carbon 
+emissions.
+5. Conclusions and discussion
+5.1. Conclusions
+This study demonstrates that the household singlehood rate exerts a 
+positive effect on per capita carbon emissions, with an impact coefficient 
+of 0.244. Comparison of influence coefficients reveals that the unmar -
+ried rate has a greater effect than the divorce rate, which in turn exceeds 
+the widowed rate. These findings remain robust after replacing 
+explanatory variables, core explanatory variables, and excluding 
+pandemic-affected samples. The mechanisms through which the 
+household singlehood rate affects per capita carbon emissions include: 
+reduced economies of scale in high-value public goods within house -
+holds, insufficient sharing of household energy, and increased per capita 
+consumption driven by the convenience-seeking behaviors of the sin -
+glehood group. After decrease, endogeneity through instrumental vari -
+ables, the impact coefficient increases to 0.306, and the primary 
+conclusions remain statistically significant.
+Heterogeneity analyses indicate that: the impact coefficient of the 
+male singlehood rate on per capita carbon emissions is larger than that 
+of the female singlehood rate; the rural singlehood rate has a greater 
+impact than its urban counterpart; the positive effect of youth single -
+hood rate is larger than that of the middle-aged group, which in turn 
+exceeds that of the elderly group; singlehood rates in both the highest 
+and lowest 25 % income groups significantly affect per capita carbon 
+emissions, with a larger impact observed in the highest income group; 
+and the positive impact coefficient of singlehood among higher educa -
+tion households is greater in absolute terms than that among lower 
+education households.
+5.2. Discussion
+5.2.1. Research on the extension of relevant literature
+The conceptual framework of this study is rooted in Gary Becker 
+(1965) 's pioneering work on the economics of the household. It analyzes 
+the carbon emission issue through the lens of household demographic 
+structure and consumption, representing a cross-disciplinary integration 
+of sociology, economics, and climate science.
+Regarding the principal finding, our research aligns with the seminal 
+works of ( Jones and Kammen, 2011 )and ( O'Neill et al., 2010 ). Jones and 
+colleagues, focusing on U.S. cities, established that declines in house -
+hold size elevate per capita energy consumption. Similarly, O'Neill 
+et al.'s cross-national analysis empirically demonstrated that efficiency 
+gains struggle to counteract rising total carbon emissions when the 
+average household size falls below three. Our result—that rising sin -
+glehood increases per capita carbon emissions through pathways like 
+weakened economies of scale, stimulated convenience consumption, 
+and decreased energy sharing—essentially confirms and deepens this 
+understanding of structural “diseconomies of scale."
+However, there are three major differences between this paper and 
+the existing literature:
+First, this study enhances the understanding of the relationship be -
+tween household structure changes and environmental impacts. The 
+empirical results indicate that the singlehood household rate, as an 
+important sociodemographic variable, has a significant and robust 
+positive influence on carbon emissions—even greater than some tradi -
+tionally emphasized economic factors. This expands the scope of 
+research on drivers of carbon emissions, highlighting the critical role of 
+micro-level household behaviors and social transformation in macro- 
+level environmental issues.
+Second, this research identifies three core mechanisms: diminished 
+economies of scale, insufficient energy sharing, and increased 
+convenience-oriented consumption. These provide a systematic theo -
+retical framework for understanding carbon emission behaviors among 
+single individuals. In particular, the mechanism of convenience-driven 
+consumption underscores the potential environmental pressures 
+arising from modern lifestyles, thereby enriching research in environ -
+mental behavioral science and social consumption theory.
+Third, detailed heterogeneity analysis—considering gender, urban -
+–rural divide, age, income, and education—reveals the complex ways in 
+which singlehood rates influence carbon emissions. These findings 
+challenge simplified narratives on emission drivers and emphasize the 
+need for differentiated mitigation policies and their micro-level foun -
+dations. For example, the greater influence of high-income and highly 
+educated singles offers a new perspective on the conventional assump -
+tion that “knowledge promotes environmental protection,” prompting 
+further academic inquiry into the complex interplay between knowl -
+edge, income, consumption behavior, and environmental responsibility.
+5.2.2. Practical implications
+(1) Individual carbon budgets are used to encourage singlehood 
+household to adopt green and low-carbon consumption patterns
+Personal Carbon Budget (PCB) is a concept in the field of climate 
+change policy aimed at promoting sustainable lifestyles by limiting in -
+dividual carbon emissions. It sets an emissions cap for citizens, 
+Table 15 
+Analysis of educational heterogeneity.
+VARIABLES (1) (2)
+High educational singlehood 
+rate
+Low educational singlehood 
+rate
+lnpcarbon lnpcarbon
+singlehighedurate 0.352*** ​
+(0.022) ​
+singlelowedurate ​ 0.176***
+​ (0.012)
+Constant 6.934*** 6.841***
+(0.087) (0.087)
+control Yes Yes
+Year FE Yes Yes
+County FE Yes Yes
+Observations 63,412 63,412
+R-squared 0.547 0.547
+Source: Calculated by STATA18
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+11 
+
+===== PAGE 12 =====
+encouraging them to examine and alter their consumption behaviors 
+and daily habits to reduce their carbon footprint ( Paulus, 2024 ).
+To effectively address the rising per capita emissions associated with 
+single-person households and leverage the positive role of Personal 
+Carbon Budgets, multi-faceted and tailored policy designs are needed:
+First, refine Personal Carbon Budget policies for single-person 
+households. When designing personal carbon allowance policies, the 
+specific characteristics of single-person households should be fully 
+considered. For instance, differentiated carbon allowance standards or 
+targeted incentives could be developed for housing, transportation, and 
+food consumption in single-person households, avoiding a one-size-fits- 
+all approach that may place an unfair burden on this group.
+Second, promote scientifically sound carbon footprint measurement 
+tools. Community-level initiatives can use carbon footprint measure -
+ment tools to help residents reflect on and reduce their personal carbon 
+footprints, ensuring they stay within their carbon budgets. Exceeding 
+the budget could trigger penalties, such as fines or mandatory partici -
+pation in activities like tree planting.
+Third, synergize with existing carbon reduction policies. Personal 
+carbon allowance policies should not operate in isolation but should 
+work in tandem with existing measures such as energy efficiency stan -
+dards, renewable energy development, and green transportation infra -
+structure. For example, carbon tax policies, as an important emission 
+reduction tool, can be integrated with personal carbon allowances, using 
+price mechanisms to guide consumers toward low-carbon products and 
+services ( Deng et al., 2023 ). 
+(2) By leveraging learning curves strategies, we encourage singles to 
+accumulate and apply low-carbon living knowledge in their daily 
+lives.
+This study further posits that for single-person households in Chinese 
+cities, the traditional “ diseconomies of scale ” effect may be moderated 
+by dynamic “ learning effects. ” The highly digitalized urban environment 
+in China provides single individuals with unique advantages for rapidly 
+learning and adapting to low-carbon lifestyles. For instance, they opti -
+mize energy use through smart home applications, reduce resource 
+idleness via sharing economy platforms (e.g., carpooling, shared power 
+banks), and engage in the “ social learning ” and dissemination of low- 
+carbon knowledge through social media. This “ learning-by-doing ” pro -
+cess implies that the carbon footprint of thesinglehood household is not 
+a fixed high point but rather a dynamic variable that can be continuously 
+optimized through education and technological innovation.
+Based on the theories of the “ learning curve ( Argote and Epple, 
+1990 ) ” and “ learning by doing ( Arrow, 1962 ), ” this paper proposes three 
+interconnected systemic policy recommendations to guide and support 
+urban singles in adopting low-carbon lifestyles.
+First, we recommend establishing a national-level “ Personal Low- 
+Carbon Living Digital Assistant ” platform. Led by the government and 
+jointly developed with internet technology companies and environ -
+mental organizations, this platform aims to systematize, streamline, and 
+personalize individuals' learning and practice processes. Its core func -
+tions should encompass three aspects: First, enabling real-time carbon 
+footprint tracking and precise feedback. By integrating smart meter and 
+transportation data, it would provide users with concrete, actionable 
+suggestions such as “ Raising your AC temperature by 1
+◦
+could save X 
+kWh this week. ”
+Second, incorporating scenario-based learning modules. Through 
+engaging tasks and challenges covering daily scenarios like dining, ac -
+commodation, and transportation, users would accumulate knowledge 
+and receive incentives during completion. Third, it should foster low- 
+carbon living communities to facilitate peer-to-peer experience 
+sharing and skill exchange. Algorithms would intelligently push success 
+stories from similar users, amplifying the “ social learning ” effect. This 
+approach aims to significantly lower the barriers to learning and 
+applying low-carbon knowledge through digital means, accelerating the 
+“ learning curve ” for single individuals.Building on digital empower -
+ment, the “ Community Low-Carbon Living Labs ” initiative should be 
+implemented concurrently, extending learning effects from online to 
+offline physical spaces. This initiative can utilize community public 
+spaces to establish small-scale experimental or experiential corners. 
+Specifically, it can include smart home device experience zones where 
+residents can personally operate energy-efficient appliances and 
+tangibly feel the benefits of technology; regularly host skill workshops 
+on upcycling old items and energy-efficient cooking; and set up tool and 
+book sharing corners to encourage resource recycling. Additionally, it 
+should showcase actual low-carbon achievements and energy-saving 
+data from community residents. By collaborating with property man -
+agement services, localized incentives like discounted fees and priority 
+access to community services can be implemented. This approach 
+bridges the perceptual gap inherent in purely online interactions, 
+deepening understanding through hands-on practice and internalizing 
+low-carbon concepts into positive lifestyle habits rooted in community 
+belonging.
+Finally, to sustain learning motivation, establishing a “ Green Credit 
+Points ” system linked to the aforementioned platform and lab is essen -
+tial. This system's core principle is transforming dynamic learning effects 
+into lasting incentives. Points are quantified based on multi-dimensional 
+behaviors like energy-saving achievements, knowledge acquisition, and 
+community participation, with diverse redemption channels available. 
+Points can be redeemed for public services like priority access to popular 
+sports facilities or discounts on public parking fees, as well as for benefits 
+in areas such as shared mobility services and e-commerce platforms 
+through corporate partnerships. Furthermore, financial institutions 
+could be encouraged to offer green financial products to high-point 
+users, while the rental market could be guided to provide preferential 
+treatment, thereby tightly linking environmental actions with economic 
+and social benefits. In summary, these three proposals synergistically 
+leverage digital tools, tangible scenarios, and systematic long-term in -
+centives to form a complete policy loop — from awareness guidance to 
+practice conversion to value feedback — systematically helping singles 
+reduce their carbon footprint. 
+(3) By intervening at sensitive points, we help singlehood household 
+adopt low-carbon lifestyles.
+Sensitive Intervention Pointsrefer to situations in complex economic 
+systems where small, targeted policy or social interventions may trigger 
+significant, positive structural changes through amplification effects 
+within the system. The “ small interventions ” targeting the singlehood 
+households in Chinese cities could lead to “ big changes ” ( Thaler and 
+Sunstein, 2008 ).
+At the community level, make renting items easier.Introducing 
+shared refrigerators, shared laundry rooms, and item exchange corners 
+in communities with high concentrations of single youth (e.g., youth 
+apartments in large cities) can serve as “ sensitive intervention points. ” 
+These low-cost interventions create new models for resource sharing, 
+directly countering “ diseconomies of scale."
+At the policy level: Integrating digital “ personal carbon accounts ” 
+with social media and e-commerce platforms, where every low-carbon 
+action (e.g., green travel, paperless offices) by single youth receives 
+immediate feedback and incentives (e.g., coupons, credit points), rep -
+resents another “ sensitive intervention point ” leveraging behavioral 
+psychology.
+At the market level, we should develop the sharing economy model. 
+By providing long-term rental apartments with public areas, shared cars, 
+gyms, offices, study rooms, and karaoke lounges, we can help singlehood 
+household fully enjoy the dual benefits of cost-effectiveness and low- 
+carbon emissions in their daily lives. In the future, we should particu -
+larly promote service sharing, such as offering ready-to-cook meals in 
+cafeterias, which will reduce carbon emissions from individual cooking.
+Regarding intervention timing, it's crucial to capitalize on pivotal 
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+12 
+
+===== PAGE 13 =====
+consumption moments that influence long-term carbon emissions for 
+single-person households. Key opportunities include first-time rentals, 
+appliance purchases, and car acquisitions. The mobile shopping system 
+should proactively recommend low-carbon alternatives like shared 
+apartments, energy-efficient appliances, and electric vehicles, accom -
+panied by discount coupons. When households move, upgrade appli -
+ances, or replace vehicles, the system should automatically suggest eco- 
+friendly products. This approach encourages single-person households 
+to prioritize low-carbon purchases and develop sustainable consumption 
+habits. 
+(4) Building a low-carbon and inclusive society,
+When proposing social policies targeting the carbon emissions of 
+single-person households, it is essential to first clarify their ethical 
+boundaries. All policy recommendations in this study adhere to the 
+principles of diversity, equity, and inclusion, as well as the framework of 
+a just transition. The core stance is that the policy objective should not 
+be to alter an individual's marital status but to provide all citizens, 
+regardless of household structure, with the capacity and choices to 
+transition to low-carbon living. We must respect individuals' autonomy 
+in lifestyle choices and avoid stigmatizing single individuals or por -
+traying them as the root of social problems. The responsibility for 
+emission reduction should be shared fairly, and policy efforts should 
+focus on building an inclusive low-carbon support system rather than 
+intervening in specific lifestyle choices.
+Building an Inclusive Low-Carbon Support System for All Household 
+Structures:
+First of all, promote energy-saving solutions tailored for small 
+households: Develop and subsidize high-efficiency appliances and 
+modular furniture suitable for single apartments and small units, and 
+provide household energy management consulting services tailored to 
+those living alone to help them achieve energy savings at lower costs.
+Second, develop community sharing economies to mitigate dis -
+economies of scale: Encourage and invest in the construction of shared 
+spaces and facilities at the community level, such as public kitchens, 
+shared laundry rooms, tool libraries, and community canteens. This not 
+only effectively reduces per capita resource consumption for those living 
+alone but also fosters community integration without imposing 
+mandatory household consolidation.
+Third, design inclusive urban services and infrastructure: Optimize 
+urban planning to increase the supply of affordable small-sized housing, 
+and improve public transportation, walking, and cycling networks to 
+ensure that single residents and all other citizens have convenient access 
+to low-carbon travel options.
+Last but not least, implement public education on low-carbon living: 
+Enhance carbon footprint awareness and emission reduction skills 
+among all citizens (not solely targeting single individuals) through 
+public campaigns and educational programs, empowering everyone to 
+make more environmentally friendly consumption decisions.
+5.2.3. Limitations and future research
+(1) This study has several limitations, including insufficient data 
+granularity, constrained exploration of micro-level behavioral 
+mechanisms due to data limitations, lack of cross-country cultural 
+comparisons, and absence of policy simulation and cost–benefit 
+analysis for the proposed measures.
+(2) Data limitations prevent access to specific consumption figures 
+for fossil and non-fossil energy sources, making it difficult to 
+measure direct carbon emissions with greater precision.
+(3) Limitations in data privacy protection make it challenging to 
+conduct county-level regional heterogeneity analysis using eco -
+nomic data from various counties and districts.
+Based on these findings and limitations, future research should: 
+(1) Based on various energy consumption data (distinguishing be -
+tween fossil and non-fossil energy sources), the direct carbon 
+emissions of households with different single-person rates were 
+calculated in detail using the life cycle assessment method;
+(2) Refine micro-level behavioral mechanism studies using detailed 
+surveys, experiments, or big data to examine energy use and 
+emission behaviors of singles in specific contexts (e.g., housing, 
+transportation, consumption);
+(3) Conduct cross-cultural comparative studies to examine the 
+generalizability of the relationship between singlehood and car -
+bon emissions across different sociocultural settings (e.g., 
+Europe, North America, East Asia), exploring the moderating 
+roles of cultural values and social welfare systems;
+(4) Perform policy simulations and cost–benefit analyses to model 
+the environmental and socioeconomic impacts of various in -
+terventions (e.g., marriage subsidies, shared housing, car- 
+sharing, energy-efficient technology promotion), providing 
+quantitative evidence for policy design.
+Institutional review board statement
+The study was conducted in accordance with the Declaration of 
+Helsinki, and approved by the Institutional Review Board” Biomedical 
+Ethics Committee of Peking University” (protocol code IRB00001052- 
+14010.
+Data availability statement
+The data are from China Family Panel Studies (CFPS), funded by 
+Peking University and the National Natural Science Foundation of 
+China. The CFPS is maintained by the Institute of Social Science Survey 
+of Peking University ( https://www.isss.pku.edu.cn/cfps/sjzx/gksj/ind 
+ex.htm ).
+Funding
+This research was funded by he following projects：1. China Na -
+tional Social Science Foundation Program (Grant No. 17BJL034).; 2. A 
+Key Project of Soft Science Research in Shanxi Province (Project No. 
+2018042005-1).; 3. The Shanxi Province Graduate Education Innova -
+tion Project (Project No. 2021Y501).; 4. Jiangsu Provincial Graduate 
+Scientific Research and Practice Innovation Program Project (Project 
+No. KYCX24_0049).
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgments
+Thanks to the anonymous reviewers and the editorial board for their 
+review.
+Data availability
+Data will be made available on request.
+References
+Argote, L., Epple, D., 1990. Learning curves in manufacturing. Science 247 (4945), 
+920–924. https://doi.org/10.1126/science.247.4945.920.
+Arrow, K.J., 1962. The economic implications of learning by doing. Rev. Econ. Stud. 29 
+(3), 155–173. https://doi.org/10.2307/2295952.
+Becker, G.S., 1965. A theory of the allocation of time. Econ. J. 75 (299), 493–517. 
+https://doi.org/10.2307/2228949.
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+13 
+
+===== PAGE 14 =====
+Brandenstein, N., Ackermann, K., Rummel, J., 2025. The trouble with carbon footprint 
+analysis in behavioral climate research. Clim. Change 178 (3). https://doi.org/ 
+10.1007/s10584-025-03900-z.
+Cao, P., Liu, Z., Zhang, H., Yan, P., Qin, C., 2024. Household size and transport carbon 
+emissions in China: direct, heterogeneity and mediating effects. Sci. Total Environ. 
+925, 171650. https://doi.org/10.1016/j.scitotenv.2024.171650.
+Cho, S.-H., Kim, J.-H., Woo, J.-H., 2021. Impact of the rise of solo living and an ageing 
+population on residential energy consumption in South Korea. Energy Environ. 33 
+(2), 399–416. https://doi.org/10.1177/0958305X211036390.
+Cui, H., Cao, Y., 2024. Low-carbon city construction, spatial spillovers and greenhouse 
+gas emission performance: evidence from Chinese cities. J. Environ. Manag. 355, 
+120405. https://doi.org/10.1016/j.jenvman.2024.120405.
+Cui, S., Zhang, L., Wang, Y., Zhao, H., 2023. Influencing mechanisms and decoupling 
+effects of embodied carbon emissions: an analysis based on China's industrial sector. 
+Sustain. Prod. Consum. 41, 320–333. https://doi.org/10.1016/j.spc.2023.07.012.
+Deng, L., Tan, J., Dai, J., 2023. Analysis of decision-making in a green supply chain under 
+different carbon tax policies. Mathematics 11 (22), 4631. https://doi.org/10.3390/ 
+math11224631.
+Du, Q., Li, X., Sun, C., 2024. Dynamic simulation for carbon emission reduction effects of 
+the prefabricated building supply chain under environmental policies. Sustain. Cities 
+Soc. 100, 105027. https://doi.org/10.1016/j.scs.2023.105027.
+Duarte, R., Miranda-Buetas, S., Sarasa, C., 2021. Household consumption patterns and 
+income inequality in EU countries: scenario analysis for a fair transition towards 
+low-carbon economies. Energy Econ. 104, 105614. https://doi.org/10.1016/j. 
+eneco.2021.105614.
+Feng, K., Hubacek, K., Sun, L., Liu, Z., 2021. Household carbon inequality in the U.S. 
+J. Clean. Prod. 278, 123994. https://doi.org/10.1016/j.jclepro.2020.123994.
+Guo, X., Wang, Y., Chen, Z., 2023. Study on the spatial and temporal correlation and 
+allometric growth mechanism between population aging and carbon emissions in 
+China. Environ. Sci. Pollut. Control Ser. 31 (1), 634–656. https://doi.org/10.1007/ 
+s11356-023-31210-3.
+Haynes, P., 2024. Developing a community-based carbon footprint questionnaire: 
+towards a dynamic understanding of how personal behaviour interacts with policy 
+and economic change. Sustainability 16 (21), 9211. https://doi.org/10.3390/ 
+su16219211.
+Hu, Y.-J., Zhang, R., Wang, H., Li, C., Tang, B.-J., 2024. Synergizing policies for carbon 
+reduction, energy transition and pollution control: evidence from Chinese power 
+generation industry. J. Clean. Prod. 436, 140460. https://doi.org/10.1016/j. 
+jclepro.2023.140460.
+Huang, L., Wang, Z., Wang, J., 2024. Increasing single households challenges household 
+decarbonization in Japan. Glob. Environ. Change 86, 102848. https://doi.org/ 
+10.1016/j.gloenvcha.2024.102848.
+International Energy Agency (IEA), 2025. Global Energy Review 2025: CO2 Emissions in 
+2024 [Report]. IEA Publications, Paris. Available at: https://www.iea.org/repo 
+rts/global-energy-review-2025 . (Accessed 23 October 2025). 
+Jack, T., Ivanova, D., 2021. Small is beautiful? Stories of carbon footprints, socio- 
+demographic trends and small households in Denmark. Energy Res. Social Sci. 78, 
+102130. https://doi.org/10.1016/j.erss.2021.102130.
+Jones, C.M., Kammen, D.M., 2011. Quantifying carbon footprint reduction opportunities 
+for U.S. households and communities. Environ. Sci. Technol. 45 (9), 4088–4095. 
+https://doi.org/10.1021/es102221h.
+Khan, A.A., Liu, Z., Zhao, J., 2024. Agri-food evolution and carbon emissions in Chinese 
+residential consumption: a life cycle analysis of urban-rural disparities and 
+socioeconomic influences. Environ. Impact Assess. Rev. 105, 107387. https://doi. 
+org/10.1016/j.eiar.2024.107387.
+Li, X., Lin, C., Lin, M., Jim, C.Y., 2024. Drivers, scenario prediction and policy simulation 
+of the carbon emission system in Fujian province (China). J. Clean. Prod. 434, 
+140375. https://doi.org/10.1016/j.jclepro.2023.140375.
+Liang, L., Chen, M., Zhang, X., Sun, M., 2024. Understanding changes in household 
+carbon footprint during rapid urbanization in China. Energy Policy 185, 113928. 
+https://doi.org/10.1016/j.enpol.2023.113928.
+Long, Y., Yoshida, Y., Dong, L., 2019. City-level household carbon footprint from 
+purchaser point of view by a modified input-output model. Appl. Energy 236, 
+379–387. https://doi.org/10.1016/j.apenergy.2018.11.099.
+Long, H., Li, Y., Liu, H., 2022. Does living alone increase the consumption of social 
+resources? Environ. Sci. Pollut. Control Ser. 29 (47), 71911–71922. https://doi.org/ 
+10.1007/s11356-022-20800-2.
+Ma, B., Ogata, S., 2024. Impact of urbanization on carbon dioxide emissions—evidence 
+from 136 countries and regions. Sustainability 16 (18), 7878. https://doi.org/ 
+10.3390/su16187878.
+Ministry of Foreign Affairs of the People's Republic of China, 2020. Statement by H.E. Xi 
+jinping president of the People'S Republic of China at the general debate of the 75th 
+session of the United Nations general assembly [Online]. Available at: https://www. 
+fmprc.gov.cn/mfa_eng/zxxx_662805/t1817090.shtml . (Accessed 23 October 2025).
+Na, H., Zhang, S., Li, J., 2024. Multi-process production occurs in the iron and steel 
+industry, supporting ‘Dual Carbon’ target: an in-Depth study of CO2 emissions from 
+different processes. J. Environ. Sci. 140, 46–58. https://doi.org/10.1016/j. 
+jes.2023.05.040.
+Nurgazina, Z., Guo, Q., Ali, U., Sharif, A., Khan, Z.A., Kartal, M.T., Kılıç Depren, S., 2023. 
+Can environmentally friendly technology help China to achieve a carbon neutrality 
+target by 2060? An asymmetrical based study in China. Environ. Sci. Pollut. Control 
+Ser. 31 (60), 67157–67170. https://doi.org/10.1007/s11356-023-27904-3.
+Oltulular, S., 2025. Energy efficiency and environmental technologies in carbon 
+emissions reduction strategies for a sustainable future: estimation through 
+simultaneous equation systems. Energies 18 (14), 3596. https://doi.org/10.3390/ 
+en18143596.
+Oyewo, B., Tauringana, V., Tawiah, V., Aju, O., 2024. Impact of country governance 
+mechanisms on carbon emissions performance of multinational entities. J. Environ. 
+Manag. 352, 120000. https://doi.org/10.1016/j.jenvman.2023.120000.
+O'Neill, B.C., Dalton, M., Fuchs, R., Jiang, L., Pachauri, S., Zigova, K., 2010. Global 
+demographic trends and future carbon emissions. Proc. Natl. Acad. Sci. U. S. A 107 
+(41), 17521–17526. https://doi.org/10.1073/pnas.1004581107.
+Paulus, N., 2024. Developing individual carbon footprint reduction pathways from 
+carbon budgets: examples with wallonia and France. Renew. Sustain. Energy Rev. 
+198, 114428. https://doi.org/10.1016/j.rser.2024.114428.
+Schubert, J., Schulz, T., Wirth, P., 2012. Settlement structures and carbon emissions in 
+Germany: the effects of social and physical concentration on carbon emissions in 
+rural and urban residential areas. Environ. Pol. Govern. 23 (1), 13–29. https://doi. 
+org/10.1002/eet.1593.
+Shao, H., Yu, M., Xia, M., Yu, D., Gao, F., 2024. Will the miniaturization of household 
+size promote household carbon emissions in China? Analysis based on CFPS data. 
+Front. Environ. Sci. 12. https://doi.org/10.3389/fenvs.2024.1382083.
+Shigetomi, Y., Nansai, K., Kagawa, S., Tohno, S., 2018. Driving forces underlying sub- 
+national carbon dioxide emissions within the household sector and implications for 
+the Paris agreement targets in Japan. Appl. Energy 228, 2321–2332. https://doi.org/ 
+10.1016/j.apenergy.2018.06.141.
+Sun, Q., Chen, H., Long, R., Zhang, J., Yang, M., Huang, H., Ma, W., Wang, Y., 2023. Can 
+Chinese cities reach their carbon peaks on time? Scenario analysis based on machine 
+learning and LMDI decomposition. Appl. Energy 347, 121427. https://doi.org/ 
+10.1016/j.apenergy.2023.121427.
+Tan-Soo, J.-S., Li, Y., Lin, B., 2024. Using cost–benefit analyses to identify key 
+opportunities in demand-side mitigation. Nat. Clim. Change 14 (11), 1158–1164. 
+https://doi.org/10.1038/s41558-024-02132-w.
+Temiz, M., Dincer, I., 2023. Solar and sodium fast reactor-based integrated energy system 
+developed with thermal energy storage and hydrogen. Energy 284, 129275. https:// 
+doi.org/10.1016/j.energy.2023.129275.
+Thaler, R.H., Sunstein, C.R., 2008. Nudge: Improving Decisions About Health, Wealth, 
+and Happiness. Yale University Press .
+US News, 2025. What is the Paris climate agreement, and what [Online]. Available at: htt 
+ps://www.usnews.com/news/national-news/articles/2025-01-22/what-is-the-par 
+is-climate-agreement-and-what . (Accessed 23 October 2025).
+Wang, Y., Chen, X., Zhang, S., 2023. Do areas with a higher proportion of single-person 
+households save more on electricity consumption? Evidence from the difference-in- 
+differences model. Energy Sustain. Dev. 77, 101350. https://doi.org/10.1016/j. 
+esd.2023.101350.
+Won, A.N., Hong, W.H., 2014. A survey on ownership of home appliances and electric 
+energy consumption status according to the number of household member. Appl. 
+Mech. Mater. 672–674, 2165–2168. https://doi.org/10.4028/www.scientific. 
+net/AMM.672-674.2165 .
+Xuan, S., Qin, Y.-N., Zhou, J.-X., Wu, J.-P., 2025. The impact of stadiums on carbon 
+emissions: a systematic review. Pol. J. Environ. Stud. https://doi.org/10.15244/ 
+pjoes/199794.
+Yang, S., Wang, X., Ge, Z., Dong, G., Ma, M., Han, X., 2023. Global per capita CO2 
+emission trends. Atmosphere 14 (12), 1797. https://doi.org/10.3390/ 
+atmos14121797.
+Yu, B., Wei, Y.-M., Gomi, K., Matsuoka, Y., 2018. Future scenarios for energy 
+consumption and carbon emissions due to demographic transitions in Chinese 
+households. Nat. Energy 3 (2), 109–118. https://doi.org/10.1038/s41560-017- 
+0053-4.
+Yu, X., Zhao, Y., Li, M., 2023. Carbon emission reduction analysis for cloud computing 
+industry: can carbon emissions trading and technology innovation help? Energy 
+Econ. 125, 106804. https://doi.org/10.1016/j.eneco.2023.106804.
+Yuan, B., Zhong, Y., Li, S., Zhao, Y., 2024. The degree of population aging and living 
+carbon emissions: evidence from China. J. Environ. Manag. 353, 120185. https:// 
+doi.org/10.1016/j.jenvman.2024.120185.
+Zhang, X., Li, J., Wang, S., 2023a. Changes in the socio-economic characteristics of 
+households can decouple carbon emissions and consumption growth in China. 
+Sustain. Prod. Consum. 43, 168–180. https://doi.org/10.1016/j.spc.2023.10.020.
+Zhang, H., Li, Y., Tong, J., 2023b. Spatiotemporal differences in and influencing effects 
+of per-capita carbon emissions in China based on population-related factors. Sci. 
+Rep. 13 (1). https://doi.org/10.1038/s41598-023-47209-2.
+Y. Liu and J. Guo                                                                                                                                                                                                                               Journal of Cleaner Production 548 (2026) 147631 
+14 

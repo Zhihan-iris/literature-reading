@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liu & Guo (2026) 文章详细介绍：单身率与消费端碳排放</title>
+  <meta name="description" content="Liu & Guo (2026)《The impact of singlehood on carbon emissions》中文详细介绍，梳理论文问题、文献缺口、CFPS 数据、投入产出法、固定效应模型、机制检验、异质性与局限。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="site-nav" aria-label="网站导航">
+        <a href="index.html" aria-current="page">文章详解</a>
+        <a href="presentation.html">HTML 演示文稿</a>
+        <a href="研究背景.html">研究背景</a>
+        <a href="机制与方法.html">机制与方法</a>
+        <a href="The%20impact%20of%20singlehood%20on%20carbon%20emissions.pdf">原文 PDF</a>
+      </nav>
+      <p class="eyebrow">文章讲义：Yaqi Liu & Jing Guo, Journal of Cleaner Production, 2026</p>
+      <h1>《The impact of singlehood on carbon emissions》详细介绍</h1>
+      <p class="subtitle">本文把“单身率上升”放进家庭消费碳排放框架中，利用 2010-2022 年 CFPS 家庭面板数据，估计单身家庭结构对人均消费端碳排放的影响，并从规模经济、便利消费和生活能源共享三条路径解释机制。</p>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="目录">
+      <h2>目录</h2>
+      <ol>
+        <li><a href="#sec1">文章问题与主线</a></li>
+        <li><a href="#sec2">研究背景与文献缺口</a></li>
+        <li><a href="#sec3">理论机制与研究假设</a></li>
+        <li><a href="#sec4">数据、变量与排放测算</a></li>
+        <li><a href="#sec5">基准模型与核心结果</a></li>
+        <li><a href="#sec6">稳健性与内生性</a></li>
+        <li><a href="#sec7">三条机制检验</a></li>
+        <li><a href="#sec8">异质性结果</a></li>
+        <li><a href="#sec9">政策建议</a></li>
+        <li><a href="#sec10">批判性阅读</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="sec1">
+        <h2>1. 文章问题与主线</h2>
+        <div class="lead">
+          论文要回答的问题是：在中国消费端碳排放越来越重要的背景下，家庭中单身成员比例上升是否会提高人均碳排放？如果会，它是通过“一个人住更难共享住房、家电和能源”，还是通过“更便利、更个性化、更高频的消费方式”发生作用？
+        </div>
+        <p>文章的核心结论可以压缩为一句话：<strong>家庭单身率提高显著增加人均消费端碳排放，基准系数为 0.244；影响主要来自家庭公共品规模经济弱化、生活能源共享不足，以及便利导向消费增加。</strong></p>
+        <div class="metric-grid">
+          <div class="metric"><span class="value">0.244***</span><span class="label">基准回归中单身率对 ln 人均碳排放的系数</span></div>
+          <div class="metric"><span class="value">0.306***</span><span class="label">使用县区平均单身率作 IV 后的第二阶段系数</span></div>
+          <div class="metric"><span class="value">63,412</span><span class="label">表格与摘要中报告的家庭观测量</span></div>
+          <div class="metric"><span class="value">2010-2022</span><span class="label">CFPS 七轮家庭面板数据覆盖期</span></div>
+        </div>
+        <div class="flow">
+          <div><span>规模经济弱化</span><br>单身家庭更可能独立拥有住房、家电、汽车等高价值公共品，导致人均使用和人均碳排放上升。</div>
+          <div><span>便利消费增加</span><br>外出就餐、网购、手机服务、家具耐用品等消费更高频、更个性化，隐含排放上升。</div>
+          <div><span>能源共享不足</span><br>做饭、取暖、用电等生活能源无法在多人家庭内摊薄，人均能源成本和排放增加。</div>
+        </div>
+      </section>
+
+      <section id="sec2">
+        <h2>2. 研究背景与文献缺口</h2>
+        <p>文章从两个大背景切入。第一，中国承诺 2030 年前碳达峰、2060 年前碳中和，生产端减排之外，生活方式和家庭消费端排放也越来越重要。第二，单身化、独居化和家庭小型化是第二次人口转变中的重要现象，可能改变家庭消费结构和能源使用方式。</p>
+        <p>现有研究并不一致。韩国研究发现单人户在大都市可能因住房面积小、共享空间利用更高而降低人均温室气体排放；日本研究则发现单人户碳足迹更高，尤其体现在能源、服装和医疗支出。中国已有研究关注单人户比例与电力消费，但主要看直接用电，难以覆盖餐饮、交通、住房、购物等消费背后的间接排放。</p>
+        <div class="method-box">
+          <h4>本文的定位</h4>
+          <p>作者把研究对象从“直接电力排放”扩展到“消费端总碳排放”，将 CFPS 家庭消费支出与产业部门碳排放强度连接起来，估计家庭结构变化如何通过消费组合影响人均碳排放。</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>研究张力</th><th>已有发现</th><th>本文如何推进</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>单人户可能节能</td><td>小户型、较少居住空间、城市共享设施可能降低排放。</td><td>本文不预设方向，而是用中国家庭数据检验净效应。</td></tr>
+              <tr><td>单人户可能高碳</td><td>住房、家电、交通和餐饮无法共享，人均固定消耗更高。</td><td>本文把规模经济、便利消费、能源共享拆成机制。</td></tr>
+              <tr><td>中国证据不足</td><td>已有中国证据偏重电力消费，忽略消费隐含碳排放。</td><td>本文使用八类家庭消费支出与产业排放强度估算人均碳排放。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="sec3">
+        <h2>3. 理论机制与研究假设</h2>
+        <p>文章提出两个假设。假设 1 是方向性命题：家庭单身率对人均碳排放有正向影响。假设 2 是机制命题：正向影响通过三条路径实现，即高价值家庭公共品规模经济下降、便利导向消费增加、生活能源共享下降。</p>
+        <div class="result-box">
+          <h4>机制 1：高价值公共品的规模经济下降</h4>
+          <p>多人家庭可以共享住房、冰箱、洗衣机、汽车等固定投入。单身家庭即使居住面积较小，人均住房面积、每人拥有住房套数、每人拥有汽车数量和购车支出也可能更高，导致单位服务的碳排放上升。</p>
+        </div>
+        <div class="result-box">
+          <h4>机制 2：便利导向消费</h4>
+          <p>单身群体更偏好即时、便利和个性化消费，例如外出就餐、外卖、网购、手机服务、频繁更新服装和电子产品。这些消费本身并不都是“能源账单”，但背后包含包装、物流、餐饮服务和制造环节的隐含排放。</p>
+        </div>
+        <div class="result-box">
+          <h4>机制 3：生活能源共享不足</h4>
+          <p>厨房燃料、取暖和家电用电都有固定成本。一人做饭、一人取暖、一人使用大型家电，会让能源消耗难以在家庭成员之间摊薄，从而提高人均碳排放。</p>
+        </div>
+      </section>
+
+      <section id="sec4">
+        <h2>4. 数据、变量与排放测算</h2>
+        <h3>4.1 数据来源</h3>
+        <p>研究使用北京大学中国家庭追踪调查 CFPS，覆盖 25 个省级地区，分析 2010-2022 年七轮家庭数据。作者对连续变量取对数，比例变量保留原值，对主要变量进行 1% 和 99% 缩尾，并剔除主变量三倍标准差以外的观测。</p>
+        <div class="warning-box">
+          <h4>一个需要注意的样本量细节</h4>
+          <p>摘要和所有主要表格报告观测量为 63,412，但数据来源段落写“最终非平衡面板为 62,412 个家庭”。这可能是排版或版本差异造成的口径不一致，汇报时建议按表格中的 63,412 说明，并把该处作为论文细节瑕疵指出。</p>
+        </div>
+        <figure class="paper-figure">
+          <img src="assets/carbon-table3-descriptives.png" width="1098" height="565" alt="原文表3：描述性统计" loading="lazy" decoding="async">
+          <figcaption>原文表3给出核心变量和控制变量的描述性统计。人均碳排放均值为 8415.99 kg，单身率均值为 0.18，未婚率、离婚率、丧偶率分别为 0.10、0.02、0.06。</figcaption>
+        </figure>
+
+        <h3>4.2 被解释变量：人均消费端碳排放</h3>
+        <p>被解释变量是家庭人均碳排放的自然对数，记为 <code>lnpcarbon</code>。作者没有采用完整生命周期评估 LCA，而采用投入产出思路：把家庭消费支出映射到产业部门，再用产业能源强度与标准煤排放系数计算消费类别的碳排放强度。</p>
+        <div class="formula">
+          CI_i = w * (sum_n Ind_{n,i}) / (sum_n Delta_{n,i})<br>
+          CE = sum_{i=1}^{8} CS_i * CI_i
+        </div>
+        <p>其中 <code>CI_i</code> 是第 i 类消费的碳排放强度，<code>w=2.493</code> 是标准煤碳排放系数，<code>Ind</code> 是相关行业标准煤消耗，<code>Delta</code> 是行业总产值，<code>CS_i</code> 是家庭在第 i 类消费上的支出。</p>
+        <figure class="paper-figure narrow">
+          <img src="assets/carbon-table2-emission-factors.png" width="537" height="247" alt="原文表2：八类消费的碳排放因子" loading="lazy" decoding="async">
+          <figcaption>原文表2列出八类消费的碳排放因子。交通通信和居住的排放强度最高，分别为 0.827 和 0.708 kgCO2/元；医疗和其他商品服务最低。</figcaption>
+        </figure>
+
+        <h3>4.3 核心解释变量与控制变量</h3>
+        <p>核心解释变量是家庭单身率：家庭中 20 岁及以上且婚姻状态为未婚、离婚或丧偶成员占家庭总人口的比例。控制变量包括户主年龄及平方项、城乡、户口、政治面貌、性别、教育、就业、体制内就业、自雇、健康、养老/医疗/工伤/生育/失业保险、住房公积金、老人抚养比、儿童抚养比、家庭收入和家庭净资产。</p>
+      </section>
+
+      <section id="sec5">
+        <h2>5. 基准模型与核心结果</h2>
+        <h3>5.1 双向固定效应模型</h3>
+        <p>文章采用地区和年份双向固定效应模型。写成简化形式：</p>
+        <div class="formula">
+          ln(percarbon_it) = beta_0 + beta_1 singlehood_it + sum_k gamma_k control_{k,it} + mu_i + lambda_t + epsilon_it
+        </div>
+        <p>其中 <code>mu_i</code> 吸收地区不随时间变化的特征，<code>lambda_t</code> 控制全国共同年份冲击，<code>beta_1</code> 是作者最关心的单身率系数。文章报告 VIF 均小于 5，Hausman 检验支持固定效应模型。</p>
+
+        <h3>5.2 描述性事实</h3>
+        <p>中国统计年鉴数据中，2001-2023 年人均碳排放从 1.532 吨上升到 14.243 吨，单身率从 25.9% 上升到 28.8%。原文图1给出单身率与人均碳排放的正相关趋势。</p>
+        <figure class="paper-figure narrow">
+          <img src="assets/carbon-fig1-trend.png" width="505" height="395" alt="原文图1：单身率与人均碳排放散点图" loading="lazy" decoding="async">
+          <figcaption>原文 Fig. 1 显示统计年鉴层面的正相关关系。它只是事实展示，不等同于因果识别；真正的估计依赖家庭面板固定效应模型。</figcaption>
+        </figure>
+
+        <h3>5.3 表5：基准回归</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>变量</th><th class="num">系数</th><th>含义</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>单身率</td><td class="num">0.244***</td><td>单身率越高，人均消费端碳排放越高。</td></tr>
+              <tr><td>未婚率</td><td class="num">0.323***</td><td>三类单身状态中影响最大，作者认为与年轻、城市、高收入和享乐型消费相关。</td></tr>
+              <tr><td>离婚率</td><td class="num">0.309***</td><td>同样显著为正，幅度接近未婚率。</td></tr>
+              <tr><td>丧偶率</td><td class="num">0.065***</td><td>仍为正，但幅度明显较小。</td></tr>
+              <tr><td>城市</td><td class="num">0.123***</td><td>城市家庭人均消费排放更高。</td></tr>
+              <tr><td>家庭收入</td><td class="num">0.158***</td><td>收入越高，人均消费端排放越高。</td></tr>
+              <tr><td>家庭净资产</td><td class="num">0.072***</td><td>财富水平与排放显著正相关。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <figure class="paper-figure">
+          <img src="assets/carbon-table5-baseline.png" width="538" height="1178" alt="原文表5：基准回归" loading="lazy" decoding="async">
+          <figcaption>原文表5是基准结果。四列分别使用总体单身率、未婚率、离婚率和丧偶率作为核心解释变量；均控制年份固定效应、县区固定效应和一系列家庭/户主变量。</figcaption>
+        </figure>
+        <div class="critique-box">
+          <h4>系数如何读更稳妥</h4>
+          <p>由于被解释变量是 <code>lnpcarbon</code>，核心解释变量是 0 到 1 的比例，0.244 更准确地说是“单身率增加 1 个单位，也就是 100 个百分点，对 log 人均碳排放的半弹性”。如果单身率增加 0.01，log 人均排放约增加 0.00244，近似 0.244%。原文把它表述成“1% increase leads to 24.4% rise”，汇报时建议解释为“系数为 0.244 且显著，方向和相对大小是关键”。</p>
+        </div>
+      </section>
+
+      <section id="sec6">
+        <h2>6. 稳健性与内生性</h2>
+        <h3>6.1 替换被解释变量</h3>
+        <p>作者使用家庭用电数据计算“人均电力碳排放”作为替代被解释变量，单身率系数为 0.168，仍在 1% 水平显著。系数低于基准 0.244，说明只看电力会低估单身化对总消费排放的影响，因为餐饮、交通、住房和网购等间接排放没有被纳入。</p>
+        <figure class="paper-figure narrow">
+          <img src="assets/carbon-table6-electricity-robustness.png" width="537" height="418" alt="原文表6：替换被解释变量" loading="lazy" decoding="async">
+          <figcaption>原文表6：用电力碳排放替代总消费端碳排放后，总体单身率、离婚率和丧偶率仍显著为正。</figcaption>
+        </figure>
+
+        <h3>6.2 替换核心解释变量与剔除疫情样本</h3>
+        <p>作者构造两个处理变量：<code>treat0=1</code> 表示家庭中存在任意单身成员，<code>treat1=1</code> 表示家庭单身率等于 1，即完全单身家庭。两者均显著为正，且完全单身家庭系数更大。剔除 COVID-19 样本后，单身率系数为 0.188，仍显著为正。</p>
+        <figure class="paper-figure narrow">
+          <img src="assets/carbon-table7-robustness.png" width="538" height="418" alt="原文表7：替换核心解释变量和剔除疫情样本" loading="lazy" decoding="async">
+          <figcaption>原文表7：任意单身、完全单身和剔除疫情期样本三种设定均支持基准结论。</figcaption>
+        </figure>
+
+        <h3>6.3 工具变量分析</h3>
+        <p>为缓解反向因果，文章使用县区层面平均单身率作为家庭单身率的工具变量。第二阶段中单身率系数为 0.306，高于基准回归。第一阶段 F 值为 7953.11，Kleibergen-Paap rk LM 检验 p 值为 0.0000，Cragg-Donald Wald F 值为 6431.774，作者据此认为不存在弱工具变量问题。</p>
+        <figure class="paper-figure narrow">
+          <img src="assets/carbon-table8-iv.png" width="537" height="395" alt="原文表8：工具变量分析" loading="lazy" decoding="async">
+          <figcaption>原文表8：县区平均单身率强烈预测家庭单身率，第二阶段估计仍显著为正。</figcaption>
+        </figure>
+        <div class="warning-box">
+          <h4>IV 的解释边界</h4>
+          <p>县区平均单身率很可能与本地住房供给、公共交通、消费服务、文化氛围和收入结构共同变化，这些因素也可能直接影响家庭碳排放。因此，这个 IV 在相关性上很强，但排除限制是否完全成立仍需要谨慎。</p>
+        </div>
+      </section>
+
+      <section id="sec7">
+        <h2>7. 三条机制检验</h2>
+        <h3>7.1 家庭高价值公共品规模经济</h3>
+        <p>单身率显著提高人均住房面积、人均住房套数、人均汽车数量和人均购车支出；这些中介变量进一步显著提高人均碳排放。其中，控制人均住房套数后，单身率对人均碳排放不再显著，作者据此认为住房套数是一个很强的中介。</p>
+        <figure class="paper-figure">
+          <img src="assets/carbon-table9-scale-mechanism.png" width="1100" height="490" alt="原文表9：高价值公共品规模经济机制" loading="lazy" decoding="async">
+          <figcaption>原文表9：单身率提高住房、汽车等家庭公共品的人均占用，进而推高人均碳排放。</figcaption>
+        </figure>
+
+        <h3>7.2 便利消费</h3>
+        <p>单身群体在外出就餐、家具耐用品、网购和手机费用上具有更高的人均支出。这些变量进入排放回归后均显著为正，说明便利导向消费是单身率影响排放的重要渠道。</p>
+        <figure class="paper-figure">
+          <img src="assets/carbon-table10-convenience-mechanism.png" width="1100" height="470" alt="原文表10：便利消费机制" loading="lazy" decoding="async">
+          <figcaption>原文表10：外出就餐、家具耐用品、网购和手机费用均支持便利消费机制。</figcaption>
+        </figure>
+
+        <h3>7.3 生活能源共享</h3>
+        <p>作者使用人均燃料费、人均取暖费和人均电费作为能源共享不足的代理变量。结果显示，单身率显著提高这三类人均能源成本，而这些能源成本也显著提高人均碳排放。</p>
+        <figure class="paper-figure">
+          <img src="assets/carbon-table11-energy-sharing.png" width="1100" height="440" alt="原文表11：家庭能源共享机制" loading="lazy" decoding="async">
+          <figcaption>原文表11：燃料、取暖和电力三类能源支出都支持“共享不足导致人均排放更高”的解释。</figcaption>
+        </figure>
+      </section>
+
+      <section id="sec8">
+        <h2>8. 异质性结果</h2>
+        <p>异质性分析的核心发现是：单身率并不是对所有群体均等地提高排放。影响在男性、农村、年轻、高收入和高教育单身群体中更强。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>维度</th><th class="num">更高系数组</th><th class="num">对照组</th><th>解释</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>性别</td><td class="num">男性 0.275***</td><td class="num">女性 0.156***</td><td>作者认为男性更偏好私家车、肉类、烟酒等碳密集生活方式。</td></tr>
+              <tr><td>城乡</td><td class="num">农村 0.153***</td><td class="num">城市 0.121***</td><td>农村更依赖煤炭、柴火等高排放能源，共享经济和公共交通较弱。</td></tr>
+              <tr><td>年龄</td><td class="num">青年 0.308***</td><td class="num">中年 0.227***；老年 0.120***</td><td>青年单身的消费活跃度更高，年龄上升后消费和出行强度下降。</td></tr>
+              <tr><td>收入</td><td class="num">最高 25%：0.245***</td><td class="num">最低 25%：0.141***；中间两组不显著</td><td>高收入单身总体消费水平高，低收入单身可能依赖高排放燃料。</td></tr>
+              <tr><td>教育</td><td class="num">高教育 0.352***</td><td class="num">低教育 0.176***</td><td>高教育群体虽可能环保意识更强，但收入和消费升级效应更大。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="two-col">
+          <figure class="paper-figure">
+            <img src="assets/carbon-table12-gender-rural.png" width="538" height="460" alt="原文表12：性别与城乡异质性" loading="lazy" decoding="async">
+            <figcaption>表12：男性大于女性，农村大于城市。</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <img src="assets/carbon-table13-age.png" width="538" height="450" alt="原文表13：年龄异质性" loading="lazy" decoding="async">
+            <figcaption>表13：青年单身率系数最大，随后是中年和老年。</figcaption>
+          </figure>
+        </div>
+        <div class="two-col">
+          <figure class="paper-figure">
+            <img src="assets/carbon-table14-income.png" width="537" height="338" alt="原文表14：收入异质性" loading="lazy" decoding="async">
+            <figcaption>表14：最高收入组和最低收入组显著，中间收入组不显著。</figcaption>
+          </figure>
+          <figure class="paper-figure">
+            <img src="assets/carbon-table15-education.png" width="538" height="375" alt="原文表15：教育异质性" loading="lazy" decoding="async">
+            <figcaption>表15：高教育单身率系数约为低教育组两倍。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="sec9">
+        <h2>9. 政策建议</h2>
+        <p>文章的政策立场并不是“减少单身”，而是承认家庭结构多元化，在尊重个体选择的前提下提供低碳生活支持。作者提出四类政策方向。</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>政策方向</th><th>具体做法</th><th>对应机制</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>个人碳预算</td><td>建立个人碳账户、碳足迹工具、碳预算约束与激励。</td><td>让消费端隐含排放可见化，帮助个体管理排放。</td></tr>
+              <tr><td>学习曲线</td><td>低碳生活数字助手、社区低碳实验室、绿色积分体系。</td><td>通过反馈、任务和同伴学习降低低碳行为成本。</td></tr>
+              <tr><td>敏感干预点</td><td>在租房、购置家电、买车等关键消费节点推送低碳替代。</td><td>小干预影响长期高碳路径。</td></tr>
+              <tr><td>包容性低碳支持</td><td>小户型节能产品、共享洗衣房/厨房/工具库、公共交通和慢行网络。</td><td>用共享基础设施抵消家庭小型化造成的规模经济损失。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="result-box">
+          <h4>最重要的规范性边界</h4>
+          <p>文章明确强调，政策目标不应是改变个人婚姻状态，也不应污名化单身群体。减排责任需要公平分担，政策应聚焦于让不同家庭结构都能获得低碳生活的能力与选择。</p>
+        </div>
+      </section>
+
+      <section id="sec10">
+        <h2>10. 批判性阅读</h2>
+        <div class="critique-box">
+          <h4>1. 系数表述有半弹性口径问题</h4>
+          <p>模型形式决定了 0.244 是比例变量对 log 排放的半弹性，不能简单说“单身率提高 1% 使排放提高 24.4%”。更谨慎的说法是：单身率提高 1 个百分点，对 log 人均排放的影响约为 0.00244，近似 0.244%。</p>
+        </div>
+        <div class="critique-box">
+          <h4>2. 工具变量的排除限制值得讨论</h4>
+          <p>县区平均单身率可能同时反映本地住房市场、服务业发展、公共交通、社交文化和收入结构。这些因素可能直接影响消费排放，因此 IV 结果更像补充证据，而不是完全解决内生性的终局答案。</p>
+        </div>
+        <div class="critique-box">
+          <h4>3. 机制检验存在“消费支出共同来源”的机械关联</h4>
+          <p>被解释变量本身由消费支出乘以排放强度构造，而外出就餐、网购、手机费用、家具耐用品等中介也来自消费支出。机制结果方向有理论意义，但部分相关性可能来自变量构造上的共同来源。</p>
+        </div>
+        <div class="critique-box">
+          <h4>4. 排放测算牺牲了直接能源细节</h4>
+          <p>投入产出法适合大样本家庭消费数据，但无法细分具体化石能源和非化石能源，也较难处理地区电力结构差异、商品生命周期和供应链动态变化。作者也把更细的 LCA 与微观行为数据列为未来研究方向。</p>
+        </div>
+        <p>总体而言，这篇文章的价值在于把“家庭结构变化”接入消费端减排议题，并用中国家庭面板数据提供系统证据。它的经验结果清晰，机制丰富，政策讨论也较包容；但汇报时最好同时说明系数解释、IV 假设和排放测算口径的边界。</p>
+      </section>
+    </main>
+  </div>
+
+  <a class="back-top" href="#top" aria-label="回到顶部">↑</a>
+</body>
+</html>

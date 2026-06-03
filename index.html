@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="文献阅读笔记目录，收录课程论文的网页讲义、研究背景、理论模型和原文资料。" />
+  <meta name="description" content="文献阅读笔记目录，收录课程论文的网页讲义、HTML 演示文稿、研究背景、理论机制、实证方法和原文资料。" />
   <title>文献阅读</title>
   <style>
     :root {
@@ -14,6 +14,8 @@
       --line: #d8e0ea;
       --accent: #8b1e3f;
       --accent-dark: #64152d;
+      --teal: #16756f;
+      --blue: #315f9d;
       --shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
     }
 
@@ -87,10 +89,40 @@
       color: var(--muted);
     }
 
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin: 0.65rem 0 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0.18rem 0.5rem;
+      border-radius: 999px;
+      color: #334155;
+      background: #eef2f7;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .tag.teal {
+      color: #0f514d;
+      background: #eef8f6;
+    }
+
+    .tag.blue {
+      color: #234b7e;
+      background: #f0f5fb;
+    }
+
     .links {
       display: flex;
       flex-wrap: wrap;
       gap: 0.55rem;
+      margin-top: 0.85rem;
     }
 
     .links a {
@@ -127,7 +159,7 @@
   <header>
     <div class="inner hero">
       <h1>文献阅读</h1>
-      <p class="subtitle">课程论文阅读笔记、理论模型推导、研究背景和原文资料整理。</p>
+      <p class="subtitle">课程论文阅读笔记、HTML 演示文稿、理论机制、研究背景、实证方法和原文资料整理。</p>
     </div>
   </header>
 
@@ -136,11 +168,34 @@
       <article class="item">
         <h2>The Great Leap Forward: Anatomy of a Central Planning Disaster</h2>
         <p>Wei Li & Dennis Tao Yang (2005)，关于大跃进时期中央计划、资源转移、过度征购与粮食产量崩溃的文献阅读整理。</p>
+        <div class="meta">
+          <span class="tag">JPE 2005</span>
+          <span class="tag blue">中央计划</span>
+          <span class="tag teal">固定效应 IV</span>
+        </div>
         <div class="links">
           <a href="The-Great-Leap-Forward/">进入文献页</a>
           <a href="The-Great-Leap-Forward/研究背景.html">研究背景</a>
           <a href="The-Great-Leap-Forward/理论模型.html">理论模型</a>
           <a href="The-Great-Leap-Forward/The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
+        </div>
+      </article>
+      <article class="item">
+        <h2>The impact of singlehood on carbon emissions: Empirical evidence from China</h2>
+        <p>Yaqi Liu & Jing Guo (2026)，基于 CFPS 家庭面板数据，研究家庭单身率对消费端人均碳排放的影响、机制、稳健性和异质性。</p>
+        <div class="meta">
+          <span class="tag">JCLP 2026</span>
+          <span class="tag blue">消费端碳排放</span>
+          <span class="tag teal">HTML 演示稿</span>
+        </div>
+        <div class="links">
+          <a href="The-impact-of-singlehood-on-carbon-emissions/">进入文献页</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/presentation.html">HTML 演示文稿</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/研究背景.html">研究背景</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/机制与方法.html">机制与方法</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/阅读笔记.md">阅读笔记</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/推文_单身与碳排放.md">推文稿</a>
+          <a href="The-impact-of-singlehood-on-carbon-emissions/The%20impact%20of%20singlehood%20on%20carbon%20emissions.pdf">原文 PDF</a>
         </div>
       </article>
     </div>
