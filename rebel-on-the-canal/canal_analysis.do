@@ -9,8 +9,8 @@
  *
  * 数据获取（二选一）：
  *   git clone https://github.com/Zhihan-iris/literature-reading.git
- *   cd literature-reading/canal_data
- *   或直接下载：.../raw/main/canal_data/canal_rebellion.dta
+ *   cd literature-reading/rebel-on-the-canal/canal_data
+ *   或直接下载：https://github.com/Zhihan-iris/literature-reading/raw/main/rebel-on-the-canal/canal_data/canal_rebellion.dta
  *
  * 外部命令安装（仅需一次）：
  *   ssc install reghdfe
