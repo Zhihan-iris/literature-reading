@@ -22,7 +22,7 @@
   - 推文稿：[推文_单身与碳排放.md](The-impact-of-singlehood-on-carbon-emissions/推文_单身与碳排放.md)
   - 原文 PDF：[The impact of singlehood on carbon emissions.pdf](The-impact-of-singlehood-on-carbon-emissions/The%20impact%20of%20singlehood%20on%20carbon%20emissions.pdf)
 
-- Yuyu Cao & Shuo Chen (2022), *Rebel on the Canal: Disruption of State Capacity and Internal Conflict*
+- Yiming Cao & Shuo Chen (2022), *Rebel on the Canal: Disruption of State Capacity and Internal Conflict*
   - 文件夹：[rebel-on-the-canal/](rebel-on-the-canal/)
   - 运行说明：[README.md](rebel-on-the-canal/README.md)
   - Stata 复现代码：[canal_analysis.do](rebel-on-the-canal/canal_analysis.do)
