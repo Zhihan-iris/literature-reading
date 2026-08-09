@@ -22,6 +22,14 @@
   - 推文稿：[推文_单身与碳排放.md](The-impact-of-singlehood-on-carbon-emissions/推文_单身与碳排放.md)
   - 原文 PDF：[The impact of singlehood on carbon emissions.pdf](The-impact-of-singlehood-on-carbon-emissions/The%20impact%20of%20singlehood%20on%20carbon%20emissions.pdf)
 
+- Yuyu Cao & Shuo Chen (2022), *Rebel on the Canal: Disruption of State Capacity and Internal Conflict*
+  - 文件夹：[rebel-on-the-canal/](rebel-on-the-canal/)
+  - 运行说明：[README.md](rebel-on-the-canal/README.md)
+  - Stata 复现代码：[canal_analysis.do](rebel-on-the-canal/canal_analysis.do)
+  - Jupyter Notebook：[canal_reproduction.ipynb](rebel-on-the-canal/canal_reproduction.ipynb)
+  - 数据与图表：[canal_data/](rebel-on-the-canal/canal_data/)
+  - 原文发表于 *American Economic Review*
+
 ## GitHub Pages
 
 发布到 GitHub Pages 后，仓库根目录的 `index.html` 会显示文献目录；每篇文献放在自己的文件夹中。
@@ -32,5 +40,6 @@
 .
 ├── index.html
 ├── The-Great-Leap-Forward/
-└── The-impact-of-singlehood-on-carbon-emissions/
+├── The-impact-of-singlehood-on-carbon-emissions/
+└── rebel-on-the-canal/
 ```
