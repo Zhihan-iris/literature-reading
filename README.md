@@ -30,6 +30,13 @@
   - 数据与图表：[canal_data/](rebel-on-the-canal/canal_data/)
   - 原文发表于 *American Economic Review*
 
+- Monte, Ferdinando, Charly Porcher & Esteban Rossi-Hansberg (2026), *Remote Work and City Structure*
+  - 文件夹：[remote-work-city-structure/](remote-work-city-structure/)
+  - 复现包详解：[README.md](remote-work-city-structure/README.md)
+  - 阅读笔记：[remote.md](remote-work-city-structure/remote.md)
+  - 复现包（分卷合并脚本）：[combine.sh](remote-work-city-structure/combine.sh)
+  - 原文 PDF：[Remote Work and City Structure正文.pdf](remote-work-city-structure/Remote%20Work%20and%20City%20Structure%E6%AD%A3%E6%96%87.pdf)
+
 ## GitHub Pages
 
 发布到 GitHub Pages 后，仓库根目录的 `index.html` 会显示文献目录；每篇文献放在自己的文件夹中。
@@ -41,5 +48,6 @@
 ├── index.html
 ├── The-Great-Leap-Forward/
 ├── The-impact-of-singlehood-on-carbon-emissions/
-└── rebel-on-the-canal/
+├── rebel-on-the-canal/
+└── remote-work-city-structure/
 ```
