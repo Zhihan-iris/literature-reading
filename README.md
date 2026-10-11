@@ -39,8 +39,10 @@
 
 - Qiaoyi Chen, Zhao Chen, Zhikuo Liu, Juan Carlos Suárez Serrato & Daniel Yi Xu, *Regulating Conglomerates: Evidence from an Energy Conservation Program in China*
   - 文件夹：[Regulating-Conglomerates/](Regulating-Conglomerates/)
+  - 在线讲义：[index.html](Regulating-Conglomerates/index.html)，52 页正文与 24 处复现代码解释
+  - 黑金粉主题演示稿：[presentation.html](Regulating-Conglomerates/presentation.html)，逐页呈现、连续阅读、目录与打印
   - 深度解析：[深度解析_Regulating_Conglomerates.md](Regulating-Conglomerates/深度解析_Regulating_Conglomerates.md)
-  - 原文发表于 *American Economic Review*（JEL: Q48, L51, O44, H23）
+  - 原文发表于 *American Economic Review* 115(2), 2025, pp. 408–447，DOI: 10.1257/aer.20211455
 
 ## GitHub Pages
 
