@@ -1,6 +1,6 @@
 """Generate the reader-facing lecture and presentation (Python standard library)."""
 from pathlib import Path
-import json,html,base64,re
+import json,html,base64,re,sys
 ROOT=Path(__file__).resolve().parents[1];E=html.escape
 slides=json.loads((ROOT/'src/reader.json').read_text());N=len(slides)
 css=(ROOT/'lecture.css').read_text();js=(ROOT/'lecture.js').read_text()
@@ -22,5 +22,6 @@ for filename,mode in [('index.html','reading')]:
  (ROOT/filename).write_text(doc)
 print(f'Built {N} pages / {sum(len(s["codes"]) for s in slides)} code excerpts')
 
-from build_deck import build
-build()
+if "--reader-only" not in sys.argv:
+ from build_deck import build
+ build()
