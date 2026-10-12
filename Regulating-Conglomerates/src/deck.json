@@ -10,31 +10,30 @@
     "kind": "cover-slide"
   },
   {
-    "title": "企业节能能否转化为行业节能？",
+    "title": "同一集团的两家企业，只有一家受到节能约束",
     "section": "01 研究问题",
-    "body": "<p>节能约束施加于名单内企业，生产决策可能由整个集团统筹。</p><div class=\"columns\"><div><h2>监管边界</h2><p>单个法人企业的能源消耗受到约束。</p><div class=\"statement\">受监管企业缩减生产</div></div><div><h2>决策边界</h2><p>集团可在关联企业之间重新安排生产。</p><div class=\"statement\">未直接受监管的关联企业扩张</div></div></div><p class=\"boundary\">研究对象：企业内部调整、集团内生产转移，以及行业市场溢出的共同作用。</p>",
+    "body": "<p>假设一个集团拥有两家生产同类产品的企业 A 和 B，可以在它们之间安排生产任务。</p><div class=\"columns\"><div><h2>企业 A：被列入节能名单</h2><p>政策要求 A 减少能源消耗。A 可以通过改善生产技术节能，也可能通过减少生产来降低能耗。</p><div class=\"statement\">问题：A 少生产的部分去了哪里？</div></div><div><h2>企业 B：没有被列入名单</h2><p>B 与 A 受同一集团控制。如果 B 接过部分生产任务，它的产出和能耗就可能增加。</p><div class=\"statement\">集团可以把部分生产转到 B</div></div></div><p class=\"boundary\">“企业集团”指由所有权关系连接、可共同安排经营活动的多家企业；这里的 B 是 A 的关联企业。</p>",
     "reader": [
       2,
       3
     ],
-    "source": "",
+    "source": "概念示例 · 对应论文关于集团内生产转移的研究问题",
     "kind": ""
   },
   {
-    "title": "实证识别企业反应，模型加总行业影响",
+    "title": "A 少用了 20 单位能源，集团实际节约多少？",
     "section": "01 研究问题",
-    "body": "<div class=\"sequence\"><div><span>01</span><h2>企业层面的证据</h2><p>DID 与事件研究<br>能耗、产出、能源效率</p></div><div><span>02</span><h2>集团与行业机制</h2><p>集团内重新配置<br>市场需求与价格调整</p></div><div><span>03</span><h2>政策与福利评价</h2><p>行业净节能与经济成本<br>替代监管方案</p></div></div><p class=\"boundary\">核心贡献：把所有权网络纳入环境监管的效果评价与政策设计。</p>",
+    "body": "<p>假设 A 减少生产，B 承接部分生产任务。两家企业的能源消耗变化如下。</p><table><thead><tr><th>能源消耗（统一单位）</th><th>企业 A：名单内</th><th>企业 B：名单外</th><th>集团合计</th></tr></thead><tbody><tr><td>政策前</td><td>100</td><td>40</td><td>140</td></tr><tr><td>政策后</td><td>80</td><td>52</td><td>132</td></tr><tr><td>变化</td><td>−20</td><td>+12</td><td>−8</td></tr></tbody></table><div class=\"equation\">集团净节能 8 = A 节能 20 − B 增耗 12</div><p>论文研究的问题是：这种生产转移是否发生？把名单外企业的反应也计入后，整个行业节约了多少能源？</p><p class=\"boundary\">数字仅用于说明机制，并非论文估计结果。“行业”还包括同类产品的其他生产企业。</p>",
     "reader": [
-      2,
-      48
+      3
     ],
-    "source": "",
+    "source": "教学示例 · 论文随后通过企业数据和模型分析这一问题",
     "kind": ""
   },
   {
     "title": "千家企业节能行动覆盖高耗能企业",
     "section": "02 制度与数据",
-    "body": "<div class=\"numbers\"><div><strong>1,008</strong><span>纳入名单的企业</span></div><div><strong>18 万吨</strong><span>2004 年年综合能耗门槛<br>单位：吨标准煤</span></div><div><strong>47%</strong><span>名单企业占全国工业能耗比重</span></div></div><p>政策于 2006 年公布，覆盖九个高耗能行业，通过目标责任、考核与能源管理推动节能。</p><div class=\"timeline\"><div><b>2004</b><span>历史能耗确定名单</span></div><div><b>2006</b><span>政策公布／事件研究基年</span></div><div><b>2007 起</b><span>DID 的政策后时期</span></div><div><b>2011 年末</b><span>万家企业行动公布</span></div></div><p class=\"boundary\">受监管表示纳入千家企业能耗管理范围；企业仍可生产。</p>",
+    "body": "<div class=\"numbers\"><div><strong>1,008</strong><span>纳入名单的企业</span></div><div><strong>18 万吨</strong><span>2004 年年综合能耗门槛<br>单位：吨标准煤</span></div><div><strong>47%</strong><span>名单企业占全国工业能耗比重</span></div></div><p>政策于 2006 年公布，覆盖九个高耗能行业，通过目标责任、考核与能源管理推动节能。</p><div class=\"timeline\"><div><b>2004</b><span>历史能耗确定名单</span></div><div><b>2006</b><span>政策公布</span></div><div><b>2007 起</b><span>观察政策实施后的变化</span></div><div><b>2011 年末</b><span>万家企业行动公布</span></div></div><p class=\"boundary\">受监管表示纳入千家企业能耗管理范围；企业仍可生产。</p>",
     "reader": [
       4,
       5,
@@ -66,9 +65,9 @@
     "kind": ""
   },
   {
-    "title": "DID 比较两组企业在政策前后的变化",
+    "title": "双重差分（DID）：比较两组企业的变化",
     "section": "03 识别策略",
-    "body": "<div class=\"columns\"><div><h2>受监管企业的直接反应</h2><ul><li>处理组：千家企业名单内企业。</li><li>对照组：后续纳入万家企业行动的企业，剔除相关关联企业。</li><li>政策后：2007 年及以后。</li></ul></div><div><h2>关联企业的溢出反应</h2><ul><li>处理组：未直接受监管、同一四位行业的关联企业。</li><li>对照组：同一四位行业、政策前产出轨迹相近的匹配企业。</li><li>能耗结果使用具有能源记录的单独匹配样本。</li></ul></div></div><div class=\"equation\">DID =（处理组政策后 − 政策前）−（对照组政策后 − 政策前）</div><p class=\"boundary\">识别依赖：无政策时两组的变化趋势可比。结果反映相对于对照组的变化。</p>",
+    "body": "<div class=\"columns\"><div><h2>比较一：名单内企业怎样变化？</h2><ul><li>处理组：千家企业名单内企业。</li><li>对照组：后续纳入万家企业行动的企业，剔除相关关联企业。</li><li>政策后：2007 年及以后。</li></ul></div><div><h2>比较二：关联企业是否承接生产？</h2><ul><li>处理组：未直接受监管、同一四位行业的关联企业。</li><li>对照组：同一四位行业、政策前产出轨迹相近的匹配企业。</li><li>能耗结果使用具有能源记录的单独匹配样本。</li></ul></div></div><div class=\"equation\">双重差分 = 处理组的前后变化 − 对照组的前后变化</div><p class=\"boundary\">识别依赖：无政策时两组的变化趋势可比。结果反映相对于对照组的变化。</p>",
     "reader": [
       11,
       12,
@@ -80,7 +79,7 @@
   {
     "title": "固定效应控制企业差异与共同冲击",
     "section": "03 识别策略",
-    "body": "<div class=\"equation\">z<sub>ijkt</sub> = β (Treat<sub>i</sub> × Post<sub>t</sub>) + α<sub>i</sub> + γ<sub>jt</sub> + δ<sub>kt</sub> + X′<sub>it</sub>θ + ε<sub>ijkt</sub></div><table><thead><tr><th>组成</th><th>经济含义</th></tr></thead><tbody><tr><td>z；Treat × Post</td><td>z 分别取 ln E、ln Y、ln(Y/E)；交互项仅在处理组且政策后为 1</td></tr><tr><td>αᵢ：企业固定效应</td><td>吸收企业不随时间变化的差异，如长期区位和固有特征</td></tr><tr><td>γⱼₜ；δₖₜ</td><td>吸收二位行业×年份、省份×年份的共同冲击</td></tr><tr><td>X；β</td><td>X 含国有属性、资产收益率、年龄、出口等；β 为相对政策效应</td></tr></tbody></table><p class=\"boundary\">Table 1 第 (4) 列为完整规格；前几列逐步加入固定效应与企业控制变量。</p>",
+    "body": "<div class=\"equation\">z<sub>ijkt</sub> = β (Treat<sub>i</sub> × Post<sub>t</sub>) + α<sub>i</sub> + γ<sub>jt</sub> + δ<sub>kt</sub> + X′<sub>it</sub>θ + ε<sub>ijkt</sub></div><table><thead><tr><th>组成</th><th>经济含义</th></tr></thead><tbody><tr><td>z；Treat × Post</td><td>z 分别取 ln E、ln Y、ln(Y/E)；交互项仅在处理组且政策后为 1</td></tr><tr><td>αᵢ：企业固定效应</td><td>吸收企业不随时间变化的差异，如长期区位和固有特征</td></tr><tr><td>γⱼₜ；δₖₜ</td><td>吸收二位行业×年份、省份×年份的共同冲击</td></tr><tr><td>X；β</td><td>X 含国有属性、资产收益率、年龄、出口等；β 为相对政策效应</td></tr></tbody></table><p class=\"boundary\">ln 表示自然对数，系数可换算为百分比变化；Table 1 各列逐步加入固定效应与控制变量。</p>",
     "reader": [
       13
     ],
@@ -204,7 +203,7 @@
   {
     "title": "DID 相对效应需要与行业总效应衔接",
     "section": "05 结构模型",
-    "body": "<div class=\"columns\"><div><h2>实证已经揭示</h2><ul><li>受监管企业收缩。</li><li>同集团关联企业扩张。</li><li>无关企业也出现市场溢出。</li></ul></div><div><h2>加总仍需回答</h2><ul><li>各类企业的能源权重是多少？</li><li>价格变化如何改变生产与需求？</li><li>节能收益是否覆盖经济成本？</li></ul></div></div><div class=\"equation\">相对变化 = 处理组总影响 − 对照组总影响</div><p class=\"boundary\">对照组也可能受市场溢出影响。结构模型提供共同的无政策基准及行业加总。</p>",
+    "body": "<div class=\"columns\"><div><h2>实证已经揭示</h2><ul><li>受监管企业收缩。</li><li>同集团关联企业扩张。</li><li>无关企业也出现市场溢出。</li></ul></div><div><h2>加总仍需回答</h2><ul><li>各类企业的能源权重是多少？</li><li>价格变化如何改变生产与需求？</li><li>节能收益是否覆盖经济成本？</li></ul></div></div><div class=\"equation\">相对变化 = 处理组总影响 − 对照组总影响</div><p class=\"boundary\">结构模型把生产和需求关系写成方程，计算“有政策”与“无政策”两种情形，用于加总行业影响。</p>",
     "reader": [
       22,
       23
