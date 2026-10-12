@@ -2,7 +2,7 @@
   {
     "title": "监管企业集团",
     "sub": "来自中国千家企业节能行动的证据 · 论文解读与复现代码导读",
-    "body": "<p class=\"cover-question\">一家企业节能了，<br>整个行业也节能了吗？</p><p class=\"authors\">Qiaoyi Chen · Zhao Chen · Zhikuo Liu<br>Juan Carlos Suárez Serrato · Daniel Yi Xu</p><p>American Economic Review, 2025, 115(2): 408–447</p><p>政策约束施加于名单内企业，生产决策则可能由整个集团统筹。监管对象与决策主体的边界差异构成本文的研究问题。</p>",
+    "body": "<p class=\"cover-question\">一家企业节能了，<br>整个行业也节能了吗？</p><p class=\"authors\">Qiaoyi Chen · Zhao Chen · Zhikuo Liu<br>Juan Carlos Suárez Serrato · Daniel Yi Xu</p><p>American Economic Review, 2025, 115(2): 408–447</p><p>政策约束施加于名单内企业，生产决策则可能由整个集团统筹。监管对象与决策主体的边界差异构成本文的研究问题。</p><p>汇报人：<span class=\"presenter-name\">Zhihan</span></p>",
     "section": "研究问题",
     "source": "文献信息：AEA 官方期刊页，DOI 10.1257/aer.20211455；内容依据本地正文与附录",
     "codes": []
@@ -240,7 +240,7 @@
   {
     "title": "受监管企业：能耗与产出同时下降",
     "sub": "Table 1 第 (4) 列，加入企业特征控制",
-    "body": "<table><thead><tr><th>结果变量</th><th>对数系数 β</th><th>标准误</th><th>p 值</th></tr></thead><tbody><tr><td>能耗</td><td><b class=\"neg\">−0.128</b></td><td>0.048</td><td>0.008</td></tr><tr><td>产出</td><td><b class=\"neg\">−0.145</b></td><td>0.042</td><td>0.001</td></tr><tr><td>能效</td><td>−0.019</td><td>0.047</td><td>0.691</td></tr></tbody></table><p class=\"takeaway\">主要反应与缩减生产一致，未发现显著的额外能效提升。</p><p class=\"caption\">沿用原文近似口径可读作 −12.8%、−14.5%。精确百分比换算为 100×(eᵝ−1)。</p><p>系数反映变化方向与幅度，标准误反映估计精度，p 值衡量结果与零效应假设的统计相容性。Table 1 各规格的能耗降幅约为 13%–16%，产出降幅约为 10%–23%，结果总体与生产收缩一致。</p>",
+    "body": "<figure class=\"original-table\"><a href=\"assets/table1.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/table1.png\" alt=\"论文原文 Table 1，含完整表注\" loading=\"lazy\"></a><figcaption>原文 Table 1 · 点击查看大图；下文按原表解释结果。</figcaption></figure><table><thead><tr><th>结果变量</th><th>对数系数 β</th><th>标准误</th><th>p 值</th></tr></thead><tbody><tr><td>能耗</td><td><b class=\"neg\">−0.128</b></td><td>0.048</td><td>0.008</td></tr><tr><td>产出</td><td><b class=\"neg\">−0.145</b></td><td>0.042</td><td>0.001</td></tr><tr><td>能效</td><td>−0.019</td><td>0.047</td><td>0.691</td></tr></tbody></table><p class=\"takeaway\">主要反应与缩减生产一致，未发现显著的额外能效提升。</p><p class=\"caption\">沿用原文近似口径可读作 −12.8%、−14.5%。精确百分比换算为 100×(eᵝ−1)。</p><p>系数反映变化方向与幅度，标准误反映估计精度，p 值衡量结果与零效应假设的统计相容性。Table 1 各规格的能耗降幅约为 13%–16%，产出降幅约为 10%–23%，结果总体与生产收缩一致。</p>",
     "section": "实证结果",
     "source": "Table 1 第 (4) 列；正文 §II",
     "codes": [
@@ -293,7 +293,7 @@
   {
     "title": "关联企业承接了生产",
     "sub": "未直接受监管、同一细分行业的关联企业相对扩张",
-    "body": "<table><thead><tr><th>结果</th><th>Table 2 第 (4) 列</th><th>解释</th></tr></thead><tbody><tr><td>产出</td><td><b class=\"pos\">+0.127</b></td><td>约 +12.7%，p < 0.001</td></tr><tr><td>能耗</td><td><b class=\"pos\">+0.318</b></td><td>约 +31.8%，p = 0.001</td></tr><tr><td>能效</td><td>−0.087</td><td>未显著，p = 0.380</td></tr></tbody></table><p class=\"caption\">产出与能耗回归的样本不同；能效变化由相应样本中的能效回归单独估计。</p><p>作者按四位行业及政策前产出轨迹匹配关联企业与对照企业，再估计政策后的相对变化。能耗结果使用具有能源记录的样本重新匹配，因此其样本覆盖与权重有别于产出回归。</p>",
+    "body": "<figure class=\"original-table\"><a href=\"assets/table2.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/table2.png\" alt=\"论文原文 Table 2，含完整表注\" loading=\"lazy\"></a><figcaption>原文 Table 2 · 点击查看大图；下文按原表解释结果。</figcaption></figure><table><thead><tr><th>结果</th><th>Table 2 第 (4) 列</th><th>解释</th></tr></thead><tbody><tr><td>产出</td><td><b class=\"pos\">+0.127</b></td><td>约 +12.7%，p < 0.001</td></tr><tr><td>能耗</td><td><b class=\"pos\">+0.318</b></td><td>约 +31.8%，p = 0.001</td></tr><tr><td>能效</td><td>−0.087</td><td>未显著，p = 0.380</td></tr></tbody></table><p class=\"caption\">产出与能耗回归的样本不同；能效变化由相应样本中的能效回归单独估计。</p><p>作者按四位行业及政策前产出轨迹匹配关联企业与对照企业，再估计政策后的相对变化。能耗结果使用具有能源记录的样本重新匹配，因此其样本覆盖与权重有别于产出回归。</p>",
     "section": "实证结果",
     "source": "Table 2，第 (4) 列；正文 §III 对能耗小样本的说明",
     "codes": [
@@ -430,7 +430,7 @@
   {
     "title": "没有股权关系的竞争者也会扩张",
     "sub": "市场泄漏来自供给收缩后的市场机会",
-    "body": "<div class=\"bigclaim\">约 <b>7%–8%</b></div><p class=\"lead\">平均监管暴露对应的未直接受监管、无关企业产出增幅</p><ul class=\"points\"><li>行业内受监管企业收缩，其他企业可能获得更多市场需求</li><li>作者比较监管强度不同的行业，并排除受监管企业的关联企业</li><li>产值变化同时包含价格与物理产量的反应</li></ul><p>Table 3 Panel A 以行业节能目标除以 2004 年行业能耗构造监管暴露，并按高耗能行业平均暴露标准化。系数 0.073 对应平均暴露下约 7.3% 的产值变化，行业聚类允许同一行业企业的误差相关。</p><h3>行业暴露 DID：处理强度在行业之间变化</h3><div class=\"equation\">ln Yᵢⱼₜ = β(Spilloverⱼ × Postₜ) + αᵢ + τₜ + Z′ⱼₜθ + X′ᵢₜγ + εᵢⱼₜ</div><p>Spillover 是标准化的行业监管暴露，Z 包括行业产出与能耗，X 在部分列加入企业特征。该回归比较监管暴露较高与较低行业中，无关企业在政策前后的产值变化。与 Table 1 的名单指示变量不同，这里利用连续的行业处理强度。</p><p>代码吸收企业与年份固定效应，并在二位行业层面聚类。同一行业内所有企业在同一年面对相同的 Spillover×Post；仅按企业聚类会遗漏行业内跨企业的残差相关，在共同冲击较强时可能低估不确定性。</p><p>该回归保留行业间监管暴露变化以识别 β。若加入完整的行业×年固定效应，Spillover×Post 会被其完全吸收。因此 Table 3 Panel A 的固定效应结构与 Table 1 不同。</p>",
+    "body": "<figure class=\"original-table\"><a href=\"assets/table3.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/table3.png\" alt=\"论文原文 Table 3，含完整表注\" loading=\"lazy\"></a><figcaption>原文 Table 3 · 点击查看大图；下文按原表解释结果。</figcaption></figure><div class=\"bigclaim\">约 <b>7%–8%</b></div><p class=\"lead\">平均监管暴露对应的未直接受监管、无关企业产出增幅</p><ul class=\"points\"><li>行业内受监管企业收缩，其他企业可能获得更多市场需求</li><li>作者比较监管强度不同的行业，并排除受监管企业的关联企业</li><li>产值变化同时包含价格与物理产量的反应</li></ul><p>Table 3 Panel A 以行业节能目标除以 2004 年行业能耗构造监管暴露，并按高耗能行业平均暴露标准化。系数 0.073 对应平均暴露下约 7.3% 的产值变化，行业聚类允许同一行业企业的误差相关。</p><h3>行业暴露 DID：处理强度在行业之间变化</h3><div class=\"equation\">ln Yᵢⱼₜ = β(Spilloverⱼ × Postₜ) + αᵢ + τₜ + Z′ⱼₜθ + X′ᵢₜγ + εᵢⱼₜ</div><p>Spillover 是标准化的行业监管暴露，Z 包括行业产出与能耗，X 在部分列加入企业特征。该回归比较监管暴露较高与较低行业中，无关企业在政策前后的产值变化。与 Table 1 的名单指示变量不同，这里利用连续的行业处理强度。</p><p>代码吸收企业与年份固定效应，并在二位行业层面聚类。同一行业内所有企业在同一年面对相同的 Spillover×Post；仅按企业聚类会遗漏行业内跨企业的残差相关，在共同冲击较强时可能低估不确定性。</p><p>该回归保留行业间监管暴露变化以识别 β。若加入完整的行业×年固定效应，Spillover×Post 会被其完全吸收。因此 Table 3 Panel A 的固定效应结构与 Table 1 不同。</p>",
     "section": "实证结果",
     "source": "正文式 (3)；Table 3 Panel A，Figure 5 Panel A",
     "codes": [
@@ -661,7 +661,7 @@
   {
     "title": "模型如何从数据中得到参数",
     "sub": "政策前分布用于参数估计，政策后反应用于模型验证",
-    "body": "<table><thead><tr><th>参数或设定</th><th>数值</th><th>依据</th></tr></thead><tbody><tr><td>产品替代弹性 σ</td><td>4</td><td>外部文献校准</td></tr><tr><td>规模报酬 ν、可变投入指数 νₗ</td><td>0.90、0.80</td><td>外部估计与成本份额</td></tr><tr><td>集团内效率保留 δ</td><td>0.900</td><td>政策前集团内规模分布</td></tr><tr><td>效率分布离散度 σₘ</td><td>1.239</td><td>政策前企业规模分布</td></tr><tr><td>存活门槛 φ₁</td><td>0.609</td><td>政策前小企业比例</td></tr></tbody></table><p class=\"caption\">核心技术参数主要匹配 2004 年数据矩；政策覆盖份额与配额强度另行校准。</p><p>替代弹性与规模报酬由外部证据校准，δ、σₘ、φ₁ 通过政策前企业分布的数据矩估计。监管门槛则匹配受监管企业的能源份额，各类参数对应不同的信息来源。</p>",
+    "body": "<figure class=\"original-table\"><a href=\"assets/table4.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/table4.png\" alt=\"论文原文 Table 4，含完整表注\" loading=\"lazy\"></a><figcaption>原文 Table 4 · 点击查看大图；下文按原表解释结果。</figcaption></figure><table><thead><tr><th>参数或设定</th><th>数值</th><th>依据</th></tr></thead><tbody><tr><td>产品替代弹性 σ</td><td>4</td><td>外部文献校准</td></tr><tr><td>规模报酬 ν、可变投入指数 νₗ</td><td>0.90、0.80</td><td>外部估计与成本份额</td></tr><tr><td>集团内效率保留 δ</td><td>0.900</td><td>政策前集团内规模分布</td></tr><tr><td>效率分布离散度 σₘ</td><td>1.239</td><td>政策前企业规模分布</td></tr><tr><td>存活门槛 φ₁</td><td>0.609</td><td>政策前小企业比例</td></tr></tbody></table><p class=\"caption\">核心技术参数主要匹配 2004 年数据矩；政策覆盖份额与配额强度另行校准。</p><p>替代弹性与规模报酬由外部证据校准，δ、σₘ、φ₁ 通过政策前企业分布的数据矩估计。监管门槛则匹配受监管企业的能源份额，各类参数对应不同的信息来源。</p>",
     "section": "结构模型",
     "source": "Table 4；正文 §V.A–B",
     "codes": [
@@ -846,7 +846,7 @@
   {
     "title": "企业收入变化的三个来源",
     "sub": "企业收入变化分为集团内分配、集团规模与市场需求三部分",
-    "body": "<div class=\"equation\">ln Revenueᵢⱼ = ln(qᵢⱼ / Qⱼ) + ρ ln Qⱼ + ln(R<sup>1−ρ</sup> P<sup>ρ</sup>)</div><table><thead><tr><th>Table 5：对数变化 × 100</th><th>分配效应</th><th>集团规模项</th><th>市场项</th><th>合计</th></tr></thead><tbody><tr><td>受监管企业</td><td>−12.9</td><td>−3.7</td><td>+2.6</td><td>−14.0</td></tr><tr><td>关联企业</td><td>+20.5</td><td>−3.7</td><td>+2.6</td><td>+19.3</td></tr><tr><td>对照企业</td><td>0</td><td>+3.9</td><td>+2.6</td><td>+6.5</td></tr></tbody></table><p class=\"caption\">Qⱼ 为集团物理总产量，R 为行业支出，P 为价格指数，ρ = 0.75；显示值存在舍入误差。</p><p>受监管企业的集团内份额下降，关联企业的份额上升；同一集团内的企业共享集团规模项，行业价格变化又共同影响各集团。三项加总形成企业收入的总变化。</p>",
+    "body": "<figure class=\"original-table\"><a href=\"assets/table5.png\" target=\"_blank\" rel=\"noopener\"><img src=\"assets/table5.png\" alt=\"论文原文 Table 5，含完整表注\" loading=\"lazy\"></a><figcaption>原文 Table 5 · 点击查看大图；下文按原表解释结果。</figcaption></figure><div class=\"equation\">ln Revenueᵢⱼ = ln(qᵢⱼ / Qⱼ) + ρ ln Qⱼ + ln(R<sup>1−ρ</sup> P<sup>ρ</sup>)</div><table><thead><tr><th>Table 5：对数变化 × 100</th><th>分配效应</th><th>集团规模项</th><th>市场项</th><th>合计</th></tr></thead><tbody><tr><td>受监管企业</td><td>−12.9</td><td>−3.7</td><td>+2.6</td><td>−14.0</td></tr><tr><td>关联企业</td><td>+20.5</td><td>−3.7</td><td>+2.6</td><td>+19.3</td></tr><tr><td>对照企业</td><td>0</td><td>+3.9</td><td>+2.6</td><td>+6.5</td></tr></tbody></table><p class=\"caption\">Qⱼ 为集团物理总产量，R 为行业支出，P 为价格指数，ρ = 0.75；显示值存在舍入误差。</p><p>受监管企业的集团内份额下降，关联企业的份额上升；同一集团内的企业共享集团规模项，行业价格变化又共同影响各集团。三项加总形成企业收入的总变化。</p>",
     "section": "模型结果",
     "source": "式 (17)、Table 5；集团内 DID 见 Table 3 Panel B",
     "codes": [

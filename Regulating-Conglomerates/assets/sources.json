@@ -1,0 +1,123 @@
+{
+  "table1": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 15,
+    "printed_page": 14,
+    "crop_at_scale_3": [
+      322,
+      480,
+      1500,
+      1808
+    ]
+  },
+  "table1-ab": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 15,
+    "printed_page": 14,
+    "crop_at_scale_3": [
+      540,
+      562,
+      1282,
+      1132
+    ]
+  },
+  "table1-c": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 15,
+    "printed_page": 14,
+    "crop_at_scale_3": [
+      532,
+      1132,
+      1282,
+      1560
+    ]
+  },
+  "table2": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 19,
+    "printed_page": 18,
+    "crop_at_scale_3": [
+      322,
+      310,
+      1500,
+      1898
+    ]
+  },
+  "table2-ab": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 19,
+    "printed_page": 18,
+    "crop_at_scale_3": [
+      532,
+      364,
+      1282,
+      908
+    ]
+  },
+  "table2-cd": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 19,
+    "printed_page": 18,
+    "crop_at_scale_3": [
+      532,
+      934,
+      1282,
+      1626
+    ]
+  },
+  "table3": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 23,
+    "printed_page": 22,
+    "crop_at_scale_3": [
+      322,
+      310,
+      1500,
+      1714
+    ]
+  },
+  "table3-a": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 23,
+    "printed_page": 22,
+    "crop_at_scale_3": [
+      432,
+      390,
+      1376,
+      822
+    ]
+  },
+  "table3-b": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 23,
+    "printed_page": 22,
+    "crop_at_scale_3": [
+      507,
+      826,
+      1314,
+      1252
+    ]
+  },
+  "table4": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 32,
+    "printed_page": 31,
+    "crop_at_scale_3": [
+      322,
+      310,
+      1500,
+      975
+    ]
+  },
+  "table5": {
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 35,
+    "printed_page": 34,
+    "crop_at_scale_3": [
+      322,
+      310,
+      1500,
+      1016
+    ]
+  }
+}

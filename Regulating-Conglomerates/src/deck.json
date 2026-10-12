@@ -1,0 +1,409 @@
+[
+  {
+    "title": "监管企业集团",
+    "section": "文献汇报",
+    "body": "<div class=\"cover\"><p class=\"cover-en\">Regulating Conglomerates</p><p class=\"cover-sub\">来自中国节能项目的证据</p><div class=\"cover-rule\"></div><p class=\"cover-authors\">Qiaoyi Chen · Zhao Chen · Zhikuo Liu<br>Juan Carlos Suárez Serrato · Daniel Yi Xu</p><p class=\"journal\">American Economic Review · 2025 · 115(2): 408–447</p><p class=\"presenter\">汇报人：<span class=\"presenter-name\">Zhihan</span></p></div>",
+    "reader": [
+      1
+    ],
+    "source": "Chen et al. (2025) · DOI: 10.1257/aer.20211455",
+    "kind": "cover-slide"
+  },
+  {
+    "title": "企业节能能否转化为行业节能？",
+    "section": "01 研究问题",
+    "body": "<p>节能约束施加于名单内企业，生产决策可能由整个集团统筹。</p><div class=\"columns\"><div><h2>监管边界</h2><p>单个法人企业的能源消耗受到约束。</p><div class=\"statement\">受监管企业缩减生产</div></div><div><h2>决策边界</h2><p>集团可在关联企业之间重新安排生产。</p><div class=\"statement\">未直接受监管的关联企业扩张</div></div></div><p class=\"boundary\">研究对象：企业内部调整、集团内生产转移，以及行业市场溢出的共同作用。</p>",
+    "reader": [
+      2,
+      3
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "实证识别企业反应，模型加总行业影响",
+    "section": "01 研究问题",
+    "body": "<div class=\"sequence\"><div><span>01</span><h2>企业层面的证据</h2><p>DID 与事件研究<br>能耗、产出、能源效率</p></div><div><span>02</span><h2>集团与行业机制</h2><p>集团内重新配置<br>市场需求与价格调整</p></div><div><span>03</span><h2>政策与福利评价</h2><p>行业净节能与经济成本<br>替代监管方案</p></div></div><p class=\"boundary\">核心贡献：把所有权网络纳入环境监管的效果评价与政策设计。</p>",
+    "reader": [
+      2,
+      48
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "千家企业节能行动覆盖高耗能企业",
+    "section": "02 制度与数据",
+    "body": "<div class=\"numbers\"><div><strong>1,008</strong><span>纳入名单的企业</span></div><div><strong>18 万吨</strong><span>2004 年年综合能耗门槛<br>单位：吨标准煤</span></div><div><strong>47%</strong><span>名单企业占全国工业能耗比重</span></div></div><p>政策于 2006 年公布，覆盖九个高耗能行业，通过目标责任、考核与能源管理推动节能。</p><div class=\"timeline\"><div><b>2004</b><span>历史能耗确定名单</span></div><div><b>2006</b><span>政策公布／事件研究基年</span></div><div><b>2007 起</b><span>DID 的政策后时期</span></div><div><b>2011 年末</b><span>万家企业行动公布</span></div></div><p class=\"boundary\">受监管表示纳入千家企业能耗管理范围；企业仍可生产。</p>",
+    "reader": [
+      4,
+      5,
+      8
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "数据连接能源、生产与所有权网络",
+    "section": "02 制度与数据",
+    "body": "<table><thead><tr><th>数据</th><th>分析用途</th></tr></thead><tbody><tr><td>CESD 企业能源数据</td><td>能耗与能源效率；识别后续纳入万家企业行动的对照企业</td></tr><tr><td>ASIF 工业企业数据</td><td>产值、企业特征与生产变化</td></tr><tr><td>CARD 股权关联数据</td><td>识别集团及关联企业</td></tr><tr><td>2004 年经济普查</td><td>企业分布与结构模型数据矩</td></tr></tbody></table><p>股权联系以至少 25% 的持股、最多两层关系识别；排除仅因共同国资委持股形成的联系。</p><p class=\"boundary\">基准溢出分析进一步限定同一四位行业，以识别生产可替代性较强的关联企业。</p>",
+    "reader": [
+      9,
+      10
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "能耗衡量总量，能效衡量单位能源的产出",
+    "section": "02 制度与数据",
+    "body": "<table><thead><tr><th>指标</th><th>含义</th><th>示例：政策前 → 政策后</th></tr></thead><tbody><tr><td>能耗 E</td><td>生产使用的能源总量</td><td>50 → 40 吨标准煤（−20%）</td></tr><tr><td>产出 Y</td><td>实证主要以产值度量</td><td>100 → 80 万元（−20%）</td></tr><tr><td>能源效率 Y/E</td><td>每单位能源对应的产值</td><td>2 → 2 万元／吨标准煤（不变）</td></tr></tbody></table><div class=\"equation\">能源强度 = E / Y　；　能源效率 = Y / E</div><p class=\"boundary\">示例仅用于定义。产量收缩可以带来节能；产值口径能效还会受到价格和产品结构影响。</p>",
+    "reader": [
+      6,
+      17
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "DID 比较两组企业在政策前后的变化",
+    "section": "03 识别策略",
+    "body": "<div class=\"columns\"><div><h2>受监管企业的直接反应</h2><ul><li>处理组：千家企业名单内企业。</li><li>对照组：后续纳入万家企业行动的企业，剔除相关关联企业。</li><li>政策后：2007 年及以后。</li></ul></div><div><h2>关联企业的溢出反应</h2><ul><li>处理组：未直接受监管、同一四位行业的关联企业。</li><li>对照组：同一四位行业、政策前产出轨迹相近的匹配企业。</li><li>能耗结果使用具有能源记录的单独匹配样本。</li></ul></div></div><div class=\"equation\">DID =（处理组政策后 − 政策前）−（对照组政策后 − 政策前）</div><p class=\"boundary\">识别依赖：无政策时两组的变化趋势可比。结果反映相对于对照组的变化。</p>",
+    "reader": [
+      11,
+      12,
+      18
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "固定效应控制企业差异与共同冲击",
+    "section": "03 识别策略",
+    "body": "<div class=\"equation\">z<sub>ijkt</sub> = β (Treat<sub>i</sub> × Post<sub>t</sub>) + α<sub>i</sub> + γ<sub>jt</sub> + δ<sub>kt</sub> + X′<sub>it</sub>θ + ε<sub>ijkt</sub></div><table><thead><tr><th>组成</th><th>经济含义</th></tr></thead><tbody><tr><td>z；Treat × Post</td><td>z 分别取 ln E、ln Y、ln(Y/E)；交互项仅在处理组且政策后为 1</td></tr><tr><td>αᵢ：企业固定效应</td><td>吸收企业不随时间变化的差异，如长期区位和固有特征</td></tr><tr><td>γⱼₜ；δₖₜ</td><td>吸收二位行业×年份、省份×年份的共同冲击</td></tr><tr><td>X；β</td><td>X 含国有属性、资产收益率、年龄、出口等；β 为相对政策效应</td></tr></tbody></table><p class=\"boundary\">Table 1 第 (4) 列为完整规格；前几列逐步加入固定效应与企业控制变量。</p>",
+    "reader": [
+      13
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "企业聚类允许同一企业的误差跨年相关",
+    "section": "03 识别策略",
+    "body": "<div class=\"columns\"><div><h2>Table 1／Table 2</h2><p>同一企业的管理、设备或需求冲击可能持续多年，年度观测并非相互独立。</p><div class=\"equation\">cluster(firmid)</div></div><div><h2>估计含义</h2><ul><li>允许同一企业内部各年的残差任意相关。</li><li>不同企业簇之间要求近似独立。</li><li>相同样本与方程下，聚类方式改变标准误、置信区间和 p 值，系数保持不变。</li></ul></div></div><p class=\"boundary\">固定效应控制条件均值中的共同成分；聚类标准误处理剩余误差的相关性。它本身不修复识别偏误。</p>",
+    "reader": [
+      13,
+      18
+    ],
+    "source": "Table 1–2 表注；Do/Table1.do；Do/Table2.do；Stata vce 文档",
+    "kind": ""
+  },
+  {
+    "title": "行业聚类覆盖同行业企业的共同误差",
+    "section": "03 识别策略",
+    "body": "<table><thead><tr><th>做法</th><th>允许相关的观测</th><th>本论文的应用</th></tr></thead><tbody><tr><td>按企业聚类</td><td>同一家企业的不同年份</td><td>名单处理与匹配关联企业 DID</td></tr><tr><td>按二位行业聚类</td><td>同行业不同企业、不同年份</td><td>行业监管暴露的市场溢出回归</td></tr></tbody></table><p>行业溢出的处理强度在行业层面变化。同行业企业共同面对需求、价格等冲击，仅按企业聚类可能遗漏跨企业相关性。</p><div class=\"equation\">行业溢出：cluster(ind2)</div><p class=\"boundary\">两者用于不同回归，均为单维聚类；标准误大小由误差相关结构决定。行业簇较少时，常规聚类推断仍需谨慎。</p>",
+    "reader": [
+      13,
+      21
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "事件研究检验政策前趋势并描绘动态反应",
+    "section": "03 识别策略",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/figure3.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/figure3.png\" alt=\"Figure 3，Panels A–B\"></button><figcaption>Figure 3，Panels A–B · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><div class=\"equation\">z<sub>it</sub> = Σ<sub>s ≠ 2006</sub> β<sub>s</sub> Treat<sub>i</sub>1(t=s)<br>+ 固定效应 + ε<sub>it</sub></div><ul><li>2006 年为省略的参照年。</li><li>政策前系数用于考察相对趋势；政策后系数反映动态变化。</li><li>Panel B 为规范化展示路径。</li></ul><p class=\"boundary\">政策前未发现显著差异，为平行趋势提供支持；不能据此确认所有混杂因素均已排除。</p></div></div>",
+    "reader": [
+      14
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "受监管企业的能耗与产出同时下降",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table1.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table1-ab.png\" alt=\"Table 1，Panels A–B；四列从左至右排列\"></button><figcaption>Table 1，Panels A–B；四列从左至右排列 · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">第 (4) 列</p><h2>能耗：β = −0.128</h2><p>标准误 0.048；p = 0.008。<br>精确换算约 −12.0%。</p><h2>产出：β = −0.145</h2><p>标准误 0.042；p = 0.001。<br>精确换算约 −13.5%。</p><p class=\"boundary\">论文用 100β 近似为 −12.8% 与 −14.5%。括号为聚类标准误，方括号为 p 值。</p></div></div>",
+    "reader": [
+      15,
+      16
+    ],
+    "source": "原文 Table 1 · PDF 第 15 页（印刷页 14）",
+    "kind": ""
+  },
+  {
+    "title": "未发现显著的额外能源效率改善",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table1.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table1-c.png\" alt=\"Table 1，Panel C 及规格控制项\"></button><figcaption>Table 1，Panel C 及规格控制项 · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">第 (4) 列</p><h2>β = −0.019</h2><p>标准误 0.047；p = 0.691。<br>估计值与零效应在统计上相容。</p><ul><li>“额外”指相对于对照组的变化。</li><li>能耗和产出同步收缩，与缩减生产的机制一致。</li></ul><p class=\"boundary\">该结果仅表明未发现额外能效改善；长期设备更新不在基准分析范围内。</p></div></div>",
+    "reader": [
+      17
+    ],
+    "source": "原文 Table 1 · 能效为产值／能源消耗",
+    "kind": ""
+  },
+  {
+    "title": "同一细分行业的关联企业相对扩张",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table2.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table2-ab.png\" alt=\"Table 2，Panels A–B\"></button><figcaption>Table 2，Panels A–B · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">Panel A · 第 (4) 列</p><h2>产出：β = +0.127</h2><p>标准误 0.035；p < 0.001。<br>近似 +12.7%；精确换算约 +13.5%。</p><h2>Panel B：安慰剂检验</h2><p>同二位、不同四位行业的关联企业：β = −0.003，p = 0.938。</p><p class=\"boundary\">扩张集中在产品替代性较强的关联企业，与集团内转移生产的机制一致。</p></div></div>",
+    "reader": [
+      18,
+      19
+    ],
+    "source": "原文 Table 2 · PDF 第 19 页（印刷页 18）",
+    "kind": ""
+  },
+  {
+    "title": "关联企业增耗，能效变化未显著",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table2.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table2-cd.png\" alt=\"Table 2，Panels C–D 及规格控制项\"></button><figcaption>Table 2，Panels C–D 及规格控制项 · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">第 (4) 列</p><h2>能耗：β = +0.318</h2><p>标准误 0.094；p = 0.001。<br>近似 +31.8%；精确换算约 +37.4%。</p><h2>能效：β = −0.087</h2><p>标准误 0.099；p = 0.380。<br>未发现显著的相对能效变化。</p><p class=\"boundary\">产出与能耗使用不同样本；能效效应由相应回归单独估计。</p></div></div>",
+    "reader": [
+      18
+    ],
+    "source": "原文 Table 2 · 百分比精确换算：100 × (eᵝ − 1)",
+    "kind": ""
+  },
+  {
+    "title": "关联企业承接约四成产出损失",
+    "section": "04 实证结果",
+    "body": "<div class=\"calculation\"><span>2.45</span><b>×</b><span>0.193</span><b>×</b><span>0.127</span><b>÷</b><span>0.145</span><b>≈</b><strong>41%</strong></div><table><thead><tr><th>数量</th><th>含义</th></tr></thead><tbody><tr><td>2.45</td><td>每家受监管企业平均对应的关联企业数量</td></tr><tr><td>0.193</td><td>关联企业相对受监管企业的平均规模</td></tr><tr><td>0.127／0.145</td><td>关联企业产出增长／受监管企业产出降幅（论文近似口径）</td></tr></tbody></table><p class=\"boundary\">该比例衡量产出损失的承接程度。能源节约的净变化还取决于各企业能耗及行业反应。</p>",
+    "reader": [
+      20
+    ],
+    "source": "原文 Section III，脚注 13；Table 1–2",
+    "kind": ""
+  },
+  {
+    "title": "无股权关联的企业也受到市场溢出影响",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table3.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table3-a.png\" alt=\"Table 3，Panel A\"></button><figcaption>Table 3，Panel A · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">第 (2) 列 · 全样本</p><h2>β = +0.073</h2><p>标准误 0.019；p = 0.001。<br>平均监管暴露对应约 7.3% 的产值扩张。</p><ul><li>排除直接受监管企业及相关关联企业。</li><li>行业节能目标／2004 年行业能耗，按平均暴露标准化。</li></ul><p class=\"boundary\">监管导致的供给收缩可能提高价格和竞争者需求；产值包含价格与数量反应。</p></div></div>",
+    "reader": [
+      21
+    ],
+    "source": "原文 Table 3 · PDF 第 23 页（印刷页 22）",
+    "kind": ""
+  },
+  {
+    "title": "行业暴露 DID 利用行业间监管强度差异",
+    "section": "03 识别策略 · 补充",
+    "body": "<div class=\"equation\">ln Y<sub>ijt</sub> = β (Spillover<sub>j</sub> × Post<sub>t</sub>) + α<sub>i</sub> + τ<sub>t</sub> + Z′<sub>jt</sub>θ + X′<sub>it</sub>γ + ε<sub>ijt</sub></div><table><thead><tr><th>设定</th><th>作用</th></tr></thead><tbody><tr><td>连续处理强度 Spilloverⱼ</td><td>比较监管暴露较高与较低行业在政策前后的产值变化</td></tr><tr><td>企业与年份固定效应</td><td>控制企业不变特征及所有企业的年度共同冲击</td></tr><tr><td>行业与企业控制变量</td><td>行业产出、行业能耗；部分规格加入企业特征</td></tr><tr><td>二位行业聚类</td><td>允许同行业企业和不同年份的误差相关</td></tr></tbody></table><p class=\"boundary\">完整的行业×年固定效应会吸收 Spillover×Post，因此本式采用企业与年份固定效应。</p>",
+    "reader": [
+      21
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "集团内比较识别生产份额的相对转移",
+    "section": "04 实证结果",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table3.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table3-b.png\" alt=\"Table 3，Panel B\"></button><figcaption>Table 3，Panel B · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><p class=\"result-label\">第 (4) 列</p><h2>β = −0.315</h2><p>受监管企业相对于同集团关联企业的产出变化；标准误 0.067，p < 0.001。</p><ul><li>集团×年固定效应控制同集团同年的共同冲击。</li><li>按集团聚类，允许同集团跨企业、跨年的误差相关。</li></ul><p class=\"boundary\">此处比较基准是同集团关联企业，因此系数与 Table 1 的比较对象不同。</p></div></div>",
+    "reader": [
+      38
+    ],
+    "source": "原文 Table 3 Panel B；Do/Table3.do 第 47–60 行",
+    "kind": ""
+  },
+  {
+    "title": "DID 相对效应需要与行业总效应衔接",
+    "section": "05 结构模型",
+    "body": "<div class=\"columns\"><div><h2>实证已经揭示</h2><ul><li>受监管企业收缩。</li><li>同集团关联企业扩张。</li><li>无关企业也出现市场溢出。</li></ul></div><div><h2>加总仍需回答</h2><ul><li>各类企业的能源权重是多少？</li><li>价格变化如何改变生产与需求？</li><li>节能收益是否覆盖经济成本？</li></ul></div></div><div class=\"equation\">相对变化 = 处理组总影响 − 对照组总影响</div><p class=\"boundary\">对照组也可能受市场溢出影响。结构模型提供共同的无政策基准及行业加总。</p>",
+    "reader": [
+      22,
+      23
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "模型把企业集团作为生产配置的决策主体",
+    "section": "05 结构模型",
+    "body": "<div class=\"columns\"><div><h2>需求</h2><p>不同集团生产差异化产品，CES 替代弹性 σ = 4；同集团企业生产可相互替代的产品。</p><div class=\"equation\">Q<sub>j</sub> = Σ<sub>i</sub> q<sub>ij</sub></div></div><div><h2>供给</h2><p>集团共同选择各企业的投入和产量。企业效率沿集团内排序递减，生产具有规模报酬递减。</p><div class=\"equation\">q<sub>i</sub> = φ δ<sup>i−1</sup> k<sub>i</sub><sup>αₖ</sup> [min(l<sub>i</sub>, η<sub>i</sub>e<sub>i</sub>)]<sup>αₗ</sup></div></div></div><p class=\"boundary\">q 为物理产量，φ 为技术效率；实证 Y 主要为产值。基准 η = 1，劳动与能源配比固定。</p>",
+    "reader": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "效率差异与报酬递减共同决定集团内规模",
+    "section": "05 结构模型",
+    "body": "<div class=\"equation\">q<sub>i</sub> / q<sub>1</sub> = δ<sup>(i−1)/(1−α)</sup></div><div class=\"columns\"><div><h2>效率随排序下降</h2><p>δ ≈ 0.90：第二家企业的效率为核心企业的约 90%。</p><h2>产量分布更陡峭</h2><p>α = 0.90 时，第二家相对产量约 0.35，第三家约 0.12。</p></div><div><h2>生产分散的原因</h2><p>把全部投入集中在一家企业会面临更强的边际报酬递减；新增企业又需要固定经营成本。</p><p>集团权衡效率、边际收益和固定成本，决定企业数量与投入配置。</p></div></div><p class=\"boundary\">政策后短期分析固定资本和企业数量，重点刻画既有企业之间的投入调整。</p>",
+    "reader": [
+      28,
+      29,
+      30
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "核心企业配额提高集团内生产转移的收益",
+    "section": "05 结构模型",
+    "body": "<div class=\"equation\">e<sub>1</sub> ≤ ξ e<sub>1</sub><sup>*</sup>　，　ξ = 0.8</div><p>核心企业能源投入上限为无政策水平的 80%。配额约束提高其有效边际成本，集团转而增加关联企业投入。</p><div class=\"equation\">l<sub>i</sub> / l<sub>1</sub> = δ<sup>(i−1)/(1−α)</sup> × [1 + λ/(w+p<sub>e</sub>)]<sup>1/(1−αₗ)</sup></div><div class=\"columns\"><div><h2>λ：配额的影子成本</h2><p>表示额外放宽一单位能源约束的边际价值。</p></div><div><h2>Λ：有效成本倍数</h2><p>Λ = 1 + λ/(w+pₑ)。约束越紧，集团内转移生产的激励越强。</p></div></div><p class=\"boundary\">原文 α = 0.90、αₗ = 0.80；两处指数分别对应不同的边际调整。</p>",
+    "reader": [
+      31,
+      32
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "价格反馈把企业调整连接为行业均衡",
+    "section": "05 结构模型",
+    "body": "<div class=\"sequence\"><div><span>01</span><h2>给定价格</h2><p>求配额影子成本<br>确定集团内投入配置</p></div><div><span>02</span><h2>重新加总</h2><p>计算各集团产量<br>更新行业价格指数</p></div><div><span>03</span><h2>迭代至收敛</h2><p>价格与生产相容<br>按能源权重计算净节能</p></div></div><div class=\"equation\">企业约束 → 集团内配置 → 行业供给与价格 → 企业需求</div><p class=\"boundary\">模型固定行业支出等外部条件，刻画相关行业均衡。</p>",
+    "reader": [
+      33
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "参数分别来自外部校准、数据矩与政策设定",
+    "section": "05 结构模型",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table4.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table4.png\" alt=\"Table 4，原表与表注\"></button><figcaption>Table 4，原表与表注 · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><h2>外部校准</h2><p>σ = 4；α = 0.90；αₗ = 0.80。</p><h2>矩估计</h2><p>δ = 0.900；σₘ = 1.239；<br>存活门槛 φ₁ = 0.609。</p><h2>政策参数</h2><p>覆盖门槛匹配能源份额；<br>1−ξ = 0.20 为配额压降幅度。</p></div></div>",
+    "reader": [
+      34
+    ],
+    "source": "原文 Table 4 · PDF 第 32 页（印刷页 31）",
+    "kind": ""
+  },
+  {
+    "title": "九个政策前数据矩约束企业与集团分布",
+    "section": "05 结构模型",
+    "body": "<div class=\"equation\">θ̂ = arg min<sub>θ</sub> [m<sub>数据</sub> − m<sub>模型</sub>(θ)]′ W [m<sub>数据</sub> − m<sub>模型</sub>(θ)]</div><table><thead><tr><th>数据矩</th><th>数量</th><th>识别信息</th></tr></thead><tbody><tr><td>三个销售规模区间的企业数量占比</td><td>3</td><td>企业规模分布</td></tr><tr><td>相同区间的销售额占比</td><td>3</td><td>大企业的经济权重</td></tr><tr><td>第二、第三家相对核心企业的规模</td><td>2</td><td>集团内效率衰减</td></tr><tr><td>销售额低于 100 万元的企业占比</td><td>1</td><td>小企业比例与存活门槛</td></tr></tbody></table><p class=\"boundary\">给定复现脚本使用单位权重矩阵；Main_test.m 读取已估参数并重算数据矩，未重新优化参数。</p>",
+    "reader": [
+      35
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "模型预测与企业层面的政策反应相比较",
+    "section": "05 结构模型",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/figure6.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/figure6.png\" alt=\"Figure 6，Panel B（论文报告）\"></button><figcaption>Figure 6，Panel B（论文报告） · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><h2>样本外验证</h2><p>主要技术参数由政策前分布估计，再与政策后的产出、能耗及能效回归结果比较。</p><ul><li>检验模型能否同时解释多类企业的反应。</li><li>多个结果共同约束生产转移与市场反馈机制。</li></ul><p class=\"boundary\">图为论文原图。所给代码中投入分解的变量引用尚待核对，相关能耗／能效预测未确认为本地复现结果。</p></div></div>",
+    "reader": [
+      36,
+      51
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "收入变化由配置、集团规模与市场项共同构成",
+    "section": "06 加总与福利",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/table5.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/table5.png\" alt=\"Table 5，模型分解原表\"></button><figcaption>Table 5，模型分解原表 · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><h2>分配效应</h2><p>企业在集团总产量中的份额发生变化。</p><h2>集团规模项</h2><p>集团总产量变化改变剩余收入。</p><h2>市场项</h2><p>行业价格调整共同影响各集团。</p><p class=\"boundary\">表中是模型对数变化。总效应按三项相加，DID 再扣除对照企业总效应。</p></div></div>",
+    "reader": [
+      37,
+      38
+    ],
+    "source": "原文 Table 5 · PDF 第 35 页（印刷页 34）",
+    "kind": ""
+  },
+  {
+    "title": "市场溢出改变 DID 与总效应的对应关系",
+    "section": "06 加总与福利",
+    "body": "<table><thead><tr><th>企业类型</th><th>相对无政策的总效应</th><th>扣除对照企业后的 DID</th></tr></thead><tbody><tr><td>受监管企业</td><td>−14.0</td><td>−14.0 − 6.5 = −20.5</td></tr><tr><td>关联企业</td><td>+19.3</td><td>+19.3 − 6.5 = +12.8</td></tr><tr><td>对照企业</td><td>+6.5</td><td>也受到行业市场溢出影响</td></tr></tbody></table><div class=\"equation\">集团内差异：−14.0 − 19.3 = −33.3</div><p class=\"boundary\">数值来自 Table 5，单位为对数变化 × 100。集团内比较消去共同集团规模项与市场项。</p>",
+    "reader": [
+      38
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "相关行业的净节能约为 4%",
+    "section": "06 加总与福利",
+    "body": "<div class=\"numbers\"><div><strong>−5.8%</strong><span>受监管集团的能耗变化<br>基期能源权重约 86%</span></div><div><strong>+6.5%</strong><span>其他集团的能耗变化<br>基期能源权重约 14%</span></div><div><strong>≈ −4%</strong><span>加总后的行业能耗变化</span></div></div><p>集团内生产转移与行业市场扩张抵消了一部分直接节能，行业仍有净节能。</p><div class=\"equation\">本地模型核验：−ln(E / E*) = 3.9644%</div><p class=\"boundary\">覆盖范围为模型中的相关行业；论文换算约每年 4,800 万吨标准煤，与全国累计政策目标口径不同。</p>",
+    "reader": [
+      39,
+      51
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "福利评价同时计入节能收益与价格成本",
+    "section": "06 加总与福利",
+    "body": "<div class=\"equation\">Δln W / (1−κ) = −ln(P / P*) − [κ/(1−κ)] ln(E / E*)</div><div class=\"columns\"><div><h2>经济成本</h2><p>能源约束提高生产成本，行业价格指数上升，降低真实消费。</p><div class=\"statement\">价格对数变化约 +3.49%</div></div><div><h2>环境收益</h2><p>能源使用减少带来环境收益；κ 表示环境收益在福利中的权重。</p><div class=\"statement\">能耗对数变化约 −3.96%</div></div></div><p class=\"boundary\">环境收益权重达到阈值时，节能收益能够抵消价格上升的成本。</p>",
+    "reader": [
+      40,
+      41,
+      51
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "福利收支平衡要求减排收益约 161 美元／吨",
+    "section": "06 加总与福利",
+    "body": "<div class=\"hero-number\">161<span>美元／吨 CO₂</span></div><p>GWTP：使政策福利效应恰好为零时，对每吨减排收益的要求。</p><div class=\"equation\">κ ≈ 0.467　→　GWTP = κ × GDP × 0.8 / CO₂</div><table><thead><tr><th>基准换算</th><th>含义</th></tr></thead><tbody><tr><td>2006 年 GDP：2.752 万亿美元；CO₂：63.8 亿吨</td><td>将福利中的环境权重转换为每吨金额</td></tr><tr><td>本地计算：161.45 美元／吨 CO₂</td><td>与论文报告约 161 美元一致</td></tr></tbody></table><p class=\"boundary\">该值是模型给出的收益门槛。114–199 美元为不同模型设定下的敏感性范围。</p>",
+    "reader": [
+      42,
+      43
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "集团监管改善生产配置与节能的权衡",
+    "section": "07 政策比较",
+    "body": "<div class=\"evidence\"><figure><button class=\"image-button\" data-image=\"assets/figure7.png\" aria-label=\"放大查看原文图表\"><img src=\"assets/figure7.png\" alt=\"Figure 7，Panel B\"></button><figcaption>Figure 7，Panel B · 点击查看完整大图</figcaption></figure><div class=\"interpretation\"><h2>企业监管</h2><p>约束单个企业，可能引起集团内向低效率企业转移生产。</p><h2>集团监管</h2><p>约束集团总能耗，保留集团内部选择生产地点的空间。</p><p class=\"boundary\">在相同价格成本下，论文比较中净节能约由 3.97% 升至 4.36%，提高约 10%。</p></div></div>",
+    "reader": [
+      44,
+      45
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "改进监管单位与扩大覆盖范围对应不同机制",
+    "section": "07 政策比较",
+    "body": "<table><thead><tr><th>方案</th><th>调整维度</th><th>论文模型中的比较</th></tr></thead><tbody><tr><td>扩大企业名单</td><td>监管覆盖范围</td><td>覆盖更多企业，但仍需考虑集团内配置</td></tr><tr><td>集团监管</td><td>监管与决策的边界</td><td>减少集团内生产转移造成的配置损失</td></tr><tr><td>统一能源税</td><td>统一边际能源成本</td><td>作为政策效率的比较基准</td></tr></tbody></table><p>基准福利门槛约为 161 美元／吨 CO₂；集团监管约 154 美元，统一税约 153 美元。</p><p class=\"boundary\">相同配额参数的比较与相同价格成本的比较具有不同口径；上述结果依赖模型设定。</p>",
+    "reader": [
+      45
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "监管效果取决于企业网络与市场调整",
+    "section": "08 结论",
+    "body": "<div class=\"conclusions\"><div><span>01</span><p><b>直接节能伴随生产收缩。</b><br>受监管企业能耗与产出下降，未发现显著的额外能效改善。</p></div><div><span>02</span><p><b>生产反应超出名单边界。</b><br>关联企业承接生产，无关企业也通过市场溢出扩张。</p></div><div><span>03</span><p><b>监管单位影响政策效率。</b><br>集团监管为内部配置保留空间，改善模型中的成本与节能权衡。</p></div></div><p class=\"boundary\">适用范围：历史政策、同一细分行业关联企业及短期行业均衡；结果不能直接外推至全部产业和长期技术变迁。</p>",
+    "reader": [
+      48,
+      49
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "复现将原始回归与结构模型分开核验",
+    "section": "技术附录",
+    "body": "<table><thead><tr><th>模块</th><th>文件路径</th><th>产出</th></tr></thead><tbody><tr><td>微观回归</td><td>Data_Generation_Program → Do/Table1–3.do</td><td>清理／匹配样本，估计 DID 与事件研究</td></tr><tr><td>参数与数据矩</td><td>Structural_Analysis/Estimation</td><td>读取参数，求模型矩与数据矩距离</td></tr><tr><td>政策均衡</td><td>Counterfactual Baseline/Main.m</td><td>价格、能耗、收入分解</td></tr><tr><td>政策比较</td><td>Main_compare.m → Do/Figure7.do</td><td>18 组覆盖门槛×配额组合及替代方案</td></tr></tbody></table><p class=\"boundary\">本演示稿保留 24 处原文件代码摘录与中文解释。各页“对应代码”连接相关计算；完整讲义保留全部细节。</p>",
+    "reader": [
+      50
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "本地核验确认基准均衡，微观回归未重跑",
+    "section": "技术附录",
+    "body": "<table><thead><tr><th>核验项目</th><th>结果／状态</th></tr></thead><tbody><tr><td>模型价格比／能耗比</td><td>1.03547156 ／ 0.96113137</td></tr><tr><td>GWTP</td><td>161.45 美元／吨 CO₂</td></tr><tr><td>参数与微观回归</td><td>使用已估参数；所给副本不含 .dta，未重估微观回归</td></tr><tr><td>政策覆盖门槛</td><td>本地约 9.344；论文出表脚本为 9.289</td></tr><tr><td>投入分解变量引用</td><td>share_input_* 与加权计算使用变量有差异，相关预测待核对</td></tr></tbody></table><p class=\"boundary\">运行环境：MATLAB R2024a；2026-10-11；Main_test.m、Main.m 与 Main_compare.m。</p>",
+    "reader": [
+      51
+    ],
+    "source": "",
+    "kind": ""
+  },
+  {
+    "title": "文献与复现来源",
+    "section": "参考文献",
+    "body": "<div class=\"references\"><p>Chen, Qiaoyi, Zhao Chen, Zhikuo Liu, Juan Carlos Suárez Serrato, and Daniel Yi Xu. 2025. “Regulating Conglomerates: Evidence from an Energy Conservation Program in China.” <i>American Economic Review</i>, 115(2): 408–447.</p><p><a href=\"https://www.aeaweb.org/articles?id=10.1257/aer.20211455\" target=\"_blank\" rel=\"noopener\">论文：DOI 10.1257/aer.20211455</a></p><p><a href=\"https://www.openicpsr.org/openicpsr/project/196012/version/V1/view\" target=\"_blank\" rel=\"noopener\">作者复现包：openICPSR 196012，V1</a></p><p>图表截取自所提供的原文 PDF；页码采用该 PDF 的物理页码及页内印刷页码。点击原图可查看完整图表。</p><p><a href=\"https://www.stata.com/manuals/rvce_option.pdf\" target=\"_blank\" rel=\"noopener\">聚类标准误：Stata vce 官方文档</a></p></div>",
+    "reader": [
+      52
+    ],
+    "source": "",
+    "kind": ""
+  }
+]
