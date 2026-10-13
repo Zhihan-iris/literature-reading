@@ -1,0 +1,15 @@
+(()=>{'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const rail=$('.rail'), menu=$('#menu');
+menu.addEventListener('click',()=>{const o=rail.classList.toggle('open');menu.setAttribute('aria-expanded',String(o))});
+$$('.rail nav a').forEach(a=>a.addEventListener('click',()=>{rail.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+$('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let count=0;$$('.rail nav a').forEach(a=>{const chapter=document.getElementById(a.hash.slice(1));const yes=!q||chapter.textContent.toLowerCase().includes(q);a.hidden=!yes;if(yes)count++});$('.search-empty').style.display=count?'none':'block';rail.classList.toggle('searching',Boolean(q))});
+const chapters=$$('.chapter');const io=new IntersectionObserver(entries=>{const e=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];if(e){$$('.rail nav a').forEach(a=>{const current=a.hash==='#'+e.target.id;a.classList.toggle('active',current);current?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current')})}},{rootMargin:'-5% 0px -70% 0px',threshold:0});chapters.forEach(e=>io.observe(e));
+let ticking=false;function progress(){const d=document.documentElement;$('#progress').style.width=(d.scrollTop/Math.max(1,d.scrollHeight-d.clientHeight)*100)+'%';ticking=false}addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(progress);ticking=true}},{passive:true});progress();
+const dialog=$('#lightbox'),big=$('#big-image'),title=$('#image-title');let opener;
+$$('.zoom-open').forEach(b=>b.addEventListener('click',()=>{opener=b;const i=b.querySelector('img');big.src=i.src;big.alt=i.alt;big.classList.remove('actual');title.textContent=b.closest('figure').querySelector('.evidence-head').textContent;dialog.showModal()}));
+$('#close-image').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.addEventListener('close',()=>opener?.focus());big.addEventListener('click',()=>big.classList.toggle('actual'));$('#actual-size').addEventListener('click',()=>big.classList.toggle('actual'));
+function print(){const closed=$$('details:not([open])');closed.forEach(d=>d.open=true);$$('img').forEach(i=>i.loading='eager');window.print();closed.forEach(d=>d.open=false)}$$('[data-print]').forEach(b=>b.addEventListener('click',print));
+$('#figures').addEventListener('click',()=>{const o=$('#figure-index').classList.toggle('open');$('#figures').setAttribute('aria-expanded',String(o));if(o)$('#figure-index').scrollIntoView({behavior:'smooth',block:'start'})});
+$('.back-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+})();

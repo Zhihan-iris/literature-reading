@@ -1,6 +1,7 @@
 # 监管企业集团：论文解读与复现代码导读
 
-- [连续阅读讲义](index.html)
+- [新版详细讲义：正文、附录与阅读思考](handout.html)
+- [原版连续阅读与代码导读](index.html)
 - [逐页呈现文稿](presentation.html)
 
 38 页 16:9 学术演示与 52 页详细讲义。黑金主题，仅首页汇报人 Zhihan 使用粉色。内容按政策背景、数据与 DID、实证结果、集团模型、福利与政策启示展开，含 24 处带原文件行号的代码摘录与中文解释。面向读者的页面仅含论文内容和复现解释。
@@ -26,3 +27,16 @@ python3 tools/build.py
 原始微观数据、软件和完整复现包不包含在此网站。代码摘录保留来源与行号；论文原图仅用于对应结果的学术说明。
 
 论文：Chen et al. (2025), AER 115(2):408–447，DOI 10.1257/aer.20211455。代码来源：作者 openICPSR 项目 196012，用户提供的 V1 副本。
+
+## 新版详细讲义（2026-10-13）
+
+`handout.html` 按用户提供的思路框架整理为17章，嵌入正文全部7张图、5张表，以及22处附录图表截图。273处公式使用预生成的原生 MathML，不依赖外部 CDN；图表点击放大、目录全文搜索、手机导航与打印均可使用。保留原版讲义和演示稿。
+
+- 可编辑内容：`src/handout.md`
+- 样式与交互：`handout.css`、`handout.js`
+- 图表和裁切定位：`assets/handout/`、`assets/handout/sources.json`
+- 构建：`node tools/build_handout.cjs`（Node.js；构建所需 marked、KaTeX及许可证已随仓库保存，运行页面不加载这些库）
+
+主要核对：区分企业DID与总体变化；重写41%转移量计算；纠正固定资本下投入转移指数为 `1/(1-alpha_l)`；区分GWTP与SCC及CO₂单位；明确114—199美元是模型敏感性范围，非置信区间。第8章数表是给定价格的代数校验，并非完整微观或均衡复现。
+
+在线路径：<https://zhihan-iris.github.io/literature-reading/Regulating-Conglomerates/handout.html>。本地离线阅读需保留 `handout.html` 与 `assets/handout/` 的相对目录。正文、附录PDF未重复上传，图表保留出处与页码。

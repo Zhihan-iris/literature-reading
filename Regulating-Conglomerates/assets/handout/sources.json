@@ -1,0 +1,750 @@
+[
+  {
+    "id": "fig1",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 3,
+    "printed_page": 2,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      942
+    ],
+    "asset": "assets/handout/fig1.webp",
+    "trim_px": [
+      126,
+      0,
+      1013,
+      725
+    ],
+    "width": 887,
+    "height": 725
+  },
+  {
+    "id": "fig2",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 12,
+    "printed_page": 11,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1415
+    ],
+    "asset": "assets/handout/fig2.webp",
+    "trim_px": [
+      126,
+      64,
+      1012,
+      1197
+    ],
+    "width": 886,
+    "height": 1133
+  },
+  {
+    "id": "fig3",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 14,
+    "printed_page": 13,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1461
+    ],
+    "asset": "assets/handout/fig3.webp",
+    "trim_px": [
+      126,
+      9,
+      1011,
+      1242
+    ],
+    "width": 885,
+    "height": 1233
+  },
+  {
+    "id": "fig4",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 18,
+    "printed_page": 17,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1174
+    ],
+    "asset": "assets/handout/fig4.webp",
+    "trim_px": [
+      126,
+      0,
+      1011,
+      956
+    ],
+    "width": 885,
+    "height": 956
+  },
+  {
+    "id": "fig5",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 21,
+    "printed_page": 20,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1380
+    ],
+    "asset": "assets/handout/fig5.webp",
+    "trim_px": [
+      126,
+      2,
+      1011,
+      1162
+    ],
+    "width": 885,
+    "height": 1160
+  },
+  {
+    "id": "fig6",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 33,
+    "printed_page": 32,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1446
+    ],
+    "asset": "assets/handout/fig6.webp",
+    "trim_px": [
+      126,
+      46,
+      1013,
+      1228
+    ],
+    "width": 887,
+    "height": 1182
+  },
+  {
+    "id": "fig7",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 39,
+    "printed_page": 38,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1549
+    ],
+    "asset": "assets/handout/fig7.webp",
+    "trim_px": [
+      126,
+      4,
+      1011,
+      1331
+    ],
+    "width": 885,
+    "height": 1327
+  },
+  {
+    "id": "tab1",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 15,
+    "printed_page": 14,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1347
+    ],
+    "asset": "assets/handout/tab1.webp",
+    "trim_px": [
+      126,
+      133,
+      1011,
+      1129
+    ],
+    "width": 885,
+    "height": 996
+  },
+  {
+    "id": "tab2",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 19,
+    "printed_page": 18,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1417
+    ],
+    "asset": "assets/handout/tab2.webp",
+    "trim_px": [
+      126,
+      3,
+      1011,
+      1199
+    ],
+    "width": 885,
+    "height": 1196
+  },
+  {
+    "id": "tab3",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 23,
+    "printed_page": 22,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      1280
+    ],
+    "asset": "assets/handout/tab3.webp",
+    "trim_px": [
+      126,
+      3,
+      1013,
+      1062
+    ],
+    "width": 887,
+    "height": 1059
+  },
+  {
+    "id": "tab4",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 32,
+    "printed_page": 31,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      736
+    ],
+    "asset": "assets/handout/tab4.webp",
+    "trim_px": [
+      126,
+      3,
+      1011,
+      518
+    ],
+    "width": 885,
+    "height": 515
+  },
+  {
+    "id": "tab5",
+    "source": "Chen_et_al_conglomerates.pdf",
+    "pdf_page": 35,
+    "printed_page": 34,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      217,
+      1253,
+      769
+    ],
+    "asset": "assets/handout/tab5.webp",
+    "trim_px": [
+      126,
+      4,
+      1011,
+      551
+    ],
+    "width": 885,
+    "height": 547
+  },
+  {
+    "id": "figA1",
+    "source": "22048.pdf",
+    "pdf_page": 81,
+    "printed_page": 81,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      203,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA1.webp",
+    "trim_px": [
+      126,
+      11,
+      1011,
+      1329
+    ],
+    "width": 885,
+    "height": 1318
+  },
+  {
+    "id": "figA2",
+    "source": "22048.pdf",
+    "pdf_page": 82,
+    "printed_page": 82,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      235,
+      1653,
+      1139
+    ],
+    "asset": "assets/handout/figA2.webp",
+    "trim_px": [
+      122,
+      7,
+      1323,
+      890
+    ],
+    "width": 1201,
+    "height": 883
+  },
+  {
+    "id": "figA3",
+    "source": "22048.pdf",
+    "pdf_page": 83,
+    "printed_page": 83,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      210,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA3.webp",
+    "trim_px": [
+      126,
+      10,
+      1012,
+      1322
+    ],
+    "width": 886,
+    "height": 1312
+  },
+  {
+    "id": "figA5",
+    "source": "22048.pdf",
+    "pdf_page": 85,
+    "printed_page": 85,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      489,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA5.webp",
+    "trim_px": [
+      126,
+      11,
+      1011,
+      1043
+    ],
+    "width": 885,
+    "height": 1032
+  },
+  {
+    "id": "figA6",
+    "source": "22048.pdf",
+    "pdf_page": 86,
+    "printed_page": 86,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      314,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA6.webp",
+    "trim_px": [
+      126,
+      11,
+      1011,
+      1218
+    ],
+    "width": 885,
+    "height": 1207
+  },
+  {
+    "id": "figA7",
+    "source": "22048.pdf",
+    "pdf_page": 87,
+    "printed_page": 87,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      579,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA7.webp",
+    "trim_px": [
+      126,
+      5,
+      1011,
+      953
+    ],
+    "width": 885,
+    "height": 948
+  },
+  {
+    "id": "figA8",
+    "source": "22048.pdf",
+    "pdf_page": 88,
+    "printed_page": 88,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      242,
+      1653,
+      1101
+    ],
+    "asset": "assets/handout/figA8.webp",
+    "trim_px": [
+      122,
+      8,
+      1335,
+      849
+    ],
+    "width": 1213,
+    "height": 841
+  },
+  {
+    "id": "figA11",
+    "source": "22048.pdf",
+    "pdf_page": 91,
+    "printed_page": 91,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      486,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA11.webp",
+    "trim_px": [
+      126,
+      7,
+      1011,
+      1046
+    ],
+    "width": 885,
+    "height": 1039
+  },
+  {
+    "id": "figA12",
+    "source": "22048.pdf",
+    "pdf_page": 92,
+    "printed_page": 92,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      332,
+      1653,
+      1007
+    ],
+    "asset": "assets/handout/figA12.webp",
+    "trim_px": [
+      122,
+      9,
+      1366,
+      665
+    ],
+    "width": 1244,
+    "height": 656
+  },
+  {
+    "id": "figA13",
+    "source": "22048.pdf",
+    "pdf_page": 93,
+    "printed_page": 93,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      218,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA13.webp",
+    "trim_px": [
+      126,
+      3,
+      1012,
+      1314
+    ],
+    "width": 886,
+    "height": 1311
+  },
+  {
+    "id": "figA14",
+    "source": "22048.pdf",
+    "pdf_page": 94,
+    "printed_page": 94,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      425,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA14.webp",
+    "trim_px": [
+      126,
+      9,
+      1011,
+      1107
+    ],
+    "width": 885,
+    "height": 1098
+  },
+  {
+    "id": "figA15",
+    "source": "22048.pdf",
+    "pdf_page": 95,
+    "printed_page": 95,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      422,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA15.webp",
+    "trim_px": [
+      126,
+      9,
+      1012,
+      1110
+    ],
+    "width": 886,
+    "height": 1101
+  },
+  {
+    "id": "figA17",
+    "source": "22048.pdf",
+    "pdf_page": 97,
+    "printed_page": 97,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      244,
+      1653,
+      1102
+    ],
+    "asset": "assets/handout/figA17.webp",
+    "trim_px": [
+      122,
+      8,
+      1351,
+      845
+    ],
+    "width": 1229,
+    "height": 837
+  },
+  {
+    "id": "figA18",
+    "source": "22048.pdf",
+    "pdf_page": 98,
+    "printed_page": 98,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      207,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA18.webp",
+    "trim_px": [
+      126,
+      9,
+      1012,
+      1325
+    ],
+    "width": 886,
+    "height": 1316
+  },
+  {
+    "id": "figA19",
+    "source": "22048.pdf",
+    "pdf_page": 99,
+    "printed_page": 99,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      486,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA19.webp",
+    "trim_px": [
+      126,
+      7,
+      1011,
+      1046
+    ],
+    "width": 885,
+    "height": 1039
+  },
+  {
+    "id": "figA20",
+    "source": "22048.pdf",
+    "pdf_page": 100,
+    "printed_page": 100,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      486,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/figA20.webp",
+    "trim_px": [
+      126,
+      7,
+      1011,
+      1046
+    ],
+    "width": 885,
+    "height": 1039
+  },
+  {
+    "id": "tabA8",
+    "source": "22048.pdf",
+    "pdf_page": 108,
+    "printed_page": 108,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      660,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA8.webp",
+    "trim_px": [
+      126,
+      12,
+      1011,
+      872
+    ],
+    "width": 885,
+    "height": 860
+  },
+  {
+    "id": "tabA17",
+    "source": "22048.pdf",
+    "pdf_page": 115,
+    "printed_page": 115,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      423,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA17.webp",
+    "trim_px": [
+      126,
+      12,
+      1012,
+      1109
+    ],
+    "width": 886,
+    "height": 1097
+  },
+  {
+    "id": "tabA36",
+    "source": "22048.pdf",
+    "pdf_page": 129,
+    "printed_page": 129,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      411,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA36.webp",
+    "trim_px": [
+      126,
+      12,
+      1041,
+      1121
+    ],
+    "width": 915,
+    "height": 1109
+  },
+  {
+    "id": "tabA38",
+    "source": "22048.pdf",
+    "pdf_page": 131,
+    "printed_page": 131,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      209,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA38.webp",
+    "trim_px": [
+      126,
+      12,
+      1011,
+      1323
+    ],
+    "width": 885,
+    "height": 1311
+  },
+  {
+    "id": "tabA3-A4",
+    "source": "22048.pdf",
+    "pdf_page": 105,
+    "printed_page": 105,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      247,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA3-A4.webp",
+    "trim_px": [
+      126,
+      12,
+      1013,
+      1285
+    ],
+    "width": 887,
+    "height": 1273
+  },
+  {
+    "id": "tabA33-A34",
+    "source": "22048.pdf",
+    "pdf_page": 127,
+    "printed_page": 127,
+    "dpi": 160,
+    "crop_px": [
+      106,
+      272,
+      1253,
+      1546
+    ],
+    "asset": "assets/handout/tabA33-A34.webp",
+    "trim_px": [
+      126,
+      12,
+      1013,
+      1260
+    ],
+    "width": 887,
+    "height": 1248
+  }
+]
