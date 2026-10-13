@@ -43,6 +43,7 @@
   - 原版讲义：[index.html](Regulating-Conglomerates/index.html)，52 页正文与 24 处复现代码解释
   - 黑金学术演示稿：[presentation.html](Regulating-Conglomerates/presentation.html)，38 页 16:9 演示、原文表格、图表放大与对应代码
   - 深度解析：[深度解析_Regulating_Conglomerates.md](Regulating-Conglomerates/深度解析_Regulating_Conglomerates.md)
+  - 公众号推文：[推文_监管企业集团.md](Regulating-Conglomerates/推文_监管企业集团.md)，十节正文、16 张原文图表与 11 段复现代码
   - 原文发表于 *American Economic Review* 115(2), 2025, pp. 408–447，DOI: 10.1257/aer.20211455
 
 ## GitHub Pages
