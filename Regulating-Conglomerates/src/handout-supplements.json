@@ -1,0 +1,102 @@
+[
+  {
+    "before": "## 二、政策背景与制度事实",
+    "title": "研究框架",
+    "body": "> 中央下达节能目标 → 地方把能效考核变通为能耗总量配额 → 被监管企业减产降耗 → 集团内关联企业与市场无关企业承接生产 → 全国净节能大幅缩水\n\n这条链上有两次关键的“接力”：政策先把约束落到核心企业身上，生产再沿着股权关系和市场价格转移到监管边界之外。论文以企业集团为起点，用四类方法组织证据。下面按方法列一遍：每种方法负责检验什么，也决定它能够把结论推进到哪里。\n\n- **描述性事实**（Figure 2）：看集团内部结构，关联企业规模小、核心企业越大关联企业越多。确认“转移生产”在物理上有空间，但承接能力有限。\n- **四层DID**：看被监管企业、关联企业、集团内部、市场层面各自发生了什么，识别出四条因果链上的关键环节。\n- **结构模型**（Melitz + 集团）：量化各环节的溢出各占多少、全国净效果是多少，把局部DID估计换算成全国一般均衡效果。\n- **福利分析**（GWTP）：判断这项政策划算吗、替代政策是否更好，给出政策评判标准与改进方向。",
+    "collapsed": false
+  },
+  {
+    "before": "## 四、三类企业，三个被解释变量",
+    "title": "Figure 2：同一集团内部的比较对象",
+    "body": "- 比较对象：同一个集团内部的成员。排第 1 的是这个集团的核心企业，也就是被监管企业；第 2、3、4…… 名是同一集团内、与它同处一个 4 位行业的关联企业。",
+    "collapsed": false
+  },
+  {
+    "before": "#### 平均处理效应",
+    "title": "为什么几幅图的时间轴不一样？",
+    "body": "能耗数据来自 CESD，覆盖 2001–2010；产出数据来自 ASIF，覆盖 1998–2009 与 2011–2013，2010 年整年缺失。论文脚注写明，2010 年的 ASIF 数据存在多处异常，统计研究中通常被剔除。所以基于产出的 Table 2、Table 3 和 Figure 4、Figure 5，事件研究图里 2009 会直接跳到 2011，中间那个断点就是 2010 年的缺口。论文用税收调查数据（ATS，提供 2009 与 2010 两年）做稳健性检验——填补能源缺失值、扩大样本、衡量关联企业产出，三种用法结论一致。",
+    "collapsed": false
+  },
+  {
+    "before": "#### 安慰剂检验",
+    "title": "40% 转移比例：三步计算",
+    "collapsed": false,
+    "excerpts": [
+      "论文到这里已经立起两个事实：被监管企业产出下降14.5%（Table 1 Panel B），同行业的关联企业产出上升12.7%（Table 2 Panel A）。两个数字放在一起，立刻逼出一个新问题：\n\n> **被监管企业减掉的那些生产，到底有多少被关联企业接走了？**",
+      "关联企业数量有限，平均每家 Top 1,000 企业只有2.45家关联企业；关联企业规模有限，平均只有被监管企业的19.3%（关联企业平均产出 ÷ 被监管企业产出，用 ASIF 2004 年数据计算）。",
+      "**第一步：先算关联企业总规模。**\n\n$$\n2.45 \\times 19.3\\% \\approx 47\\%\n$$\n\n所有关联企业加在一起，相当于被监管企业原产出的 47%。\n\n**第二步：再算关联企业增产的部分。** 政策后关联企业产出增加12.7%（来自 Table 2 Panel A 第 (4) 列的 DID 回归，衡量关联企业相对于同行业无关企业的产出上升），这 12.7% 是相对于它们自己原有产出的增量。\n\n$$\n47\\% \\times 12.7\\% \\approx 6\\%\n$$\n\n关联企业新增的产出，相当于被监管企业原产出的 6%。\n\n**第三步：对比被监管企业的减产幅度。** 被监管企业产出下降14.5%（来自 Table 1 Panel B 第 (4) 列的 DID 回归，衡量被监管企业相对于 Top 10,000 的产出下降），所以关联企业承接了其中：\n\n$$\n\\frac{6\\%}{14.5\\%} \\approx 41\\%\n$$"
+    ]
+  },
+  {
+    "before": "### 5.6 四层DID总结",
+    "title": "市场溢出：研究对象",
+    "body": "这一层研究的是无关企业：与任何 Top 1,000 都没有股权关联、也不属于任何集团的独立企业。它们不直接受政策约束，但被监管企业减产会推高行业价格，它们有可能趁机扩产。",
+    "collapsed": false
+  },
+  {
+    "before": "## 四、三类企业，三个被解释变量",
+    "title": "公众号代码摘录｜集团结构：Figure 2",
+    "body": "```stata\n* 图2-A：把各集团的产出矩摊平到\"第几名\"，看相对规模怎么衰减\nuse \"data_moments.dta\", clear\nkeep if type == \"Baseline\"\nreshape long delta_mean, i(id) j(rank)\ntwoway (scatter delta_mean rank if rank <= 5, msize(large)), ///\n    ylabel(0(0.2)1, nogrid) xlabel(1(1)5) ///\n    ytitle(\"Relative Size\") xtitle(\"Rank\")\n\n* 图2-B：先数出每个集团有几家企业，再对核心企业产出做分箱散点\negen groupid = group(conglomerate ind4 year)\nbysort groupid: egen number = count(firmid)\ngsort groupid -loutput\nby groupid: gen rank = _n          // 第1名即核心企业\nkeep if rank == 1\nbinscatter number loutput, absorb(ind4) nq(30)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "#### 平均处理效应",
+    "title": "公众号代码摘录｜事件研究：逐年交互项",
+    "body": "```stata\n* 把 treat 与每一年的虚拟变量交互，逐年系数就是事件研究\ntab year, gen(ydummy)\nforvalues i = 1(1)10 {\n    local j = 2000 + `i'\n    gen treat_year`j' = ydummy`i' * top1000\n}\n* 以2006年为基准年，省略它；交互项只留2001-2005与2007-2010\nreghdfe lenergy treat_year2001-treat_year2005 treat_year2007-treat_year2010, ///\n    absorb(firmid ind2_year province_year) cluster(firmid)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "### 5.3 第二层DID：集团内部的生产转移",
+    "title": "公众号代码摘录｜被监管企业：三组回归",
+    "body": "```stata\n* 三个被解释变量各跑四列，固定效应逐层加厚\nlocal control \"soe roa age exp\"\nforeach y of varlist lenergy loutput lefficiency {\n    eststo `y'_1: reghdfe `y' treat_post, absorb(firmid year) cluster(firmid)\n    eststo `y'_2: reghdfe `y' treat_post, absorb(firmid ind2_year) cluster(firmid)\n    eststo `y'_3: reghdfe `y' treat_post, ///\n        absorb(firmid ind2_year province_year) cluster(firmid)\n    eststo `y'_4: reghdfe `y' treat_post `control', ///\n        absorb(firmid ind2_year province_year) cluster(firmid)\n}\n```",
+    "collapsed": true
+  },
+  {
+    "before": "#### 为什么只能转移40%？",
+    "title": "公众号代码摘录｜关联企业：匹配与回归",
+    "body": "```stata\n* 候选池：同一4位行业、不属于Top 1,000、且与之无股权关系的企业\n* 配对规则：按产出规模的欧氏距离找最近的一家，最差5%的配对丢弃\n* 回归带上匹配权重\nreghdfe loutput related_post [fweight = weight], ///\n    absorb(firmid ind2_year province_year) cluster(firmid)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "### 5.4 第三层DID：集团内部再验证",
+    "title": "公众号代码摘录｜安慰剂检验",
+    "body": "```stata\n* 安慰剂：同2位行业、不同4位行业的关联企业\n* 有股权关系，但产品不可替代，理论上接不了生产\n* 配对池、距离匹配、加权回归的流程与主回归完全一致\nreghdfe loutput related_post [fweight = weight], ///\n    absorb(firmid ind2_year province_year) cluster(firmid)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "### 5.5 第四层DID：市场溢出（连续型）",
+    "title": "公众号代码摘录｜集团内部：集团×年份固定效应",
+    "body": "```stata\n* 集团×年份固定效应吸收了集团层面的共同冲击\n* 识别只来自\"同一集团、同一年\"里被监管那家 vs 没被监管那家\nreghdfe loutput treat_post top1000, ///\n    absorb(conglomerate_year ind2_year province_year) cluster(conglomerate)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "### 5.6 四层DID总结",
+    "title": "公众号代码摘录｜市场溢出：行业暴露度",
+    "body": "```stata\n* 处理变量是行业层面的连续暴露度，标准误聚类到2位行业\nreghdfe loutput spillover_post loutput_ind2 lenergy_ind2 soe roa age exp ///\n    if top1000_industry == 1, absorb(firmid year) cluster(ind2)\n```",
+    "collapsed": true
+  },
+  {
+    "before": "### 9.5 估计结果与解读",
+    "title": "公众号代码摘录｜DID 与模型预测的比较",
+    "body": "```stata\n* 把 DID 估出来的系数和标准误手写进来，与模型预测并排画图\nmat var = (-20.4,  4.2 \\    // 表1 Panel B：受监管企业产出\n            11.8,  3.7 \\    // 表2 Panel A：关联企业产出\n             7.3,  1.9 \\    // 表3 Panel A：市场溢出\n           -36.7,  7.0 \\    // 表3 Panel B：集团内部\n           -15.6,  4.7 \\    // 表1 Panel A：受监管企业能耗\n            30.2,  7.6)      // 表2 Panel C：关联企业能耗\ngen ci_l = var2 - 2*var3\ngen ci_h = var2 + 2*var3\n```",
+    "collapsed": true
+  },
+  {
+    "before": "## 十、福利分析",
+    "title": "公众号代码摘录｜参数读取与转换",
+    "body": "```matlab\n% 固定参数：文献取值\nalpha   = 0.9;            % 规模报酬\nalpha_k = 0.1;            % 资本弹性\nalpha_l = alpha - alpha_k % 劳动弹性 = 0.8\nrho     = 0.75;           % 替代参数，对应 sigma = 4\n\n% 待估参数：没有现成文献值，用2004年数据矩估计\n%   param_opt(1) -> 生存阈值\n%   param_opt(2) -> 集团内效率衰减 delta\n%   param_opt(3) -> 生产率分布标准差 sigma\nload param_opt\ncutoff = param_opt(1);\ndelta  = param_opt(2)^(1/(1-alpha));\nsigma  = param_opt(3);\n```",
+    "collapsed": true
+  },
+  {
+    "before": "## 八、结构模型：Melitz + 企业集团 + 能源监管",
+    "title": "公众号代码摘录｜DID 的模型分解",
+    "body": "```matlab\n%%% Table 5：把 DID 估计按模型拆成三块\n%%% 第一列配置效应，第二列剩余收入效应，第三列市场效应，第四列合计\ndecomposition_results = [ ...\n  share_regulated       , residual_rev_regulated                        , market_demand_all , ... ;   % 被监管企业\n  0                     , residual_rev_control                          , market_demand_all , ... ;   % 控制组\n  share_regulated       , residual_rev_regulated-residual_rev_control   , 0                 , ... ;   % DID\n  share_related         , residual_rev_related                          , market_demand_all , ... ;   % 关联企业\n  share_regulated-share_related , 0 , 0 , share_regulated-share_related ] ;                          % 集团内部\n```",
+    "collapsed": true
+  },
+  {
+    "before": "## 十三、政策启示",
+    "title": "公众号代码摘录｜替代政策与 GWTP",
+    "body": "```stata\n* 把模型反事实的百分比结果换成\"福利成本\"与\"节能幅度\"\nforeach var in v4 v5 v6 v7 v8 v9 {\n    replace `var' = -ln(`var')*100\n}\n* 盈亏平衡的 kappa，再折成每吨碳的支付意愿\nlocal kb = -v4[10]/v5[10]\nlocal kb = `kb'/(1+`kb')\nlocal gwtp = round(`kb'/(6.38/(2.752*1000)*1.25), 1)\ndi `gwtp'        // 161 美元/吨\n```",
+    "collapsed": true
+  }
+]

@@ -30,10 +30,13 @@ python3 tools/build.py
 
 ## 新版详细讲义（2026-10-13）
 
-`handout.html` 按用户要求完整使用最初提供的16章原稿，保留原有描述、数字、公式及思考，不改写或润色。嵌入正文全部7张图、5张表，以及22处附录截图，仅补充图表编号和来源页码。公式采用预生成 MathML，页面支持图表放大、目录搜索、手机阅读与打印。
+`handout.html` 按用户要求完整使用最初提供的16章原稿，保留原有描述、数字、公式及思考，不改写或润色。嵌入正文全部7张图、5张表，以及22处附录截图，每处图表均附读图说明、结果解释和来源页码。公众号新增细节以原文节选补入对应章节，11段代码摘录与16处长推导默认折叠，核心公式保持可见。公式采用预生成 MathML，页面支持图表放大、目录搜索、手机阅读与打印。
 
 - 原稿：`src/handout.md`（与用户最初提供的文本逐字节一致）
 - 图表位置：`src/handout-figures.json`（独立配置，避免改动原稿）
+- 公众号原文与补充位置：`src/wechat-original.md`、`src/handout-supplements.json`（摘录逐字保留；代码节选未经重新运行）
+- 图表解释：`src/handout-captions.json`
+- 折叠与排版：`tools/prepare_handout.cjs`（仅改变展示，不改写原稿）
 - 样式与交互：`handout.css`、`handout.js`
 - 图表及来源：`assets/handout/`、`assets/handout/sources.json`
 - 构建：`node tools/build_handout.cjs`（构建依赖及许可证随仓库提供）
