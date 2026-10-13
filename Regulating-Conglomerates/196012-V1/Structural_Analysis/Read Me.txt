@@ -1,0 +1,28 @@
+
+This folder contains the files that conduct all the structural analysis
+
+---Estimation: run main.m to estimate parameters of the baseline model (using pattern search)
+	       run main_test.m to compare model fits and generate txt file for graph
+
+---Estimation Menu: run main.m to estimate parameters for alternative combinations rho/sigma
+
+---Sensitivity Analysis: run main_ste.m for standard errors of baseline model (save tableA29_1, tableA29_2)
+			 run main_ste_menu.m for standard errors of alternative combinations rho/sigma (save tableA29_menu)
+
+---Estimation ImpSub: run main.m to estimate parameters for model with imperfect substitution
+		      run main_ste.m for standard errors (save tableA29_3)
+
+---Output: load all the above saved files and generate Table A29 in latex
+
+---Counterfactual Baseline: run main.m to solve the baseline counterfactual (and alternative thresholds/xi),INCLUDE decomposition for the comparison w/DID 
+			    run main_compare.m solves the cases for alternative regulations (baseline/conglomerate regulation/taxation) and no leakages
+
+---Counterfactaul AdjK: run main.m to solve the baseline counterfactual with capital adjustment, INCLUDE decomposition for the comparison w/DID 
+
+---Counterfactual Robustness: run main_compare.m for all the alternative values of rho/alpha. 
+
+---Energy Efficiency: run main.m for the cases corresponding the different gamma of endogenous energy efficiency cost
+
+---Imperfect Sub: run main.m for the case of imperfect within congl. subs
+
+---Heterogeneous EE: run main.m for the case of heterogeneous energy efficiency (ex-ante). 

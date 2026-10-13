@@ -1,0 +1,12 @@
+Source: IEA World Energy Balances 2020 https://www.iea.org/subscribe-to-data-services/world-energy-balances-and-statistics
+Documentation: https://iea.blob.core.windows.net/assets/4f314df4-8c60-4e48-9f36-bfea3d2b7fd5/WorldBAL_2020_Documentation.pdf
+This data is subject to the IEA's terms and conditions: https://www.iea.org/terms
+
+,Industry,Transport,Residential,Commercial and public services,Agriculture / forestry,Non-specified,Non-energy use,Units
+1990,283755,487570,209892,159271,14405,19615,119048,ktoe
+1995,272823,527559,247703,173301,15203,406,140752,ktoe
+2000,332286,588242,264059,193053,14104,1513,153034,ktoe
+2005,276415,622893,271670,200391,22159,13053,156497,ktoe
+2010,270429,595753,270118,207352,21846,12138,135352,ktoe
+2015,263370,613794,255891,208107,20738,14319,134429,ktoe
+2018,276582,638100,270940,217594,21153,20343,149417,ktoe

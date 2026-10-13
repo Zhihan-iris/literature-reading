@@ -1,0 +1,50 @@
+22 THE AMERICAN ECONOMIC REVIEW MONTH YEAR
+Table 3—Industry-Level Spillovers and Within-Conglomerate Effects
+A. Industry-Level Spillovers
+Variables ln(Output)
+All Sample Energy-Intensive Industries
+Spillover  Post 0.081 0.073 0.083 0.084
+(0.022) (0.019) (0.023) (0.027)
+[0.001] [0.001] [0.006] [0.013]
+Observations 2,557,940 2,557,940 843,313 843,313
+R2 0.840 0.856 0.831 0.848
+Firm FE Y Y Y Y
+Year FE Y Y Y Y
+Industry-Level Controls Y Y Y Y
+Firm-Level Controls Y Y
+B. Within-Conglomerate Difference-in-Differences
+Variables ln(Output)
+Treat  Post -0.343 -0.350 -0.367 -0.315
+(0.067) (0.068) (0.070) (0.067)
+[0.000] [0.000] [0.000] [0.000]
+Observations 15,174 15,149 15,146 14,745
+R2 0.530 0.535 0.582 0.626
+Treat Y Y Y Y
+Conglomerate  Year FE Y Y Y Y
+Industry  Year FE Y Y Y
+Province  Year FE Y Y
+Firm-Level Controls Y
+Note: Panel A of this table shows estimates of Equation 3 where Spillover  Post is an indicator for
+industry-level exposure to the Top 1,000 program interacted with an indicator for years after 2006 and
+the dependent variable is log firm output. Exposure to the Top 1,000 program is defined as the proportion
+of total energy savings targets of Top 1,000 firms relative to the total energy consumption in 2004 for
+each industry. The estimates in this table correspond to a pooled version of the regression displayed in
+Panel A of Figure 5. The results show that the average market-level spillover led to a 7.3%–8.4% increase
+in the output of unregulated, unrelated firms. See Section III for additional discussion. Standard errors
+clustered at the industry level are shown in parentheses with p-values in brackets below. Panel B of this
+table shows the output change of regulated firms relative to that of related firms (in the same 4-digit
+industry) within the same conglomerate. Treat  Post is an indicator for regulated firms (Top 1,000
+firms) interacted with an indicator for years after 2006, and the dependent variable is log firm output.
+The estimates in this table correspond to a pooled version of the regression displayed in Panel B of Figure
+5 and show that regulated firms experienced a 31.5%–36.7% output decrease relative to the output of
+their related firms in the same conglomerate. See Section V.C for additional discussion. Conglomerate-
+by-year fixed effects are included, and standard errors clustered at the conglomerate level are shown in
+parentheses with p-values in brackets below.
+Source: Authors’ calculations using ASIF data.
+has preferences over a continuum of varieties ! 2 Ω:
+U =
+[∫
+!2Ω
+q(!)d!
+]1/
+;

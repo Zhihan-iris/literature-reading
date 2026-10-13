@@ -45,6 +45,8 @@
   - 深度解析：[深度解析_Regulating_Conglomerates.md](Regulating-Conglomerates/深度解析_Regulating_Conglomerates.md)
   - 公众号推文：[推文_监管企业集团.md](Regulating-Conglomerates/推文_监管企业集团.md)，九节正文、16 张原文图表与 11 段复现代码
   - 公众号排版版：[整理版微信公众号.md](Regulating-Conglomerates/整理版微信公众号.md)，图表全部改为分点列表，图片为托管链接
+  - 原文与复现：[Chen_et_al_conglomerates.pdf](Regulating-Conglomerates/Chen_et_al_conglomerates.pdf)（正文）、[22048.pdf](Regulating-Conglomerates/22048.pdf)（136 页 Online Appendix）、[196012-V1/](Regulating-Conglomerates/196012-V1/)（作者复现包，Stata + Matlab）
+  - 研究素材：[research-figures/](Regulating-Conglomerates/research-figures/)（原文图表切图与提取脚本）、[build/](Regulating-Conglomerates/build/)（渲染稿与构建脚本）
   - 原文发表于 *American Economic Review* 115(2), 2025, pp. 408–447，DOI: 10.1257/aer.20211455
 
 ## GitHub Pages

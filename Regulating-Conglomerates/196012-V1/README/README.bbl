@@ -1,0 +1,23 @@
+\ifx\undefined\bysame
+\newcommand{\bysame}{\leavevmode\hbox to\leftmargin{\hrulefill\,\,}}
+\fi
+\begin{thebibliography}{xx}
+
+
+\harvarditem[NBS]{NBS}{2001-2009, 2011}{ASIF}
+{\bf NBS}, ``Annual Survey on Industrial Firms,'' National Bureau of Statistics
+  2001-2009, 2011.
+  
+\harvarditem[MEP]{MEP}{2001-2010}{MEP}
+{\bf MEP}, ``China's Environmental Statistics Database,'' Ministry of Environmental Protection
+  2001-2010.
+  
+ \harvarditem[SAIC]{SAIC}{1980-2018}{SAIC}
+{\bf SAIC}, ``China's Administration Registration Database,'' State Administration for Industry and Commerce
+  1980-2018.
+
+\harvarditem[SAT]{SAT}{2007-2015}{SAT}
+{\bf SAT}, ``Annual Enterprise Tax Survey,'' Chinese State Administration of Tax
+  2007-2015.
+
+\end{thebibliography}

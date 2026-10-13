@@ -1,0 +1,37 @@
+14 THE AMERICAN ECONOMIC REVIEW MONTH YEAR
+Table 1—Effects of the Program on Regulated Firms
+A. Energy Use
+Variables ln(Energy Use)
+Treat  Post -0.125 -0.156 -0.156 -0.128
+(0.042) (0.045) (0.047) (0.048)
+[0.003] [0.001] [0.001] [0.008]
+Observations 23,607 23,602 23,151 20,571
+R2 0.887 0.890 0.892 0.898
+B. Output
+Variables ln(Output)
+Treat  Post -0.096 -0.226 -0.204 -0.145
+(0.040) (0.041) (0.042) (0.042)
+[0.017] [0.000] [0.000] [0.001]
+Observations 23,435 23,430 22,991 20,446
+R2 0.881 0.887 0.889 0.893
+C. Energy Efficiency
+Variables ln(Energy Efficiency)
+Treat  Post 0.032 -0.069 -0.049 -0.019
+(0.042) (0.044) (0.046) (0.047)
+[0.451] [0.119] [0.290] [0.691]
+Observations 23,435 23,430 22,991 20,446
+R2 0.837 0.840 0.842 0.848
+Firm FE Y Y Y Y
+Year FE Y Y Y Y
+Industry  Year FE Y Y Y
+Province  Year FE Y Y
+Firm-Level Controls Y
+Note: This table shows estimates of Equation 2 where Treat  Post is an indicator for regulated firms
+interacted with an indicator for years after 2006 and the dependent variable is log firm energy consumption
+in Panel A, log firm output in Panel B, and log firm energy efficiency in Panel C. The estimates in this
+table correspond to a pooled version of the regression displayed in Figure 3. The coefficient in column
+(4) means that regulated firms decreased energy consumption by 12.8% and output by 14.5%. However,
+firms did not appear to improve energy efficiency after the implementation of the policy. See Section II
+for additional discussion and Table A.7 for more information about the data and variables. Standard
+errors clustered at the firm level are shown in parentheses with p-values in brackets below.
+Source: Authors’ calculations using CESD and ASIF data.
