@@ -30,13 +30,12 @@ python3 tools/build.py
 
 ## 新版详细讲义（2026-10-13）
 
-`handout.html` 按用户提供的思路框架整理为17章，嵌入正文全部7张图、5张表，以及22处附录图表截图。273处公式使用预生成的原生 MathML，不依赖外部 CDN；图表点击放大、目录全文搜索、手机导航与打印均可使用。保留原版讲义和演示稿。
+`handout.html` 按用户要求完整使用最初提供的16章原稿，保留原有描述、数字、公式及思考，不改写或润色。嵌入正文全部7张图、5张表，以及22处附录截图，仅补充图表编号和来源页码。公式采用预生成 MathML，页面支持图表放大、目录搜索、手机阅读与打印。
 
-- 可编辑内容：`src/handout.md`
+- 原稿：`src/handout.md`（与用户最初提供的文本逐字节一致）
+- 图表位置：`src/handout-figures.json`（独立配置，避免改动原稿）
 - 样式与交互：`handout.css`、`handout.js`
-- 图表和裁切定位：`assets/handout/`、`assets/handout/sources.json`
-- 构建：`node tools/build_handout.cjs`（Node.js；构建所需 marked、KaTeX及许可证已随仓库保存，运行页面不加载这些库）
+- 图表及来源：`assets/handout/`、`assets/handout/sources.json`
+- 构建：`node tools/build_handout.cjs`（构建依赖及许可证随仓库提供）
 
-主要核对：区分企业DID与总体变化；重写41%转移量计算；纠正固定资本下投入转移指数为 `1/(1-alpha_l)`；区分GWTP与SCC及CO₂单位；明确114—199美元是模型敏感性范围，非置信区间。第8章数表是给定价格的代数校验，并非完整微观或均衡复现。
-
-在线路径：<https://zhihan-iris.github.io/literature-reading/Regulating-Conglomerates/handout.html>。本地离线阅读需保留 `handout.html` 与 `assets/handout/` 的相对目录。正文、附录PDF未重复上传，图表保留出处与页码。
+在线地址：<https://zhihan-iris.github.io/literature-reading/Regulating-Conglomerates/handout.html>。离线阅读需保留页面与图表目录的相对位置。页面不含原版阅读或演示稿的跳转。
