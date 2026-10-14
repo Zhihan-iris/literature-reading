@@ -14,6 +14,7 @@ for(const placement of JSON.parse(read('src/handout-figures.json'))){
 }
 function protect(tex,display){tex=tex.replace(/\b(Spillover|Treat|Post|Year|Related)_/g,'\\mathrm{$1}_');const result=katex.renderToString(tex.trim(),{displayMode:display,output:'mathml',throwOnError:true,strict:'ignore'});const id=math.length;math.push(display?`<div class="equation">${result}</div>`:`<span class="math-inline">${result}</span>`);return `MATHSLOT${id}END`;}
 md=md.replace(/\$\$([\s\S]*?)\$\$/g,(_,t)=>protect(t,true)).replace(/\\\[([\s\S]*?)\\\]/g,(_,t)=>protect(t,true)).replace(/\\\(([\s\S]*?)\\\)/g,(_,t)=>protect(t,false)).replace(/\$([^$\n]+)\$/g,(_,t)=>protect(t,false));
+if(/^\s*\${1,2}\s*$/m.test(md))throw Error('Unrendered display-math delimiter in handout');
 // Format previously plain-text identifiers without changing their values or wording.
 const plainMath={
  '`e₁ ≤ ξ · e₁*`':'e_1 \\leq \\xi \\cdot e_1^*',

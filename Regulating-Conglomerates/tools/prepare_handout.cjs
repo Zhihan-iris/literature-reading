@@ -34,7 +34,8 @@ module.exports=function prepare(md,read,escape){
   const opening=s.collapsed?`<details class="code-excerpt"><summary>${escape(s.title)}</summary><div class="detail-body"><p class="excerpt-label">公众号原文节选</p>`:`<aside class="wechat-supplement"><div class="excerpt-label">公众号补充 · 原文节选</div><h4>${escape(s.title)}</h4>`;
   let ending=s.collapsed?'</div></details>':'</aside>';
   if(s.title.startsWith('40%'))ending='<p class="calculation-note"><strong>读数提示：</strong>47%的分母是核心企业原产出，约41%的分母是核心企业减产量，两者不能直接比较为“实际值与上限”。这三步是规模与DID系数结合的近似核算，剩余部分的去向仍需市场溢出和一般均衡分析。</p>'+ending;
-  md=md.replace(s.before,slot(opening)+(s.excerpts||[s.body]).join('\n\n')+slot(ending)+s.before);
+  // A callback keeps literal $$ (display math) and $& / $' in excerpts intact.
+  md=md.replace(s.before,()=>slot(opening)+(s.excerpts||[s.body]).join('\n\n')+slot(ending)+s.before);
  }
  // Protect code before parsing dollar signs and underscores as mathematics.
  md=md.replace(/```([\w-]*)\n([\s\S]*?)```/g,(_,lang,code)=>slot(`<pre><code class="language-${escape(lang)}">${escape(code)}</code></pre>`));
