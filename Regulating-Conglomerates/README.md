@@ -4,19 +4,24 @@
 - [原版连续阅读与代码导读](index.html)
 - [逐页呈现文稿](presentation.html)
 
-38 页 16:9 学术演示与 52 页详细讲义。黑金主题，仅首页汇报人 Zhihan 使用粉色。内容按政策背景、数据与 DID、实证结果、集团模型、福利与政策启示展开，含 24 处带原文件行号的代码摘录与中文解释。面向读者的页面仅含论文内容和复现解释。
+当前 `presentation.html` 为17页精简演示版，按用户提供的框架保留要点与完整讲稿。讲稿位于页底，字号明显小于正文，可一键隐藏。正文配有 Figure 2、3、4、5、6、7 的相应面板，点击可查看原图。详细讲义 `handout.html` 独立保留。
 
 ## 操作
 
-演示稿通过目录、底部页码或左右方向键切换。Table 1–5 使用原文截图，较长表格按面板放大；点击查看完整原表及表注。页面“对应代码”与“代码索引”提供原始源码和解释。打印演示稿输出 38 页；完整讲义的打印版包含所有代码。两个 HTML 均内嵌样式、脚本和图像，可离线打开。
+演示稿支持目录、页码跳转、方向键、全屏、隐藏／显示讲稿和打印。桌面为16:9画布，手机切换为单列阅读。打印输出17页，包含讲稿。离线阅读需保留 `presentation.html` 与 `assets/` 的相对位置。
 
 ## 构建
 
-演示稿修改 `src/deck.json`、`deck.css`、`deck.js`；完整讲义修改 `src/reader.json`、`lecture.css`、`lecture.js`。原表截图位于 `assets/`，裁切来源记录于 `assets/sources.json`。统一构建：
+- 精简版原稿：`src/concise-original.md`，与用户附件逐字节一致。
+- 排版与数学格式：`tools/build_presentation.cjs`。
+- 样式与交互：`presentation.css`、`presentation.js`。
+- 原图：`assets/` 与 `assets/handout/`；面板通过CSS取景，完整原图保持不变。
+- 精简版构建：`node tools/build_presentation.cjs`。
+- 详细讲义构建：`node tools/build_handout.cjs`。
+- 旧版连续阅读页构建：`python3 tools/build.py --reader-only`。
+- `python3 tools/build.py` 同时构建旧版阅读页和当前精简演示版；需要 Node.js，或通过 `NODE_BINARY` 指定可执行文件。
 
-```sh
-python3 tools/build.py
-```
+原38页演示稿的结构数据 `src/deck.json` 保留作历史参考；当前演示稿只使用精简版原稿。
 
 ## 核验范围
 
