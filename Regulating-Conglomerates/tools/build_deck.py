@@ -1,4 +1,4 @@
-"""Build the current 17-slide HTML presentation from the supplied concise framework."""
+"""Build the current 20-slide HTML presentation from the supplied concise framework."""
 from pathlib import Path
 import os
 import shutil
