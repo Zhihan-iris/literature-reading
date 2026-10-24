@@ -2,6 +2,16 @@
 
 这个仓库用于整理课程论文和文献阅读笔记。每篇文献独立放在一个文件夹中，包含网页讲义、HTML 演示文稿或专题页面、原文 PDF、表格图像和阅读笔记。
 
+## 按研究主题查找
+
+| 分类 | 文献目录 |
+| --- | --- |
+| 经济史与制度 | [中央计划与大跃进](The-Great-Leap-Forward/) · [运河与内部冲突](rebel-on-the-canal/) |
+| 环境与能源 | [单身与碳排放](The-impact-of-singlehood-on-carbon-emissions/) · [能源监管与企业集团](Regulating-Conglomerates/) |
+| 城市与空间 | [远程办公与城市结构](remote-work-city-structure/) |
+
+每篇论文保留独立目录；讲义、阅读笔记、作者复现包和派生结果分别以该目录内的说明为准。目录名称暂不改动，原有网页和下载链接继续可用。
+
 ## 已整理文献
 
 - Wei Li & Dennis Tao Yang (2005), *The Great Leap Forward: Anatomy of a Central Planning Disaster*

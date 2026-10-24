@@ -63,6 +63,7 @@
       padding: 1.4rem 0 3rem;
     }
 
+    section { margin-top: 2rem; }
     .literature-list {
       display: grid;
       gap: 1rem;
@@ -76,7 +77,7 @@
       box-shadow: var(--shadow);
     }
 
-    .item h2 {
+    .item h3 {
       margin: 0;
       color: var(--accent-dark);
       font-size: 1.25rem;
@@ -163,10 +164,8 @@
     </div>
   </header>
 
-  <main>
-    <div class="inner literature-list">
-      <article class="item">
-        <h2>The Great Leap Forward: Anatomy of a Central Planning Disaster</h2>
+  <main><div class="inner"><nav class="links" aria-label="研究主题"><a href="#history">经济史与制度</a><a href="#environment">环境与能源</a><a href="#urban">城市与空间</a></nav><section aria-labelledby="history"><h2 id="history">经济史与制度</h2><div class="literature-list"><article class="item">
+        <h3>The Great Leap Forward: Anatomy of a Central Planning Disaster</h3>
         <p>Wei Li & Dennis Tao Yang (2005)，关于大跃进时期中央计划、资源转移、过度征购与粮食产量崩溃的文献阅读整理。</p>
         <div class="meta">
           <span class="tag">JPE 2005</span>
@@ -179,9 +178,8 @@
           <a href="The-Great-Leap-Forward/理论模型.html">理论模型</a>
           <a href="The-Great-Leap-Forward/The%20Great%20Leap%20Forward.pdf">原文 PDF</a>
         </div>
-      </article>
-      <article class="item">
-        <h2>The impact of singlehood on carbon emissions: Empirical evidence from China</h2>
+      </article><article class="item"><h3>Rebel on the Canal</h3><p>运河主题的论文阅读与复现材料，包含 Stata 代码、Jupyter Notebook 和配套数据。</p><div class="meta"><span class="tag">AER 2022</span><span class="tag blue">经济史</span><span class="tag teal">复现材料</span></div><div class="links"><a href="https://github.com/Zhihan-iris/literature-reading/tree/main/rebel-on-the-canal">查看阅读与复现说明</a><a href="https://github.com/Zhihan-iris/literature-reading/blob/main/rebel-on-the-canal/canal_reproduction.ipynb">Notebook</a></div></article></div></section><section aria-labelledby="environment"><h2 id="environment">环境与能源</h2><div class="literature-list"><article class="item">
+        <h3>The impact of singlehood on carbon emissions: Empirical evidence from China</h3>
         <p>Yaqi Liu & Jing Guo (2026)，基于 CFPS 家庭面板数据，研究家庭单身率对消费端人均碳排放的影响、机制、稳健性和异质性。</p>
         <div class="meta">
           <span class="tag">JCLP 2026</span>
@@ -197,24 +195,8 @@
           <a href="The-impact-of-singlehood-on-carbon-emissions/推文_单身与碳排放.md">推文稿</a>
           <a href="The-impact-of-singlehood-on-carbon-emissions/The%20impact%20of%20singlehood%20on%20carbon%20emissions.pdf">原文 PDF</a>
         </div>
-      </article>
-      <article class="item">
-        <h2>Remote Work and City Structure</h2>
-        <p>Monte, Porcher &amp; Rossi-Hansberg (2026, AER)，研究远程办公如何永久改变城市结构：一次临时冲击（疫情封锁）能否把城市从高通勤稳态推到低通勤稳态。基于手机定位、微观工资等七类数据的结构估计，含官方完整复现代码包。</p>
-        <div class="meta">
-          <span class="tag">AER 2026</span>
-          <span class="tag blue">多重稳态</span>
-          <span class="tag teal">结构估计</span>
-        </div>
-        <div class="links">
-          <a href="remote-work-city-structure/">进入文献页</a>
-          <a href="remote-work-city-structure/README.md">复现包详解</a>
-          <a href="remote-work-city-structure/remote.md">阅读笔记</a>
-          <a href="remote-work-city-structure/Remote%20Work%20and%20City%20Structure%E6%AD%A3%E6%96%87.pdf">原文 PDF</a>
-        </div>
-      </article>
-      <article class="item">
-        <h2>Regulating Conglomerates: Evidence from an Energy Conservation Program in China</h2>
+      </article><article class="item">
+        <h3>Regulating Conglomerates: Evidence from an Energy Conservation Program in China</h3>
         <p>Chen, Chen, Liu, Suárez Serrato &amp; Xu (AER 2025)，研究千家企业节能政策的直接效果与集团、市场溢出。关联企业约承接受监管企业 40% 的产出损失。38 页黑金学术演示与 52 页详细讲义，按政策、实证、模型与福利展开，含 24 处复现代码解释和 MATLAB 实际运行核验。</p>
         <div class="meta">
           <span class="tag">AER</span>
@@ -227,8 +209,20 @@
           <a href="Regulating-Conglomerates/presentation.html">HTML 演示稿</a>
           <a href="Regulating-Conglomerates/%E6%B7%B1%E5%BA%A6%E8%A7%A3%E6%9E%90_Regulating_Conglomerates.md">深度解析</a>
         </div>
-      </article>
-    </div>
-  </main>
+      </article></div></section><section aria-labelledby="urban"><h2 id="urban">城市与空间</h2><div class="literature-list"><article class="item">
+        <h3>Remote Work and City Structure</h3>
+        <p>Monte, Porcher &amp; Rossi-Hansberg (2026, AER)，研究远程办公如何永久改变城市结构：一次临时冲击（疫情封锁）能否把城市从高通勤稳态推到低通勤稳态。基于手机定位、微观工资等七类数据的结构估计，含官方完整复现代码包。</p>
+        <div class="meta">
+          <span class="tag">AER 2026</span>
+          <span class="tag blue">多重稳态</span>
+          <span class="tag teal">结构估计</span>
+        </div>
+        <div class="links">
+          <a href="remote-work-city-structure/">进入文献页</a>
+          <a href="remote-work-city-structure/README.md">复现包详解</a>
+          <a href="remote-work-city-structure/remote.md">阅读笔记</a>
+          <a href="remote-work-city-structure/Remote%20Work%20and%20City%20Structure%E6%AD%A3%E6%96%87.pdf">原文 PDF</a>
+        </div>
+      </article></div></section></div></main>
 </body>
 </html>
